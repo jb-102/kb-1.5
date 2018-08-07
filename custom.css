@@ -703,6 +703,36 @@ p
 
 }
 
+.cart-item-price {
+	font-family: Gotham-Medium;
+    margin-top: 20px;
+}
+
+.cart-item-name {
+    margin-bottom: : 25px;
+}
+
+.cart-item-details {
+	padding: 40px 15px;
+}
+
+.badge-cart-main {
+    background-color: #2b2b2b !important;
+    font-size: 12px;
+    padding: 8px;
+    width: 28px;
+    height: 28px;
+    border-radius: 30px;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    font-family: Gotham-Book;
+}
+
 
 .kb-footer {
 	font-family: Cormorant-Medium !important;
