@@ -68,6 +68,35 @@
 	{
 		margin-top: 20px !important;
 	}
+	.mobileCategory
+	{
+		padding: 5px !important;
+	}
+	.mobileCategory > img
+	{
+		height:197px !important;
+	}
+	.mobileCategory > p
+	{
+		line-height:30px !important;
+		font-size:10px !important;
+	}
+
+	.mobileCategory > center > strike
+	{
+		font-size:10px !important;
+	}
+
+
+	.mobileCategory > center > span
+	{
+		font-size:10px !important;
+	}
+	#mainContainerCategory
+	{
+		padding-right: 35px !important;
+		padding-left: 15px;
+	}
 
 }
 @media (min-width: 577px) and (max-width: 768px)
@@ -983,7 +1012,7 @@ p {
 {
 	margin-bottom:0; 
 	line-height:50px;
-	color:black !important;
+	color:black;
 }
 
 #catRightSide > div > center > strike
