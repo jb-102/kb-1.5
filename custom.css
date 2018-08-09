@@ -941,4 +941,28 @@ p {
 	.testimonial .post{ font-size: 11px; }
 }
 
+#catRightSide > div
+{
+	margin-bottom: 50px;
+}
 
+#catRightSide > div > p
+{
+	margin-bottom:0; 
+	line-height:50px;
+	color:black !important;
+}
+
+#catRightSide > div > center > strike
+{
+	font-size:18px;
+	color: grey;
+	margin-right:20px;
+}
+
+
+#catRightSide > div > center > span
+{
+	font-size:18px;
+	color: grey;
+}
