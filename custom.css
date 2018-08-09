@@ -1028,3 +1028,12 @@ p {
 	font-size:18px;
 	color: grey;
 }
+.stars
+{
+	padding-left: 0;
+}
+.stars > li 
+{
+	float: left;
+	list-style: none;
+}
