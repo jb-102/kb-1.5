@@ -68,6 +68,35 @@
 	{
 		margin: 20px !important;
 	}
+	.mobileCategory
+	{
+		padding: 5px !important;
+	}
+	.mobileCategory > img
+	{
+		height:197px !important;
+	}
+	.mobileCategory > p
+	{
+		line-height:30px !important;
+		font-size:10px !important;
+	}
+
+	.mobileCategory > center > strike
+	{
+		font-size:10px !important;
+	}
+
+
+	.mobileCategory > center > span
+	{
+		font-size:10px !important;
+	}
+	#mainContainerCategory
+	{
+		padding-right: 35px !important;
+		padding-left: 15px;
+	}
 
 }
 
@@ -1006,4 +1035,37 @@ p {
 	.testimonial .post{ font-size: 11px; }
 }
 
+#catRightSide > div
+{
+	margin-bottom: 50px;
+}
 
+#catRightSide > div > p
+{
+	margin-bottom:0; 
+	line-height:50px;
+	color:black;
+}
+
+#catRightSide > div > center > strike
+{
+	font-size:18px;
+	color: grey;
+	margin-right:20px;
+}
+
+
+#catRightSide > div > center > span
+{
+	font-size:18px;
+	color: grey;
+}
+.stars
+{
+	padding-left: 0;
+}
+.stars > li 
+{
+	float: left;
+	list-style: none;
+}
