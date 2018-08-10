@@ -82,6 +82,28 @@
 		color: #615f5f;
 		line-height: 27px;
 	}
+	.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+	{
+		border-bottom: 2px solid black !important;
+		border: none;
+	}
+	.nav-tabs
+	{
+		border: none;
+		margin-bottom: 10px;
+	}
+	.nav-tabs>li>a:hover
+	{
+		border-color: transparent;
+	}
+	.nav>li>a:focus, .nav>li>a:hover
+	{
+		background: transparent;
+	}
+	.nav-tabs>li>a
+	{
+		color: black;
+	}
 </style>
 
 </head>
@@ -890,41 +912,253 @@
 					<button type="button" style="background: white;border: 1px solid grey; padding:10px 20px;margin-left: 20px;">ADD TO WISHLIST</button>
 					<div class="doubleBreak"></div>
 
-				<p>
-					 <span style="font-size:12px;padding-top:2px;font-weight: bold"> SHARE </span>
-					<span style="margin-left: 20px;margin-top:-2px;">
-						<a href="#"> 
-							<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
-						</a>
-						<a href="#"> 
-							<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
-						</a>
-						<a href="#"> 
-							<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
-						</a>
-						<a href="#"> 
-							<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
-						</a>	
-						<a href="#"> 
-							<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
-						</a>
-						<a href="#"> 
-							<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
-						</a>
-					</span>
-				</p>
-				<div class="doubleBreak"></div>			
+					<p>
+						<span style="font-size:12px;padding-top:2px;font-weight: bold"> SHARE </span>
+						<span style="margin-left: 20px;margin-top:-2px;">
+							<a href="#"> 
+								<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
+							</a>
+							<a href="#"> 
+								<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
+							</a>
+							<a href="#"> 
+								<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
+							</a>
+							<a href="#"> 
+								<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
+							</a>	
+							<a href="#"> 
+								<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
+							</a>
+							<a href="#"> 
+								<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
+							</a>
+						</span>
+					</p>
+					<div class="doubleBreak"></div>			
 
 					<h5 style="font-weight:bold;">	CHECK COD AVAILABILITY	</h5>
 					<div style="width:200px;box-shadow: 0px 1px 0.2px -1px grey">
 						<input type="text" placeholder="enter pincode" style="width:170px;border: none;padding:5px;">
 						<span class="fa fa-search" style="padding-left:3px;cursor: pointer;"></span>
 					</div>
+                	<div class="col-md-12" style="margin-top: 20px;padding-left:0;">
+                    <div class="card">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">DESCRIPTION</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">MORE INFO</a></li>
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">SELLER DETAILS</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home" style="font-size:13px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</div>
+                            <div role="tabpanel" class="tab-pane" id="profile">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            <div role="tabpanel" class="tab-pane" id="messages">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type psum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                        </div>
+                    </div>
+                	</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<h2 class="text-center" style="font-family: times new roman;padding-top: 40px;padding-bottom: 40px;">YOU MAY ALSO LIKE</h2>
+				
+				<div class="col-md-12" id="catRightSide">
+					<div class="col-md-3 col-xs-6 mobileCategory">
+						<img data-src="images/cat1.jpg" class="lazy img-responsive initial loaded" alt="Kashmir Box" src="images/cat1.jpg" data-was-processed="true">
+						<p class="text-center">Aftab Garden Silk Saree</p>
+						<center>
+							<strike>Rs. 4,500</strike>
+							<span>Rs. 3,344</span>
+						</center>
+					</div>
+					<div class="col-md-3 col-xs-6 mobileCategory">
+						<img data-src="images/cat2.jpg" class="lazy img-responsive initial loaded" alt="Kashmir Box" src="images/cat2.jpg" data-was-processed="true">
+						<p class="text-center">Aftab Garden Silk Saree</p>
+						<center>
+							<strike>Rs. 4,500</strike>
+							<span>Rs. 3,344</span>
+						</center>
+					</div>
+					<div class="col-md-3 col-xs-6 mobileCategory">
+						<img data-src="images/cat3.jpg" class="lazy img-responsive initial loaded" alt="Kashmir Box" src="images/cat3.jpg" data-was-processed="true">
+						<p class="text-center">Aftab Garden Silk Saree</p>
+						<center>
+							<strike>Rs. 4,500</strike>
+							<span>Rs. 3,344</span>
+						</center>
+					</div>
+					<div class="col-md-3 col-xs-6 mobileCategory">
+						<img data-src="images/cat1.jpg" class="lazy img-responsive initial loaded" alt="Kashmir Box" src="images/cat1.jpg" data-was-processed="true">
+						<p class="text-center">Aftab Garden Silk Saree</p>
+						<center>
+							<strike>Rs. 4,500</strike>
+							<span>Rs. 3,344</span>
+						</center>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Powered by</h3>
+					<hr>
+				</div>
+				<div class="col-md-12" style="margin: 0 0 20px 0;">
+					<div class="col-md-6" style="padding-left:0;">
+						<span>
+							<ul class="stars">
+								<li><i class="fa fa-star"></i> </li>
+								<li><i class="fa fa-star"></i> </li>
+								<li><i class="fa fa-star"></i> </li>
+								<li><i class="fa fa-star"></i> </li>
+								<li><i class="fa fa-star"></i> </li>
+							</ul>
+						</span>
+						<span style="margin-left:15px;"> 18 Reviews</span>
+					</div>
+					<div class="col-md-6">
+						<span style="float: right;background: darkgrey;padding: 5px 10px;color: white;">
+							<i class="fa fa-edit"></i> WRITE A REVIEW</span>
+					</div>
+				</div>
+				<div class="col-md-12">
+						<span style="border-bottom:2px solid black;">Reviews (18) </span>
+						<hr style="margin-top: 0">
+					<div class="col-md-12" style="padding-left: 0;padding-bottom: 20px;margin-bottom: 20px; border-bottom:1px solid lightgrey;">
+						<div class="col-md-6" style="padding-left: 0">
+							<span class="badge">S</span>
+							<span>
+								<span style="margin-left:5px;">satheh m.</span>
+								<span style="color: grey"> Verified Buyer</span>
+								<ul class="stars" style="margin-left: 35px;">
+									<li><i class="fa fa-star" style="color: orange"></i> </li>
+									<li><i class="fa fa-star" style="color: orange"></i> </li>
+									<li><i class="fa fa-star" style="color: orange"></i> </li>
+									<li><i class="fa fa-star" style="color: orange"></i> </li>
+									<li><i class="fa fa-star" style="color: orange"></i> </li>
+								</ul>
+							</span>
+						</div>
+						<div class="col-md-6" style="padding-right:0">
+							<span style="float: right;">02/01/2015</span>
+						</div>
+						<div class="col-md-12">
+							<h3>Excellent and best products!</h3>
+							<p style="font-size:14px;">
+								This is orginal product and i could feel the diffrence within 3 days of its usage. I have used other product as well that was also great.Keep going best of luck..This is orginal product and i could feel the diffrence within 3 days of its usage. I have used other product as well that was also great.Keep going best of luck.. <span><a href="#" style="color:black;">Read more</a></span>
+							</p>
+						<div class="col-md-6" style="padding-left:0">
+							<span class="fa fa-edit"></span>
+							<span>Share</span>
+						</div>
+						<div class="col-md-6">
+							<div style="float: right;">
+								<span>
+									Was This Review Helpful?
+								</span>
+								<span class="fa fa-thumbs-up" style="margin-left: 10px;color:grey">1</span>
+								<span class="fa fa-thumbs-down" style="margin-left: 10px;color: grey">1</span>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<div class="col-md-12" style="padding-left: 0;padding-bottom: 20px;margin-bottom: 20px; border-bottom:1px solid lightgrey;">
+						<div class="col-md-6" style="padding-left: 0">
+							<span class="badge">S</span>
+							<span>
+								<span style="margin-left:5px;">satheh m.</span>
+								<span style="color: grey"> Verified Buyer</span>
+								<ul class="stars" style="margin-left: 35px;">
+									<li><i class="fa fa-star" style="color: orange"></i> </li>
+									<li><i class="fa fa-star" style="color: orange"></i> </li>
+									<li><i class="fa fa-star" style="color: orange"></i> </li>
+									<li><i class="fa fa-star" style="color: orange"></i> </li>
+									<li><i class="fa fa-star" style="color: orange"></i> </li>
+								</ul>
+							</span>
+						</div>
+						<div class="col-md-6" style="padding-right:0">
+							<span style="float: right;">02/01/2015</span>
+						</div>
+						<div class="col-md-12">
+							<h3>Excellent and best products!</h3>
+							<p style="font-size:14px;">
+								This is orginal product and i could feel the diffrence within 3 days of its usage. I have used other product as well that was also great.Keep going best of luck..This is orginal product and i could feel the diffrence within 3 days of its usage. I have used other product as well that was also great.Keep going best of luck.. <span><a href="#" style="color:black;">Read more</a></span>
+							</p>
+						<div class="col-md-6" style="padding-left:0">
+							<span class="fa fa-edit"></span>
+							<span>Share</span>
+						</div>
+						<div class="col-md-6">
+							<div style="float: right;">
+								<span>
+									Was This Review Helpful?
+								</span>
+								<span class="fa fa-thumbs-up" style="margin-left: 10px;color:grey">1</span>
+								<span class="fa fa-thumbs-down" style="margin-left: 10px;color: grey">1</span>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<div class="col-md-12" style="padding-left: 0;padding-bottom: 20px;margin-bottom: 20px;">
+						<div class="col-md-6" style="padding-left: 0">
+							<span class="badge">S</span>
+							<span>
+								<span style="margin-left:5px;">satheh m.</span>
+								<span style="color: grey"> Verified Buyer</span>
+								<ul class="stars" style="margin-left: 35px;">
+									<li><i class="fa fa-star" style="color: orange"></i> </li>
+									<li><i class="fa fa-star" style="color: orange"></i> </li>
+									<li><i class="fa fa-star" style="color: orange"></i> </li>
+									<li><i class="fa fa-star" style="color: orange"></i> </li>
+									<li><i class="fa fa-star" style="color: orange"></i> </li>
+								</ul>
+							</span>
+						</div>
+						<div class="col-md-6" style="padding-right:0">
+							<span style="float: right;">02/01/2015</span>
+						</div>
+						<div class="col-md-12">
+							<h3>Excellent and best products!</h3>
+							<p style="font-size:14px;">
+								This is orginal product and i could feel the diffrence within 3 days of its usage. I have used other product as well that was also great.Keep going best of luck..This is orginal product and i could feel the diffrence within 3 days of its usage. I have used other product as well that was also great.Keep going best of luck.. <span><a href="#" style="color:black;">Read more</a></span>
+							</p>
+						<div class="col-md-6" style="padding-left:0">
+							<span class="fa fa-edit"></span>
+							<span>Share</span>
+						</div>
+						<div class="col-md-6">
+							<div style="float: right;">
+								<span>
+									Was This Review Helpful?
+								</span>
+								<span class="fa fa-thumbs-up" style="margin-left: 10px;color:grey">1</span>
+								<span class="fa fa-thumbs-down" style="margin-left: 10px;color: grey">1</span>
+							</div>
+						</div>
+						</div>
+					</div>
+
+
+
+
 
 				</div>
-				<div class="doubleBreak"></div>			
 			</div>
-		</div>
+
+
+
+
+
+
+
+
+<br>
+<br>
 		<hr>
 
 
