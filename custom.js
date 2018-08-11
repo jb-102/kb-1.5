@@ -93,3 +93,8 @@ $(window).scroll(function() {
 		$('#stickHeader').css('display','block');
 	}
 });
+
+$('#btn-new-address').click(function() {
+    $('#new-address').slideDown();
+});
+

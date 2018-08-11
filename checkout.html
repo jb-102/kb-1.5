@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="custom.css">
+	<!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
 
 	<style type="text/css">
 
@@ -26,24 +27,7 @@
 	}
 
 
-	#facebookLogin {
-		padding: 10px;
-		font-size:16px;
-		border-radius:0;
-		width:100%;
-		color: #3a5a98 !important;
-		border: 1px solid #3a5a98
-	}
 
-	#facebookLogin:hover {
-		padding: 10px;
-		font-size:16px;
-		border-radius:0;
-		width:100%;
-		background-color: #3a5a98 !important;
-		color: #e6e6e6 !important;
-		border: 1px solid #3a5a98
-	}
 
 
 	#accordion .panel-heading{
@@ -125,7 +109,7 @@
 </style>	
 
 </head>
-<body>
+<body style="font-family: Gotham-Book">
 	<div style="margin-top:20px;">
 		<div class="row">
 			<div class="col-md-12">
@@ -160,305 +144,885 @@
 				</div>
 				<div class="doubleBreak"></div>
 				<div class="doubleBreak"></div>
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1">
-						<div class="row">
-							<div class="col-md-8">
-								<div class="col-md-12">
-									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingOne">
-												<h4 class="panel-title">
-													<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-														1 Login <span class="fa fa-check"></span>
-													</a>
-												</h4>
-											</div>
-											<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-												<div class="panel-body">
-													<div class="col-md-6">
-														<h5 class="font-gotham-book" style="font-family: inherit;font-weight: bold;line-height: 1.1;font-size: 1.125em">Returning Customer</h5>
-														<form>
-															<input type="email" name="email" placeholder="Email" class="form-control checkoutTextbox" >
-															<div class="doubleBreak"></div>
-															<input type="password" class="form-control checkoutTextbox" name="password" placeholder="Password">
-															<div class="text-red font-gotham-book text-right" style="cursor: pointer;">forgot password?</div>
-															<div class="doubleBreak"></div>
-
-															<button type="button" class="btn btn-default" name="submit" id="facebookLogin">
-																Connect with <b>Facebook</b>
-															</button>
-															<div class="doubleBreak"></div>
-
-															<input type="button" name="submit" value="Login" style="background: #2b2b2b;color:white; padding: 10px;border: 0; font-size:16px; border-radius:0;width:100%;">
-
-														</form>
-													</div>
-													<div class="col-md-6">
-														<h5 class="font-gotham-book" style="font-family: inherit;font-weight: bold;line-height: 1.1;font-size: 1.125em">Create Account</h5>
-														<input type="email" class="form-control checkoutTextbox" name="email" placeholder="email address">
-														<div class="doubleBreak"></div>
-
-														<input type="button" name="submit" value="Continue" style="background: #2b2b2b;color: white;border: 0; padding: 10px;font-size:16px; border-radius:0;width:100%;">
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingTwo">
-												<h4 class="panel-title">
-													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-														2 Delivery Address <span class="fa fa-check"></span>
-													</a>
-												</h4>
-											</div>
-											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-												<div class="panel-body">
-													<div class="col-md-12">
-														<form>
-															<div class="row">
-																<h4 style="font-weight:normal;font-family:sans-serif;padding:5px 12px;">Your Personal Details</h4>
-
-																<div class="col-md-12" style="padding: 0">
-																	<div class="col-md-3">
-																		<input type="text" name="email" placeholder="First Name" class="form-control checkoutTextbox" >
-																	</div>
-																	<div class="col-md-3">
-																		<input type="text" class="form-control checkoutTextbox" name="password" placeholder="Last Name">
-																	</div>
-
-																	<div class="col-md-6">
-																		<input type="number" name="mobile" placeholder="Mobile Number" class="form-control checkoutTextbox" >
-																	</div>
-																</div>
-																<div class="col-md-12" style="margin-top:20px;padding: 0">
-																	<div class="col-md-6">
-																		<input type="email" name="email" placeholder="E-Mail" class="form-control checkoutTextbox" >
-																	</div>
-																	<div class="col-md-3">
-																		<input type="password" class="form-control checkoutTextbox" name="password" placeholder="Password">
-																	</div>
-
-																	<div class="col-md-3">
-																		<input type="password" name="password" placeholder="Confirm Password" class="form-control checkoutTextbox" >
-																	</div>
-																</div>
-															</div>
-
-
-															<div class="row">
-																<h4 style="font-weight:normal;font-family:sans-serif;padding:10px 12px;">Your Address</h4>
-
-																<div class="col-md-12" style="padding: 0">
-																	<div class="col-md-6">
-																		<input type="text" name="address1" placeholder="Address 1" class="form-control checkoutTextbox" >
-																	</div>
-																	<div class="col-md-6">
-																		<input type="text" class="form-control checkoutTextbox" name="password" placeholder="Address 2">
-																	</div>
-																</div>
-																<div class="col-md-12" style="margin-top:20px;padding: 0">
-																	<div class="col-md-6">
-																		<input type="text" name="city" placeholder="City" class="form-control checkoutTextbox" >
-																	</div>
-																	<div class="col-md-6">
-																		<input type="number" class="form-control checkoutTextbox" name="mobile" placeholder="Pincode">
-																	</div>
-
-																	<div class="col-md-6" style="margin-top: 20px;">
-																		<input type="number" class="form-control checkoutTextbox" name="add_mobile" placeholder="Additional Mobile Number">
-																	</div>
-
-																</div>
-
-																<div class="col-md-12" style="margin-top:20px;padding: 0">
-																	<div class="col-md-6">
-																		<select class="form-control">
-																			<option>--- Please Select ---</option>
-																			<option>India</option>
-																			<option>England</option>
-																			<option>New Zealand</option>
-																		</select>
-																	</div>
-																	<div class="col-md-6">
-																		<select class="form-control">
-																			<option>--- Please Select ---</option>
-																			<option>India</option>
-																			<option>England</option>
-																			<option>New Zealand</option>
-																		</select>
-																	</div>
-																</div>
-
-															</div>
-
-															<div class="col-md-12" style="margin-top: 20px;padding: 0">
-																<input type="button" name="submit" value="Continue" style="background: #2b2b2b; color:white;border: 0; padding: 10px;font-size:16px; border-radius:0;">
-															</div>
-														</form>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingFour">
-												<h4 class="panel-title">
-													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-														Delivery Address 2
-													</a>
-												</h4>
-											</div>
-											<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-												<div class="panel-body">
-													<div class="col-md-12">
-														<form>
-															<div class="row">
-																<p style="font-weight:normal;font-family:sans-serif;border: 1px solid #139841;padding: 15px;margin-bottom: 20px;color:#3c763d;border-radius: 4px;font-size:14px;">Please select an address to continue</p>
-
-																<div class="col-md-1">
-																	<input type="radio" name="radio" style="margin:30px 3px 0px 5px;text-align: center;">
-																</div>
-																<div class="col-md-11" style="padding: 0">
-																	<h4>Junaid Bhat</h4>
-																	<p>nishat, Lalchowk, Srinagar, India</p>
-																</div>
-															</div>
-
-															<div class="row">
-
-																<div class="col-md-1">
-																	<input type="radio" name="radio" style="margin:30px 3px 0px 5px;text-align: center;">
-																</div>
-																<div class="col-md-11" style="padding: 0">
-																	<h4>Majic Bhat</h4>
-																	<p>Dalgate, Lalchowk, Srinagar, India</p>
-																</div>
-															</div>
-
-														</form>
-													</div>
-
-													<div class="col-md-12" style="margin-top: 20px;padding: 0">
-														<h4 style="padding: 10px;cursor: pointer; font-size:16px;color:#1e90ff;"><i class="fa fa-plus"></i> Add new address</h4>
-													</div>
-
-													<div class="col-md-12" style="margin-top: 20px;padding: 0">
-														<input type="button" class="btn btn-warning" name="submit" value="Proceed to Payment" style="background: #2b2b2b;padding: 10px;font-size:16px; border-radius:0;">
-													</div>
-
-												</div>
-
-											</div>
-										</div>
-
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingThree">
-												<h4 class="panel-title">
-													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-														3 Payment  <span class="fa fa-check"></span>
-													</a>
-												</h4>
-											</div>
-											<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-												<div class="panel-body">
-													<div class="row">
-														<div class="col-md-12">
-															<div class="break"></div>
-															<div style="box-shadow:0px 0px 1px 0px grey;padding:15px;">
-																<div style="float:left;">
-																	<input type="radio" name="radio" checked>
-																	<span> CC Avenue</span>
-																</div>
-																<div style="display: flex;justify-content: center;">
-																	<img src="images/d.png" style="width: 40px;height: 20px;margin-right:5px;">
-																	<img src="images/m.png" style="width: 40px;height: 20px;margin-right:5px;">
-																	<img src="images/v.png" style="width: 40px;height: 20px;margin-right:5px;">
-																	<img src="images/a.png" style="width: 40px;height: 20px;margin-right:5px;">
-																</div>
-															</div>
-															<div class="break"></div>
-
-															<div style="box-shadow:0px 0px 1px 0px grey;padding:15px;">
-																<div style="float:left;">
-																	<input type="radio" name="radio">
-																	<span> PayU Money</span>
-																</div>
-																<div style="display: flex;justify-content: center;">
-																	<img src="images/d.png" style="width: 40px;height: 20px;margin-right:5px;">
-																	<img src="images/m.png" style="width: 40px;height: 20px;margin-right:5px;">
-																	<img src="images/v.png" style="width: 40px;height: 20px;margin-right:5px;">
-																	<img src="images/a.png" style="width: 40px;height: 20px;margin-right:5px;">
-																</div>
-															</div>
-															<div class="break"></div>
-
-															<div style="box-shadow:0px 0px 1px 0px grey;padding:15px;">
-																<div style="float:left;">
-																	<input type="radio" name="radio">
-																	<span> Cash on Delivery</span>
-																</div>
-																<div style="display: flex;justify-content: center;">
-																	<span>Not Available at your Address</span>
-																</div>
-															</div>
-															<div class="break"></div>
-
-															<div style="box-shadow:0px 0px 1px 0px grey;padding:15px;">
-																<div>
-																	<input type="radio" name="radio">
-																	<span> MobiKwik Wallet</span>
-																</div>
-															</div>
-															<div class="doubleBreak"></div>
-															<input type="button" class="btn" value="PAY NOW" style="background: #2b2b2b;color:white;width:100%;border-radius:0;padding:12px 0">
-
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-
-									</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="checkout-steps col-sm-8" id="notfy">
+						<!--STEP1-->
+						<div class="step open done" id="step1">
+							<div class="step-title"><span class="index">1</span><span>Login</span></div>
+							<div class="step-complete-panel clearfix" data-step-id="#step1">
+								<div class="index text-center"><span>1</span></div>
+								<div class="details">
+									<p class="step-complete-title">Login <span class="fa fa-check"></span></p>
+									<p class="user"><span class="name">Muheet Mehraj</span><span class="email">muheet@kashmirbox.com</span></p>
 								</div>
 							</div>
-							<div class="col-md-4" id="checkoutRight">
-								<span class="badge-checkout"> <i class="fa fa-check"></i></span><span> Authenticity Guaranteed</span>
-								<div class="doubleBreak"></div>
-								<span class="badge-checkout"> <i class="fa fa-lock"></i></span><span> 100% Safe & Secure Payments Process</span>
-								<div class="doubleBreak"></div>
-								<span class="badge-checkout"> <i class="fa fa-refresh"></i></span><span> Easy Returns</span>
-								<div class="doubleBreak"></div>
-								<div class="break"></div>
 
-								<b>Order Summary</b>
-								<div class="break"></div>
-
-								<div id="summary">
-									<p><b>Total:</b>&nbsp;&nbsp; 7,000</p>
-									<p><b>Discount:</b>&nbsp;&nbsp; 300</p>
-									<p><b>GST:</b>&nbsp;&nbsp; 600</p>
-									<p><b>Shipping:</b> &nbsp;&nbsp;Free</p>
-									<p><b>Grand Total:</b>&nbsp;&nbsp; 7,300</p>
+							<div class="step-content collapse"> 
+								<div class="view logged-out clearfix">
+									<!-- login ajax here -->
+									<div class="col-sm-6 col-left" id="get-login-reg-option">                    
+										<div class="login-form-wrap">
+					                      <h4>Returning Customer</h4>
+					                      <form id="checkout-login-form">
+					                        <div class="form-group">
+					                          <input class="form-control" id="login-email" type="text" name="email" value="" placeholder="E-Mail">
+					                        </div>
+					                        <div class="form-group">
+					                          <input class="form-control" id="login-password" type="password" name="password" value="" placeholder="Password">
+					                        </div>
+					                        <div class="form-group">
+					                          <button class="submit-btn btn btn-orange" type="submit">Login</button>
+					                           <a class="submit-btn btn btn-orange hidden" id="forgotPassword">RESET</a>
+					                          <a href="https://www.kashmirbox.com/account/forgotten" class="forgot-password-link" data-value="forgot" id="forgotPasswordLink">forgot password?
+					                          </a>
+					                        </div>
+					                        <div id="facebookLogin" class="form-group social-login-btns">
+					                          <a href="https://www.facebook.com/v2.5/dialog/oauth?client_id=481227988562682&amp;state=a2caf9dd01e841ce9b2e56942b540c7d&amp;response_type=code&amp;sdk=php-sdk-5.6.1&amp;redirect_uri=https%3A%2F%2Fwww.kashmirbox.com%2Findex.php%3Froute%3Daccount%2Flogin%2FloginFb&amp;scope=email" class="facebook-login-btn">Connect with <strong>Facebook</strong></a>
+					                        </div>
+					                      </form>
+					                    </div>
+					                </div>
+									<!-- reg ajax here -->
+									<div class="col-sm-6 col-right">
+										<div class="register-form-wrap">
+											<h4>Create Account</h4>
+											<form id="checkout-register-form">
+												<div class="form-group">
+													<input class="form-control" id="register-email" type="email" name="email" placeholder="email address">
+												</div>                          
+												<div class="form-group">
+													<button class="submit-btn btn btn-orange" type="submit">Continue</button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div> 
+								<div class="view logged-in clearfix hidden">
+									<div class="col-sm-12">
+										<div class="userdetails">
+										</div>
+										<button class="btn btn-orange nextstep">Continue Checkout</button>                    
+									</div>
 								</div>
+
+							</div>
+						</div>
+						<div class="step open done" id="step2">
+							<div class="step-title"><span class="index">2</span><span>Delivery Address</span></div>
+							<div class="step-complete-panel clearfix" data-step-id="#step1">
+								<div class="index text-center"><span>2</span></div>
+								<div class="details">
+									<p class="step-complete-title">Delivery Address <span class="fa fa-check"></span></p>
+									<p class="user"><span class="street-address">BarBarshah</span><span class="city">Srinagar</span><span class="state">Jammu and Kashmir</span><span class="pincode">190001 </span></p>
+								</div>
+							</div>
+							<div class="step-content collapse" id="pAddress"> 
+								<div class="address">
+									<p class="alert alert-success">Please select an address to continue</p>
+									<div class="address-forms">
+										<div class="address-form-wrap first clearfix saved">
+											<div class="address-form-edit-panel" id="address24380">
+												<div class="address-toggle">
+													<div class="radio radio-primary">
+														<input class="address-toggle" id="edit-panel-address-toggle24380" type="radio" name="payment_address" value="existing">
+														<label for="edit-panel-address-toggle24380"> </label>
+													</div>
+												</div>
+												<div class="address-summary">
+													<input type="hidden" name="address_1" value="">
+													<input type="hidden" name="address_2" value="">
+													<input type="hidden" name="address_id" value="24380">
+													<input type="hidden" name="city" value="">
+													<input type="hidden" name="company" value="">
+													<input type="hidden" name="country_id" value="99">
+													<input type="hidden" name="firstname" value="">
+													<input type="hidden" name="lastname" value="">
+													<input type="hidden" name="postcode" value="191121">
+													<input type="hidden" name="shipping_address" value="existing">
+													<input type="hidden" name="zone_id" value="1488">
+													<input type="hidden" name="custom_field[1]" value="7006403179">
+													<p><span class="name">Junaid Bhat</span></p>
+													<p class="delivery-address"><span class="street-address">nishat</span><span class="city">SRINAGAR</span><span class="state">Jammu and Kashmir, India</span><span class="pincode">191121</span></p>
+													<!--  <p class="pin-error">The pincode is not servicable</p> -->
+													<p class="pin-error"></p>
+												</div>
+												<!-- <div class="address-edit"><a><span class="fa fa-edit"></span><span>Edit</span></a></div> -->
+											</div>
+											<div class="address-form-edit-panel" id="address24381">
+												<div class="address-toggle">
+													<div class="radio radio-primary">
+														<input class="address-toggle" id="edit-panel-address-toggle24381" type="radio" name="payment_address" value="existing">
+														<label for="edit-panel-address-toggle24381"> </label>
+													</div>
+												</div>
+												<div class="address-summary">
+													<input type="hidden" name="address_1" value="">
+													<input type="hidden" name="address_2" value="">
+													<input type="hidden" name="address_id" value="24381">
+													<input type="hidden" name="city" value="">
+													<input type="hidden" name="company" value="">
+													<input type="hidden" name="country_id" value="99">
+													<input type="hidden" name="firstname" value="">
+													<input type="hidden" name="lastname" value="">
+													<input type="hidden" name="postcode" value="kajhsdkjah">
+													<input type="hidden" name="shipping_address" value="existing">
+													<input type="hidden" name="zone_id" value="1488">
+													<input type="hidden" name="custom_field[1]" value="khaksjh">
+													<p><span class="name">Bhat Junaid</span></p>
+													<p class="delivery-address"><span class="street-address">hkasjdh</span><span class="city">kjashdkjhas</span><span class="state">Jammu and Kashmir, India</span><span class="pincode">kajhsdkjah</span></p>
+													<!--  <p class="pin-error">The pincode is not servicable</p> -->
+													<p class="pin-error"></p>
+												</div>
+												<!-- <div class="address-edit"><a><span class="fa fa-edit"></span><span>Edit</span></a></div> -->
+											</div>
+
+											<div class="address-form-edit-panel" id="address36927">
+												<div class="address-toggle">
+													<div class="radio radio-primary">
+														<input class="address-toggle" id="edit-panel-address-toggle36927" type="radio" name="payment_address" value="existing">
+														<label for="edit-panel-address-toggle36927"> </label>
+													</div>
+												</div>
+												<div class="address-summary">
+													<input type="hidden" name="address_1" value="">
+													<input type="hidden" name="address_2" value="">
+													<input type="hidden" name="address_id" value="36927">
+													<input type="hidden" name="city" value="">
+													<input type="hidden" name="company" value="">
+													<input type="hidden" name="country_id" value="107">
+													<input type="hidden" name="firstname" value="">
+													<input type="hidden" name="lastname" value="">
+													<input type="hidden" name="postcode" value="kjhdsakjh">
+													<input type="hidden" name="shipping_address" value="existing">
+													<input type="hidden" name="zone_id" value="1662">
+													<input type="hidden" name="custom_field[1]" value="kdjhaksjhdk">
+													<p><span class="name">qkjdhk jhaksjhd</span></p>
+													<p class="delivery-address"><span class="street-address">aksjhd@kajshd.aksjhd</span><span class="city">kjhdakjdh</span><span class="state">Fukui, Japan</span><span class="pincode">kjhdsakjh</span></p>
+													<!--  <p class="pin-error">The pincode is not servicable</p> -->
+													<p class="pin-error"></p>
+												</div>
+												<!-- <div class="address-edit"><a><span class="fa fa-edit"></span><span>Edit</span></a></div> -->
+											</div>
+											<div class="address-form-edit-panel" id="address36928">
+												<div class="address-toggle">
+													<div class="radio radio-primary">
+														<input class="address-toggle" id="edit-panel-address-toggle36928" type="radio" name="payment_address" value="existing">
+														<label for="edit-panel-address-toggle36928"> </label>
+													</div>
+												</div>
+												<div class="address-summary">
+													<input type="hidden" name="address_1" value="">
+													<input type="hidden" name="address_2" value="">
+													<input type="hidden" name="address_id" value="36928">
+													<input type="hidden" name="city" value="">
+													<input type="hidden" name="company" value="">
+													<input type="hidden" name="country_id" value="109">
+													<input type="hidden" name="firstname" value="">
+													<input type="hidden" name="lastname" value="">
+													<input type="hidden" name="postcode" value="jhdkajshdk">
+													<input type="hidden" name="shipping_address" value="existing">
+													<input type="hidden" name="zone_id" value="1719">
+													<input type="hidden" name="custom_field[1]" value="hkdjahskdjhk">
+													<p><span class="name">kjajhsdk jhdkajshk</span></p>
+													<p class="delivery-address"><span class="street-address">kjhkajhsdkj</span><span class="city">kjhdakjsdhk</span><span class="state">Aqtobe, Kazakhstan</span><span class="pincode">jhdkajshdk</span></p>
+													<!--  <p class="pin-error">The pincode is not servicable</p> -->
+													<p class="pin-error"></p>
+												</div>
+												<!-- <div class="address-edit"><a><span class="fa fa-edit"></span><span>Edit</span></a></div> -->
+											</div>
+										</div>
+										<div class="address-form-wrap new editing hidden clearfix">
+											<div class="address-form">
+												<div class="col-xs-12">
+													<div class="radio radio-primary">
+														<input class="address-toggle" id="edit-address-toggle1" type="radio" name="address-toggle" value="1" checked="">
+													</div>
+												</div>
+												<form id="address-form1" data-form-id="1">
+													<div class="form-group">
+														<div class="col-xs-12">
+															<p>Your Personal Details</p>
+														</div>
+														<div class="col-sm-3">
+															<input class="form-control" type="text" name="firstname" value="" placeholder="First Name" id="input-payment-firstname" autofocus="">
+														</div>
+														<div class="col-sm-3">
+															<input class="form-control" type="text" name="lastname" value="" placeholder="Last Name" id="input-payment-lastname">
+														</div>
+														<div class="col-sm-6">
+															<input class="form-control" type="text" name="telephone" value="" placeholder="Mobile Number" id="input-payment-telephone">
+														</div>
+													</div>
+													<div class="form-group clearfix">
+														<div class="col-xs-12">
+															<p>Your Address</p>
+														</div>
+														<div class="col-sm-6">
+															<input type="text" name="address_1" value="" placeholder="Address 1" class="form-control" id="input-payment-address-1">
+														</div>
+														<div class="col-sm-6">
+															<input type="text" name="address_2" value="" placeholder="Address 2" class="form-control">
+														</div>
+													</div>
+													<div class="form-group clearfix">
+														<div class="col-sm-6">
+															<input type="text" class="form-control" name="city" value="" placeholder="City" id="input-payment-city">
+														</div>
+														<div class="col-sm-6">
+															<input type="text" class="form-control" name="postcode" value="" placeholder="Pincode" id="input-payment-postcode">
+														</div>
+													</div>
+													<div class="form-group clearfix">
+														<div class="col-sm-6">
+															<input class="form-control" type="text" name="custom_field[1]" value="" placeholder="Additional Mobile Number" id="input-shipping-custom-field1">
+														</div>
+													</div>
+													<div class="form-group clearfix">
+														<div class="col-sm-6">
+															<select name="country_id" id="input-payment-country" class="form-control">
+																<option value=""> --- Please Select --- </option>
+																<option value="244">Aaland Islands</option>
+																<option value="1">Afghanistan</option>
+																<option value="2">Albania</option>
+																<option value="3">Algeria</option>
+																<option value="4">American Samoa</option>
+																<option value="5">Andorra</option>
+																<option value="6">Angola</option>
+																<option value="7">Anguilla</option>
+																<option value="8">Antarctica</option>
+																<option value="9">Antigua and Barbuda</option>
+																<option value="10">Argentina</option>
+																<option value="11">Armenia</option>
+																<option value="12">Aruba</option>
+																<option value="252">Ascension Island (British)</option>
+																<option value="13">Australia</option>
+																<option value="14">Austria</option>
+																<option value="15">Azerbaijan</option>
+																<option value="16">Bahamas</option>
+																<option value="17">Bahrain</option>
+																<option value="18">Bangladesh</option>
+																<option value="19">Barbados</option>
+																<option value="20">Belarus</option>
+																<option value="21">Belgium</option>
+																<option value="22">Belize</option>
+																<option value="23">Benin</option>
+																<option value="24">Bermuda</option>
+																<option value="25">Bhutan</option>
+																<option value="26">Bolivia</option>
+																<option value="245">Bonaire, Sint Eustatius and Saba</option>
+																<option value="27">Bosnia and Herzegovina</option>
+																<option value="28">Botswana</option>
+																<option value="29">Bouvet Island</option>
+																<option value="30">Brazil</option>
+																<option value="31">British Indian Ocean Territory</option>
+																<option value="32">Brunei Darussalam</option>
+																<option value="33">Bulgaria</option>
+																<option value="34">Burkina Faso</option>
+																<option value="35">Burundi</option>
+																<option value="36">Cambodia</option>
+																<option value="37">Cameroon</option>
+																<option value="38">Canada</option>
+																<option value="251">Canary Islands</option>
+																<option value="39">Cape Verde</option>
+																<option value="40">Cayman Islands</option>
+																<option value="41">Central African Republic</option>
+																<option value="42">Chad</option>
+																<option value="43">Chile</option>
+																<option value="44">China</option>
+																<option value="45">Christmas Island</option>
+																<option value="46">Cocos (Keeling) Islands</option>
+																<option value="47">Colombia</option>
+																<option value="48">Comoros</option>
+																<option value="49">Congo</option>
+																<option value="50">Cook Islands</option>
+																<option value="51">Costa Rica</option>
+																<option value="52">Cote D'Ivoire</option>
+																<option value="53">Croatia</option>
+																<option value="54">Cuba</option>
+																<option value="246">Curacao</option>
+																<option value="55">Cyprus</option>
+																<option value="56">Czech Republic</option>
+																<option value="237">Democratic Republic of Congo</option>
+																<option value="57">Denmark</option>
+																<option value="58">Djibouti</option>
+																<option value="59">Dominica</option>
+																<option value="60">Dominican Republic</option>
+																<option value="61">East Timor</option>
+																<option value="62">Ecuador</option>
+																<option value="63">Egypt</option>
+																<option value="64">El Salvador</option>
+																<option value="65">Equatorial Guinea</option>
+																<option value="66">Eritrea</option>
+																<option value="67">Estonia</option>
+																<option value="68">Ethiopia</option>
+																<option value="69">Falkland Islands (Malvinas)</option>
+																<option value="70">Faroe Islands</option>
+																<option value="71">Fiji</option>
+																<option value="72">Finland</option>
+																<option value="74">France, Metropolitan</option>
+																<option value="75">French Guiana</option>
+																<option value="76">French Polynesia</option>
+																<option value="77">French Southern Territories</option>
+																<option value="126">FYROM</option>
+																<option value="78">Gabon</option>
+																<option value="79">Gambia</option>
+																<option value="80">Georgia</option>
+																<option value="81">Germany</option>
+																<option value="82">Ghana</option>
+																<option value="83">Gibraltar</option>
+																<option value="84">Greece</option>
+																<option value="85">Greenland</option>
+																<option value="86">Grenada</option>
+																<option value="87">Guadeloupe</option>
+																<option value="88">Guam</option>
+																<option value="89">Guatemala</option>
+																<option value="256">Guernsey</option>
+																<option value="90">Guinea</option>
+																<option value="91">Guinea-Bissau</option>
+																<option value="92">Guyana</option>
+																<option value="93">Haiti</option>
+																<option value="94">Heard and Mc Donald Islands</option>
+																<option value="95">Honduras</option>
+																<option value="96">Hong Kong</option>
+																<option value="97">Hungary</option>
+																<option value="98">Iceland</option>
+																<option value="99">India</option>
+																<option value="100">Indonesia</option>
+																<option value="101">Iran (Islamic Republic of)</option>
+																<option value="102">Iraq</option>
+																<option value="103">Ireland</option>
+																<option value="254">Isle of Man</option>
+																<option value="104">Israel</option>
+																<option value="105">Italy</option>
+																<option value="106">Jamaica</option>
+																<option value="107">Japan</option>
+																<option value="257">Jersey</option>
+																<option value="108">Jordan</option>
+																<option value="109" selected="selected">Kazakhstan</option>
+																<option value="110">Kenya</option>
+																<option value="111">Kiribati</option>
+																<option value="253">Kosovo, Republic of</option>
+																<option value="114">Kuwait</option>
+																<option value="115">Kyrgyzstan</option>
+																<option value="116">Lao People's Democratic Republic</option>
+																<option value="117">Latvia</option>
+																<option value="118">Lebanon</option>
+																<option value="119">Lesotho</option>
+																<option value="120">Liberia</option>
+																<option value="121">Libyan Arab Jamahiriya</option>
+																<option value="122">Liechtenstein</option>
+																<option value="123">Lithuania</option>
+																<option value="124">Luxembourg</option>
+																<option value="125">Macau</option>
+																<option value="127">Madagascar</option>
+																<option value="128">Malawi</option>
+																<option value="129">Malaysia</option>
+																<option value="130">Maldives</option>
+																<option value="131">Mali</option>
+																<option value="132">Malta</option>
+																<option value="133">Marshall Islands</option>
+																<option value="134">Martinique</option>
+																<option value="135">Mauritania</option>
+																<option value="136">Mauritius</option>
+																<option value="137">Mayotte</option>
+																<option value="138">Mexico</option>
+																<option value="139">Micronesia, Federated States of</option>
+																<option value="140">Moldova, Republic of</option>
+																<option value="141">Monaco</option>
+																<option value="142">Mongolia</option>
+																<option value="242">Montenegro</option>
+																<option value="143">Montserrat</option>
+																<option value="144">Morocco</option>
+																<option value="145">Mozambique</option>
+																<option value="146">Myanmar</option>
+																<option value="147">Namibia</option>
+																<option value="148">Nauru</option>
+																<option value="149">Nepal</option>
+																<option value="150">Netherlands</option>
+																<option value="151">Netherlands Antilles</option>
+																<option value="152">New Caledonia</option>
+																<option value="153">New Zealand</option>
+																<option value="154">Nicaragua</option>
+																<option value="155">Niger</option>
+																<option value="156">Nigeria</option>
+																<option value="157">Niue</option>
+																<option value="158">Norfolk Island</option>
+																<option value="112">North Korea</option>
+																<option value="159">Northern Mariana Islands</option>
+																<option value="160">Norway</option>
+																<option value="161">Oman</option>
+																<option value="162">Pakistan</option>
+																<option value="163">Palau</option>
+																<option value="247">Palestinian Territory, Occupied</option>
+																<option value="164">Panama</option>
+																<option value="165">Papua New Guinea</option>
+																<option value="166">Paraguay</option>
+																<option value="167">Peru</option>
+																<option value="168">Philippines</option>
+																<option value="169">Pitcairn</option>
+																<option value="170">Poland</option>
+																<option value="171">Portugal</option>
+																<option value="172">Puerto Rico</option>
+																<option value="173">Qatar</option>
+																<option value="174">Reunion</option>
+																<option value="175">Romania</option>
+																<option value="176">Russian Federation</option>
+																<option value="177">Rwanda</option>
+																<option value="178">Saint Kitts and Nevis</option>
+																<option value="179">Saint Lucia</option>
+																<option value="180">Saint Vincent and the Grenadines</option>
+																<option value="181">Samoa</option>
+																<option value="182">San Marino</option>
+																<option value="183">Sao Tome and Principe</option>
+																<option value="184">Saudi Arabia</option>
+																<option value="185">Senegal</option>
+																<option value="243">Serbia</option>
+																<option value="186">Seychelles</option>
+																<option value="187">Sierra Leone</option>
+																<option value="188">Singapore</option>
+																<option value="189">Slovak Republic</option>
+																<option value="190">Slovenia</option>
+																<option value="191">Solomon Islands</option>
+																<option value="192">Somalia</option>
+																<option value="193">South Africa</option>
+																<option value="194">South Georgia &amp; South Sandwich Islands</option>
+																<option value="113">South Korea</option>
+																<option value="248">South Sudan</option>
+																<option value="195">Spain</option>
+																<option value="196">Sri Lanka</option>
+																<option value="249">St. Barthelemy</option>
+																<option value="197">St. Helena</option>
+																<option value="250">St. Martin (French part)</option>
+																<option value="198">St. Pierre and Miquelon</option>
+																<option value="199">Sudan</option>
+																<option value="200">Suriname</option>
+																<option value="201">Svalbard and Jan Mayen Islands</option>
+																<option value="202">Swaziland</option>
+																<option value="203">Sweden</option>
+																<option value="204">Switzerland</option>
+																<option value="205">Syrian Arab Republic</option>
+																<option value="206">Taiwan</option>
+																<option value="207">Tajikistan</option>
+																<option value="208">Tanzania, United Republic of</option>
+																<option value="209">Thailand</option>
+																<option value="210">Togo</option>
+																<option value="211">Tokelau</option>
+																<option value="212">Tonga</option>
+																<option value="213">Trinidad and Tobago</option>
+																<option value="255">Tristan da Cunha</option>
+																<option value="214">Tunisia</option>
+																<option value="215">Turkey</option>
+																<option value="216">Turkmenistan</option>
+																<option value="217">Turks and Caicos Islands</option>
+																<option value="218">Tuvalu</option>
+																<option value="219">Uganda</option>
+																<option value="220">Ukraine</option>
+																<option value="221">United Arab Emirates</option>
+																<option value="222">United Kingdom</option>
+																<option value="223">United States</option>
+																<option value="224">United States Minor Outlying Islands</option>
+																<option value="225">Uruguay</option>
+																<option value="226">Uzbekistan</option>
+																<option value="227">Vanuatu</option>
+																<option value="228">Vatican City State (Holy See)</option>
+																<option value="229">Venezuela</option>
+																<option value="230">Viet Nam</option>
+																<option value="231">Virgin Islands (British)</option>
+																<option value="232">Virgin Islands (U.S.)</option>
+																<option value="233">Wallis and Futuna Islands</option>
+																<option value="234">Western Sahara</option>
+																<option value="235">Yemen</option>
+																<option value="238">Zambia</option>
+																<option value="239">Zimbabwe</option>
+															</select> 
+														</div>
+														<div class="col-sm-6">
+															<select name="zone_id" id="input-payment-zone" class="form-control"><option value=""> --- Please Select --- </option><option value="1716">Almaty</option><option value="1717">Almaty City</option><option value="1718">Aqmola</option><option value="1719" selected="selected">Aqtobe</option><option value="1720">Astana City</option><option value="1721">Atyrau</option><option value="1722">Batys Qazaqstan</option><option value="1723">Bayqongyr City</option><option value="1724">Mangghystau</option><option value="1725">Ongtustik Qazaqstan</option><option value="1726">Pavlodar</option><option value="1727">Qaraghandy</option><option value="1728">Qostanay</option><option value="1729">Qyzylorda</option><option value="1730">Shyghys Qazaqstan</option><option value="1731">Soltustik Qazaqstan</option><option value="1732">Zhambyl</option></select>
+														</div>
+													</div>
+
+
+													<div class="form-group">
+														<div class="col-xs-12">
+															<button id="button-payment-address" class="btn btn-orange save-address" type="button">Save</button>
+															<button class="btn btn-default cancel-address" type="button">Cancel</button>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix" id="shipping_method"></div>
+								<div class="clearfix" id="add-new-address">
+									<a><span class="fa fa-plus"></span><span>Add new address</span></a>
+								</div>
+								<div id="proceed-to-payment-step">
+									<button id="payment-step" class="btn btn-orange hidden">Proceed to Payment</button>
+								</div>
+							</div>
+						</div>
+						<div class="step open" id="step3">
+							<div class="step-title"><span class="index">3</span><span>Payment</span></div>
+							              <div class="step-content collapse in" id="payment_methods"><div class="col-xs-12 payment-gateway">
+							  <div class="radio radio-primary">
+							            <input class="paymentGateway" id="paytm-payment-option" type="radio" name="payment_method" value="paytm">
+							       <label for="paytm-payment-option" id="l-paytm"><span class="edit-label"> Paytm - Credit Card &amp; Debit Card </span>
+							        <img src="catalog/view/theme/kashmirbox_1/images/icons/cc-avenue-gateway.png" alt="Paytm - Credit Card &amp; Debit Card">
+							      </label>
+							    </div>
+							</div>
+							<div class="col-xs-12 payment-gateway">
+							  <div class="radio radio-primary">
+							        <input class="paymentGateway" id="ccavenuepay-payment-option" type="radio" name="payment_method" value="ccavenuepay">
+							       <label for="ccavenuepay-payment-option" id="l-ccavenuepay"><span class="edit-label"> CCavenue Cards,Netbanking &amp; EMI </span>
+							        <img src="catalog/view/theme/kashmirbox_1/images/icons/cc-avenue-gateway.png" alt="CCavenue Cards,Netbanking &amp; EMI">
+							      </label>
+							    </div>
+							</div>
+							<div class="col-xs-12 payment-gateway">
+							  <div class="radio radio-primary">
+							        <input class="paymentGateway" id="payu-payment-option" type="radio" name="payment_method" value="payu">
+							       <label for="payu-payment-option" id="l-payu"><span class="edit-label"> PayUMoney Cards &amp; NetBanking </span>
+							        <img src="catalog/view/theme/kashmirbox_1/images/icons/cc-avenue-gateway.png" alt="PayUMoney Cards &amp; NetBanking">
+							      </label>
+							    </div>
+							</div>
+							<div class="col-xs-12 payment-gateway">
+							  <div class="radio radio-primary">
+							        <input class="paymentGateway" id="cod-payment-option" type="radio" name="payment_method" value="cod">
+							       <label for="cod-payment-option" id="l-cod"><span class="edit-label"> Cash On Delivery Rs.0 </span>
+							          </label>
+							    </div>
+							</div>
+							<input class="hidden" type="checkbox" name="agree" value="1" checked="checked">
+							<textarea name="comment" rows="8" class="hidden form-control"></textarea>
+							<div id="proceed-to-payment-gateway" class="btnConfirm hidden"><a class="btn btn-orange">Confirm Order</a></div> 
+
+							</div>
+
+							              <div id="confirm"></div>
+            			</div>
+					</div>
+					<div class="checkout-sidebar col-sm-4">
+						<div class="features hidden-xs">
+							<ul class="features-list">
+								<li> <span class="fa fa-check"></span><span>Authenticity Guaranteed</span></li>
+								<li> <span class="fa fa-lock"></span><span>100% Safe &amp; Secure Payments Process</span></li>
+								<li> <span class="fa fa-refresh"></span><span>Easy Returns</span></li>
+							</ul>
+						</div>
+						<div class="order-summary">
+							<h4 style="font-family: Gotham-Medium">Order Summary</h4>
+							<div class="break"></div>
+							<div id="summary">
+								<p><b>Total:</b>&nbsp;&nbsp; 7,000</p>
+								<p><b>Discount:</b>&nbsp;&nbsp; 300</p>
+								<p><b>GST:</b>&nbsp;&nbsp; 600</p>
+								<p><b>Shipping:</b> &nbsp;&nbsp;Free</p>
+								<p><b>Grand Total:</b>&nbsp;&nbsp; 7,300</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<hr>
-				<div>
-					<center style="margin-bottom: 20px; font-family: Gotham-Book;">
-						Copyright © KashmirBox.com  2017-18. All Rights Reserved
-					</center>
-				</div>
 			</div>
+<!-- 			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="col-md-12">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tablist" id="headingOne">
+											<h4 class="panel-title">
+												<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													1 Login <span class="fa fa-check"></span>
+												</a>
+											</h4>
+										</div>
+										<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+											<div class="panel-body">
+												<div class="col-md-6">
+													<h5 class="font-gotham-book" style="font-family: inherit;font-weight: bold;line-height: 1.1;font-size: 1.125em">Returning Customer</h5>
+													<form>
+														<input type="email" name="email" placeholder="Email" class="form-control checkoutTextbox" >
+														<div class="doubleBreak"></div>
+														<input type="password" class="form-control checkoutTextbox" name="password" placeholder="Password">
+														<div class="text-red font-gotham-book text-right" style="cursor: pointer;">forgot password?</div>
+														<div class="doubleBreak"></div>
+
+														<button type="button" class="btn btn-default" name="submit" id="facebookLogin">
+															Connect with <b>Facebook</b>
+														</button>
+														<div class="doubleBreak"></div>
+
+														<input type="button" name="submit" value="Login" style="background: #2b2b2b;color:white; padding: 10px;border: 0; font-size:16px; border-radius:0;width:100%;">
+
+													</form>
+												</div>
+												<div class="col-md-6">
+													<h5 class="font-gotham-book" style="font-family: inherit;font-weight: bold;line-height: 1.1;font-size: 1.125em">Create Account</h5>
+													<input type="email" class="form-control checkoutTextbox" name="email" placeholder="email address">
+													<div class="doubleBreak"></div>
+
+													<input type="button" name="submit" value="Continue" style="background: #2b2b2b;color: white;border: 0; padding: 10px;font-size:16px; border-radius:0;width:100%;">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tablist" id="headingTwo">
+											<h4 class="panel-title">
+												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2 Delivery Address <span class="fa fa-check"></span>
+												</a>
+											</h4>
+										</div>
+										<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+											<div class="panel-body">
+												<div>
+													<div>
+														<p id="alertMessage" class="alert">Please select an address to continue</p>
+														<div class="row single-address">
+															<div class="col-md-1 text-center">
+																<input type="radio" name="radio" style="margin-top:15px;">
+															</div>
+															<div class="col-md-11">
+																<h4 class="address-name">Junaid Bhat</h4>
+																<p>nishat, Lalchowk, Srinagar, India</p>
+															</div>
+														</div>
+
+														<div class="row single-address">
+
+															<div class="col-md-1 text-center">
+																<input type="radio" name="radio" style="margin-top:15px;">
+															</div>
+															<div class="col-md-11">
+																<h4 class="address-name">Majic Bhat</h4>
+																<p>Dalgate, Lalchowk, Srinagar, India</p>
+															</div>
+														</div>
+													</div>
+													<div id="new-address">
+														<div class="row">
+															<h4 style="font-weight:normal;font-family:sans-serif;padding:5px 12px;">Your Personal Details</h4>
+
+															<div class="col-md-12" style="padding: 0">
+																<div class="col-md-3">
+																	<input type="text" name="email" placeholder="First Name" class="form-control checkoutTextbox" >
+																</div>
+																<div class="col-md-3">
+																	<input type="text" class="form-control checkoutTextbox" name="password" placeholder="Last Name">
+																</div>
+
+																<div class="col-md-6">
+																	<input type="number" name="mobile" placeholder="Mobile Number" class="form-control checkoutTextbox" >
+																</div>
+															</div>
+															<div class="col-md-12" style="margin-top:20px;padding: 0">
+																<div class="col-md-6">
+																	<input type="email" name="email" placeholder="E-Mail" class="form-control checkoutTextbox" >
+																</div>
+																<div class="col-md-3">
+																	<input type="password" class="form-control checkoutTextbox" name="password" placeholder="Password">
+																</div>
+
+																<div class="col-md-3">
+																	<input type="password" name="password" placeholder="Confirm Password" class="form-control checkoutTextbox" >
+																</div>
+															</div>
+														</div>
+
+
+														<div class="row">
+															<h4 style="font-weight:normal;font-family:sans-serif;padding:10px 12px;">Your Address</h4>
+
+															<div class="col-md-12" style="padding: 0">
+																<div class="col-md-6">
+																	<input type="text" name="address1" placeholder="Address 1" class="form-control checkoutTextbox" >
+																</div>
+																<div class="col-md-6">
+																	<input type="text" class="form-control checkoutTextbox" name="password" placeholder="Address 2">
+																</div>
+															</div>
+															<div class="col-md-12" style="margin-top:20px;padding: 0">
+																<div class="col-md-6">
+																	<input type="text" name="city" placeholder="City" class="form-control checkoutTextbox" >
+																</div>
+																<div class="col-md-6">
+																	<input type="number" class="form-control checkoutTextbox" name="mobile" placeholder="Pincode">
+																</div>
+
+																<div class="col-md-6" style="margin-top: 20px;">
+																	<input type="number" class="form-control checkoutTextbox" name="add_mobile" placeholder="Additional Mobile Number">
+																</div>
+
+															</div>
+
+															<div class="col-md-12" style="margin-top:20px;padding: 0">
+																<div class="col-md-6">
+																	<select class="form-control">
+																		<option>--- Please Select ---</option>
+																		<option>India</option>
+																		<option>England</option>
+																		<option>New Zealand</option>
+																	</select>
+																</div>
+																<div class="col-md-6">
+																	<select class="form-control">
+																		<option>--- Please Select ---</option>
+																		<option>India</option>
+																		<option>England</option>
+																		<option>New Zealand</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+
+														<div style="margin-top: 20px;padding: 0">
+															<input type="button" name="submit" class="btn" value="Continue"/>
+														</div>
+													</div>
+												</div>
+												<div style="margin-top: 20px;padding: 0">
+													<h4 id="btn-new-address" style="padding: 10px;cursor: pointer; font-size:16px;color:#1e90ff;"><i class="fa fa-plus"></i> Add new address</h4>
+												</div>
+												<div style="margin-top: 20px;padding: 0">
+													<input type="button" class="btn" name="submit" value="Proceed to Payment">
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tablist" id="headingThree">
+											<h4 class="panel-title">
+												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+												3 Payment</span>
+											</a>
+										</h4>
+									</div>
+									<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+										<div class="panel-body">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="break"></div>
+													<div style="box-shadow:0px 0px 1px 0px grey;padding:15px;">
+														<div style="float:left;">
+															<input type="radio" name="radio" checked>
+															<span> CC Avenue</span>
+														</div>
+														<div style="display: flex;justify-content: center;">
+															<img src="images/d.png" style="width: 40px;height: 20px;margin-right:5px;">
+															<img src="images/m.png" style="width: 40px;height: 20px;margin-right:5px;">
+															<img src="images/v.png" style="width: 40px;height: 20px;margin-right:5px;">
+															<img src="images/a.png" style="width: 40px;height: 20px;margin-right:5px;">
+														</div>
+													</div>
+													<div class="break"></div>
+
+													<div style="box-shadow:0px 0px 1px 0px grey;padding:15px;">
+														<div style="float:left;">
+															<input type="radio" name="radio">
+															<span> PayU Money</span>
+														</div>
+														<div style="display: flex;justify-content: center;">
+															<img src="images/d.png" style="width: 40px;height: 20px;margin-right:5px;">
+															<img src="images/m.png" style="width: 40px;height: 20px;margin-right:5px;">
+															<img src="images/v.png" style="width: 40px;height: 20px;margin-right:5px;">
+															<img src="images/a.png" style="width: 40px;height: 20px;margin-right:5px;">
+														</div>
+													</div>
+													<div class="break"></div>
+
+													<div style="box-shadow:0px 0px 1px 0px grey;padding:15px;">
+														<div style="float:left;">
+															<input type="radio" name="radio">
+															<span> Cash on Delivery</span>
+														</div>
+														<div style="display: flex;justify-content: center;">
+															<span>Not Available at your Address</span>
+														</div>
+													</div>
+													<div class="break"></div>
+
+													<div style="box-shadow:0px 0px 1px 0px grey;padding:15px;">
+														<div>
+															<input type="radio" name="radio">
+															<span> MobiKwik Wallet</span>
+														</div>
+													</div>
+													<div class="doubleBreak"></div>
+													<input type="button" class="btn" value="PAY NOW" style="background: #2b2b2b;color:white;width:100%;border-radius:0;padding:12px 0">
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4" id="checkoutRight">
+						<div class="features hidden-xs">
+							<ul class="features-list">
+								<li> 
+									<span class="fa fa-check">
+									</span>
+									<span>Authenticity Guaranteed
+									</span>
+								</li>
+								<li> 
+									<span class="fa fa-lock">
+									</span>
+									<span>100% Safe &amp; Secure Payments Process
+									</span>
+								</li>
+								<li> 
+									<span class="fa fa-refresh">
+									</span>
+									<span>Easy Returns
+									</span>
+								</li>
+							</ul>
+						</div>
+						<h4 style="font-family: Gotham-Medium">Order Summary</h4>
+						<div class="break"></div>
+						<div id="summary">
+							<p><b>Total:</b>&nbsp;&nbsp; 7,000</p>
+							<p><b>Discount:</b>&nbsp;&nbsp; 300</p>
+							<p><b>GST:</b>&nbsp;&nbsp; 600</p>
+							<p><b>Shipping:</b> &nbsp;&nbsp;Free</p>
+							<p><b>Grand Total:</b>&nbsp;&nbsp; 7,300</p>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+		</div>
+		<hr/>
+		<div>
+			<center style="margin-bottom: 20px; font-family: Gotham-Book;">
+				Copyright © KashmirBox.com  2017-18. All Rights Reserved
+			</center>
 		</div>
 	</div>
+</div>
+</div>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<script type="text/javascript">
+	$('#btn-new-address').click(function() {
+		$('#new-address').slideDown();
+	});
+</script>
 </body>
 </html>
