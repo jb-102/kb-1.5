@@ -133,6 +133,31 @@ body.stellarnav-noscroll-x{
     -moz-transition:transform .3s ease-out;
     transition:transform .3s ease-out
 }
+
+.firstDDLayer > li > a{
+    border: none !important;
+    border-top:1px solid rgba(0,0,0,.15) !important;
+    font-family: Gotham-Book;
+    font-size: 13px;
+    color: #282828 !important;
+}
+
+.secondDDLayer > li > a{
+    padding-left: 30px;
+    border: none !important;
+    font-family: Gotham-Book;
+    font-size: 13px;
+    color: #282828 !important;
+}
+
+.thirdDDLayer > li > a{
+    padding-left: 60px;
+    border: none !important;
+    font-family: Gotham-Book;
+    font-size: 13px;
+    color: #7f7f7f !important;
+}
+
 .stellarnav.mobile>ul>li>a.dd-toggle{
     padding:0
 }
@@ -140,10 +165,10 @@ body.stellarnav-noscroll-x{
     display:none
 }
 .stellarnav li.open>a.dd-toggle i{
-    -webkit-transform:rotate(135deg);
-    -ms-transform:rotate(135deg);
-    -o-transform:rotate(135deg);
-    transform:rotate(135deg)
+    -webkit-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    transform:rotate(90deg)
 }
 .stellarnav .call-btn-mobile,.stellarnav .close-menu,.stellarnav .location-btn-mobile,.stellarnav .menu-toggle{
     display:none;
@@ -242,7 +267,7 @@ body.stellarnav-noscroll-x{
     border-top:1px solid rgba(0,0,0,.15)
 }
 .stellarnav.mobile li a.dd-toggle,.stellarnav.mobile.light li a.dd-toggle{
-    border:0
+    border:0 !important;
 }
 .stellarnav.mobile .call-btn-mobile,.stellarnav.mobile .close-menu,.stellarnav.mobile .dd-toggle,.stellarnav.mobile .location-btn-mobile,.stellarnav.mobile .menu-toggle{
     display:inline-block;

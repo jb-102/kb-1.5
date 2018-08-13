@@ -13,6 +13,8 @@
 	<link rel="stylesheet" type="text/css" href="custom.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.13.0/lazyload.min.js"></script>
 	<link href="css/drawer.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="all" href="css/stellarnav.min.css">
+
 
 <style type="text/css">
 
@@ -83,31 +85,31 @@
 	<header id="mainHeader" class="container-fluid">
 		<nav class="navbar">
 			<div class="row" style="margin: 0">
-				<div class="col-md-10 col-md-offset-1">
+				<div class="col-md-10 col-md-offset-1" id="top_nav_head">
 					<div id="navbar" class="navbar-collapse collapse top_nav">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">KB</a></li>
+						<ul class="nav navbar-nav" id="top_nav_left">
+							<li class="active hidden-xs hidden-sm"><a href="#">KB</a></li>
 							<li><a href="#about">KB CASHMERE</a></li>
 							<li><a href="#contact">KB PASHMINA</a></li>
-							<li><a href="#contact">KB TRESURE BOX</a></li>
+							<li class="hidden-xs hidden-sm"><a href="#contact">KB TRESURE BOX</a></li>
 						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">Kashmir Wholesale</a></li>
-							<li><a href="#">Services</a></li>
+						<ul class="nav navbar-nav navbar-right" id="top_nav_right">
+							<li class="hidden-xs hidden-sm"><a href="#">Kashmir Wholesale</a></li>
+							<li class="hidden-xs hidden-sm"><a href="#">Services</a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Currency : USD <span class="caret"></span></a>
 								<ul class="dropdown-menu">
 									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
+									<li><a href="#">Another </a></li>
+									<li><a href="#">Something</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
 								<ul class="dropdown-menu">
 									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
+									<li><a href="#">Another</a></li>
+									<li><a href="#">Something </a></li>
 								</ul>
 							</li>
 						</ul>
@@ -118,17 +120,17 @@
 
 		<div class="row hidden-xs" style="padding: 0px 0px 10px 0; margin: 0">
 			<div class="col-md-10 col-md-offset-1">
-				<div class="col-md-4">
+				<div class="col-md-4 col-xs-4">
 
 					<div class="search">
 						<span class="fa fa-search"></span>
 						<input placeholder="Search the store" id="searchbox">
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-xs-4">
 					<h2 class="text-center main_heading">KASHMIR BOX</h2>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-xs-4">
 					<ul class="nav navbar-nav pull-right" id="middle_right_nav">
 						<li><a class="middle_right_nav_login" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
 						<li><a data-toggle="modal" data-target="#myModal">SIGNUP</a></li>
@@ -471,6 +473,22 @@
 			</div>
 		</div>
 	</header>
+
+	<header id="mainHeaderGrey" class="container-fluid hidden" style="background: #d4d4d4;">
+			<nav>
+				<div class="row" style="margin: 0">
+					<div class="col-xs-12" id="top_nav_head">
+						<div id="navbar" class="navbar-collapse collapse top_nav">
+							<ul class="row" style="margin-bottom: 0;padding: 0;">
+								<li class="col-xs-4"><a href="#about" style="color: #2b2b2b;">KB CASHMERE</a></li>
+								<li class="col-xs-4"><a href="#contact" style="color: #2b2b2b;">KB PASHMINA</a></li>
+								<li class="col-xs-4"><a href="#contact" style="color: #2b2b2b;">KB TRESURE BOX</a></li>
+							</ul>
+						</div><!--/.nav-collapse -->
+					</div>
+				</div>
+			</nav>
+		</header>
 
 
 	<!-- Sticky Header -->
@@ -826,45 +844,28 @@
 		</nav>
 	</header>
 
-	<!-- Mobile Nav -->
-	
+		<!-- ========	New mobile nav  ========= -->
+	<div id="main-nav" class="stellarnav hidden-sm hidden-md hidden-lg">
 
-<link rel="stylesheet" type="text/css" media="all" href="css/stellarnav.min.css">
-	<!-- ========	New mobile nav  ========= -->
-	<div id="main-nav" class="stellarnav hidden-md hidden-lg">
+		<span style="width: 83%;float: right;">
+			<span style="margin-right: 70px;"><i class="fa fa-search fa-lg"></i></span>
+			<span style="text-align: center;margin-top: 12px;margin-right: 20px;font-size: 30px;font-family: Cormorant-Medium;">KB</span>
+			<a href="#about" style="" class="loginMobile" data-toggle="modal" data-target="#myModal">LOGIN</a>
+			<a href="#contact" data-toggle="modal" data-target="#myModal" class="loginMobile" style="border: none;">SIGNUP</a>
+			<a href="#contact" class="drawer-toggle" id="openHanbergerCart"> <span class="badge-cart">2</span></a>
+		</span>
 
-	<span style="width: 83%;float: right;">
-		<span style="margin-right: 70px;"><i class="fa fa-search fa-lg"></i></span>
-		<span style="text-align: center;margin-top: 12px;margin-right: 20px;font-size: 30px;font-family: Cormorant-Medium;">KB</span>
-		<a href="#about" style="" class="loginMobile" data-toggle="modal" data-target="#myModal">LOGIN</a>
-		<a href="#contact" data-toggle="modal" data-target="#myModal" class="loginMobile" style="border: none;">SIGNUP</a>
-		<a href="#contact" class="drawer-toggle" id="openHanbergerCart"> <span class="badge-cart">2</span></a>
-	</span>
-
-		<ul>
-			<li><a href="">Dropdown1</a>
-		    	<ul>
-		    		<li><a href="#">How deep?</a>
-		    			<ul>
-				    		<li><a href="#">Deep</a>
-				    			<ul>
-				    				<li><a href="#">Even deeper</a>
-				    					<ul>
-				    						<li><li><a href="#">Item</a></li></li>
-				    						<li><li><a href="#">Item</a></li></li>
-				    						<li><li><a href="#">Item</a></li></li>
-				    					</ul>
-				    				</li>
-				    				<li><a href="#">Item</a></li>
-				    				<li><a href="#">Item</a></li>
-				    				<li><a href="#">Item</a></li>
-				    			</ul>
-				    		</li>
+		<ul class="firstDDLayer">
+			<li><a href="">MEN</a>
+		    	<ul class="secondDDLayer">
+		    		<li><a href="">Dropdown2</a>
+		    			<ul class="thirdDDLayer">
+				    		<li><a href="#">How deep?</a></li>
 				    		<li><a href="#">Item</a></li>
 				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
 				    		<li><a href="#">Item</a></li>
-				    		<li><a href="#">Item</a></li>
-		    			</ul>
+				    	</ul>
 		    		</li>
 		    		<li><a href="#">Item</a></li>
 		    		<li><a href="#">Item</a></li>
@@ -872,38 +873,54 @@
 		    		<li><a href="#">Item</a></li>
 		    	</ul>
 		    </li>
-		    <li><a href="">Item 2</a></li>
-		    <li><a href="">Item 3</a></li>
-		    <li><a href="">Item 4</a></li>
-		    <li><a href="">Item 5</a></li>
-		    <li><a href="">Item 6</a></li>
-		    <li class="drop-left"><a href="">Drop Left</a>
-		    	<ul>
-		    		<li><a href="#">How deep?</a>
-		    			<ul>
-				    		<li><a href="#">Deep</a>
-				    			<ul>
-				    				<li><a href="#">Even deeper</a>
-				    					<ul>
-				    						<li><li><a href="#">Item</a></li></li>
-				    						<li><li><a href="#">Item</a></li></li>
-				    						<li><li><a href="#">Item</a></li></li>
-				    					</ul>
-				    				</li>
-				    				<li><a href="#">Item</a></li>
-				    				<li><a href="#">Item</a></li>
-				    				<li><a href="#">Item</a></li>
-				    			</ul>
-				    		</li>
+		    <li><a href="">WOMEN</a>
+		    	<ul class="secondDDLayer">
+		    		<li><a href="">Dropdown2</a>
+		    			<ul class="thirdDDLayer">
+				    		<li><a href="#">How deep?</a></li>
 				    		<li><a href="#">Item</a></li>
 				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
 				    		<li><a href="#">Item</a></li>
-				    		<li><a href="#">Item</a></li>
-		    			</ul>
+				    	</ul>
 		    		</li>
 		    		<li><a href="#">Item</a></li>
 		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
 		    		<li><a href="#">Item</a></li>
+		    	</ul>
+		    </li>
+		    <li><a href="">FOOD</a>
+		    	<ul class="secondDDLayer">
+		    		<li><a href="">Dropdown2</a>
+		    			<ul class="thirdDDLayer">
+				    		<li><a href="#">How deep?</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+				    		<li><a href="#">Item</a></li>
+				    	</ul>
+		    		</li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+		    		<li><a href="#">Item</a></li>
+		    	</ul>
+		    </li>
+		    <li><a href="">DECOR</a>
+		    	<ul class="secondDDLayer">
+		    		<li><a href="">Dropdown2</a>
+		    			<ul class="thirdDDLayer">
+				    		<li><a href="#">How deep?</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+				    		<li><a href="#">Item</a></li>
+				    	</ul>
+		    		</li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
 		    		<li><a href="#">Item</a></li>
 		    	</ul>
 		    </li>
@@ -1001,7 +1018,7 @@
 						</div>
 					</div>
 				</div>
-				<hr style="margin: 65px 0px; padding: 0;">
+				<hr class="row_three_hr">
 				<div class="break"></div>			
 				<div class="row">
 					<div class="col-md-7">
@@ -1014,26 +1031,29 @@
 							<p class="what-sells-best-p">
 								Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor.
 							</p>
-
-							<input type="button" name="collection" value="View Collection" class="btn row_two_onlyButton">
+							<div class="row_two_onlyButton_div">
+								<input type="button" name="collection" value="View Collection" class="btn row_two_onlyButton">
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="doubleBreak"></div>			
 				<div class="break"></div>			
 				<div class="row">
-					<div class="col-md-5">
+					<div class="col-md-7 col-md-push-7">
+						<img data-src="images/k5.jpg" class="lazy img-responsive row_general_image">					
+					</div>
+					<div class="col-md-5 col-md-pull-5">
 						<div style="margin-top: 15%">
 							<h4 class="new-arrivals text-right">NEW ARRIVALS</h4>
 							<h3 class="what-sells-best text-right">WHAT SELLS BEST?</h3>
 							<p class="what-sells-best-p text-right">
 								Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor.
 							</p>
-							<input type="button" name="collection" value="View Collection" class="btn pull-right row_two_onlyButton">
+							<div class="row_two_onlyButton_div" id="row_two_onlyButton_div2">
+								<input type="button" name="collection" value="View Collection" class="btn pull-right row_two_onlyButton">
+							</div>
 						</div>
-					</div>
-					<div class="col-md-7">
-						<img data-src="images/k5.jpg" class="lazy img-responsive row_general_image">					
 					</div>
 				</div>
 				<div class="doubleBreak"></div>			
@@ -1049,7 +1069,9 @@
 							<p class="what-sells-best-p">
 								Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor.
 							</p>
-							<input type="button" name="collection" value="View Collection" class="btn row_two_onlyButton">
+							<div class="row_two_onlyButton_div">
+								<input type="button" name="collection" value="View Collection" class="btn row_two_onlyButton">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1075,7 +1097,7 @@
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 				<div class="row">
 					<div class="col-md-12">
-						<h2 style="text-align: center;font-family: Cormorant-SemiBold !important;color: black !important;margin: 0 0 65px 0;">WHAT OUR CUSTOMERS SAY</h2>
+						<h2 class="clientReviewTitle">WHAT OUR CUSTOMERS SAY</h2>
 						<div id="testimonial-slider" class="owl-carousel">
 							<div class="testimonial">
 								<div class="pic">
@@ -1288,6 +1310,26 @@
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		function toogleHamburger() {
+			
+			
+		}
+        function toogleHeader() {
+        	$('.menu-toggle').find('.fa').css("cssText", "padding: 0px !important;")
+			if($('.menu-toggle').find('.fa').hasClass('fa-bars')){
+				$('.menu-toggle').find('.fa').removeClass('fa-bars')
+				$('.menu-toggle').find('.fa').addClass('fa-times')
+				$('#mainHeader').addClass('hidden')
+				$('#mainHeaderGrey').removeClass('hidden')
+			} else {
+				$('.menu-toggle').find('.fa').addClass('fa-bars')
+				$('.menu-toggle').find('.fa').removeClass('fa-times')
+				$('#mainHeader').removeClass('hidden')
+				$('#mainHeaderGrey').addClass('hidden')
+			}
+		}
+	</script>
 
 <!-- Mobile Nav Script -->
 	<script type="text/javascript" src="js/stellarnav.min.js"></script>
