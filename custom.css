@@ -2272,3 +2272,51 @@ p {
 	}
 }
 
+.textboxHead
+	{
+		margin: 50px 0;
+		border-bottom: 1px solid grey;
+	}
+	.textboxes
+	{
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+	}
+	.textboxexButton
+	{
+		width: 100%;
+		background: #222;
+		color: white;
+		border-radius: 0;
+		padding: 15px 0 ;
+		font-weight: bold;
+	}
+
+	.signUpStyleHead
+	{
+		box-shadow: 0px 3px 20px -6px lightgrey;
+		margin-top: 20px;
+	}
+	.signUpStyle
+	{
+		text-align: center;
+		padding: 20px 0 ;
+		font>-weight: bold;
+	}
+	.loginMobile
+	{
+		padding-top: 0px;padding-bottom: 0px;margin-top: 10px;color: #363636;font-weight: bolder;font-size: 13px;font-family: Gotham-Medium;position: relative;padding: 0px 8px;border-right: 2px solid;
+	}
+
+@media (min-width: 280px) and (max-width: 768px)
+{
+	#cartNav
+	{
+		width:100% !important
+	}
+	.drawer--right .drawer-nav
+	{
+		right: -100%;
+	}
+}

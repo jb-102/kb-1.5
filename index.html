@@ -14,6 +14,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.13.0/lazyload.min.js"></script>
 	<link href="css/drawer.css" rel="stylesheet">
 
+<style type="text/css">
+
+</style>
+
 </head>
 <body class="drawer drawer--right">
 	<!-- cart slide data -->
@@ -23,7 +27,7 @@
 	      <span class="fa fa-angle-left" style="font-size: 30px"></span>
 	    </button> -->
 
-	    <nav class="drawer-nav" role="navigation">
+	    <nav class="drawer-nav" role="navigation" id="cartNav">
 	      	<h2 class="row">
 	      		<span class="col-md-4 fa fa-angle-left drawer-toggle" style="font-size: 30px; padding-left: 30px; cursor: pointer;" ></span>
 	      		<span class="col-md-8" style="font-family: Gotham-Medium;" >Your Cart</span>
@@ -31,7 +35,7 @@
 	      	<hr/>
 	      	<div class="container">
 		      	<div class="row">
-		      		<div class="col-md-6 col-xs-6 col-sm-6" style="overflow: auto !important;">
+		      		<div class="col-md-6 col-xs-12 col-sm-6" style="overflow-y: auto !important;">
 		      			<div class="row" id="row_1">
 		      				<div class="col-md-3  col-xs-3 col-sm-3">
 		      					<img src="images/cart1.png" class="img-responsive">
@@ -58,7 +62,7 @@
 		      				</div>
 		      			</div>
 		      			<hr id="row_2_hr">
-		      			<div class="row" style="position: fixed; bottom: 15px; width: 35%;">
+		      			<div class="row" style="position: fixed; bottom: 15px; width: 100%;">
 	      					<div class="col-md-12">
 	      						<div>
 	      							<h4 class="text-center font-gotham-book"><span>SUBTOTAL: </span><span>Rs. 3704</span></h4>
@@ -822,113 +826,93 @@
 		</nav>
 	</header>
 
+	<!-- Mobile Nav -->
+	
 
-	<div class="container hidden-md hidden-lg">
-		<div class="row">
-			<div class="col-xs-4" style="display: flex;">
-				<h3 style="margin-top: 15px;">
-					<!-- <span class="fa fa-bars" style="font-size: 13px;"></span> -->
-					  <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button" style="color: black;"> <!-- Sidebar toggle button-->
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="fa fa-bars"></span>
-                    </a>
-				</h3>
-				<h3 style="margin-left: 25px;line-height: 9px">
-					<span><i class="fa fa-search" style="font-size: 16px;"></i></span>
-				</h3>
-			</div>
-			<div class="col-xs-3">
-				<h3 style="text-align: center;margin-top: 12px;font-size: 30px;font-family: Cormorant-Medium">KB</h3>
-			</div>
-			<div class="col-xs-5">
-				<ul class="nav navbar-nav" id="middle_right_nav">
-					<li><a href="#about" class="middle_right_nav_login" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
-					<li><a href="#contact" data-toggle="modal" data-target="#myModal">SIGNUP</a></li>
-					<li><a href="#contact"> <span class="badge-cart">2</span></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+<link rel="stylesheet" type="text/css" media="all" href="css/stellarnav.min.css">
+	<!-- ========	New mobile nav  ========= -->
+	<div id="main-nav" class="stellarnav hidden-md hidden-lg">
 
+	<span style="width: 83%;float: right;">
+		<span style="margin-right: 70px;"><i class="fa fa-search fa-lg"></i></span>
+		<span style="text-align: center;margin-top: 12px;margin-right: 20px;font-size: 30px;font-family: Cormorant-Medium;">KB</span>
+		<a href="#about" style="" class="loginMobile" data-toggle="modal" data-target="#myModal">LOGIN</a>
+		<a href="#contact" data-toggle="modal" data-target="#myModal" class="loginMobile" style="border: none;">SIGNUP</a>
+		<a href="#contact" class="drawer-toggle" id="openHanbergerCart"> <span class="badge-cart">2</span></a>
+	</span>
 
-	<aside class="main-sidebar hidden-lg hidden-md">
+		<ul>
+			<li><a href="">Dropdown1</a>
+		    	<ul>
+		    		<li><a href="#">How deep?</a>
+		    			<ul>
+				    		<li><a href="#">Deep</a>
+				    			<ul>
+				    				<li><a href="#">Even deeper</a>
+				    					<ul>
+				    						<li><li><a href="#">Item</a></li></li>
+				    						<li><li><a href="#">Item</a></li></li>
+				    						<li><li><a href="#">Item</a></li></li>
+				    					</ul>
+				    				</li>
+				    				<li><a href="#">Item</a></li>
+				    				<li><a href="#">Item</a></li>
+				    				<li><a href="#">Item</a></li>
+				    			</ul>
+				    		</li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Item</a></li>
+		    			</ul>
+		    		</li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+		    		<li><a href="#">Item</a></li>
+		    	</ul>
+		    </li>
+		    <li><a href="">Item 2</a></li>
+		    <li><a href="">Item 3</a></li>
+		    <li><a href="">Item 4</a></li>
+		    <li><a href="">Item 5</a></li>
+		    <li><a href="">Item 6</a></li>
+		    <li class="drop-left"><a href="">Drop Left</a>
+		    	<ul>
+		    		<li><a href="#">How deep?</a>
+		    			<ul>
+				    		<li><a href="#">Deep</a>
+				    			<ul>
+				    				<li><a href="#">Even deeper</a>
+				    					<ul>
+				    						<li><li><a href="#">Item</a></li></li>
+				    						<li><li><a href="#">Item</a></li></li>
+				    						<li><li><a href="#">Item</a></li></li>
+				    					</ul>
+				    				</li>
+				    				<li><a href="#">Item</a></li>
+				    				<li><a href="#">Item</a></li>
+				    				<li><a href="#">Item</a></li>
+				    			</ul>
+				    		</li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Item</a></li>
+		    			</ul>
+		    		</li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Item</a></li>
+		    	</ul>
+		    </li>
+		</ul>
+	</div><!-- .stellar-nav -->
 
-                <!-- sidebar -->
-                <div class="sidebar" style="height: auto;">
-                   
-                    <!-- sidebar menu -->
-                    <ul class="sidebar-menu">
-                        <li class="active">
-                            <a href="index.html"><i class="fa fa-hospital-o"></i><span>Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-user-md"></i><span>Doctor</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="forms_basic.html">Add Doctor</a></li>
-                                <li><a href="table.html">Doctor list</a></li>
-                                
-                            </ul>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-user"></i><span>Patient</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="add-patient.html">Add patient</a></li>
-                                <li><a href="pt-list.html">patient list</a></li>
-                            </ul>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-sitemap"></i><span>Department</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="add-department.html">Add Department</a></li>
-                                <li><a href="dep-list.html">Department list</a></li>
-                            </ul>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-list-alt"></i> <span>Schedule</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="add-schedule.html">Add schedule</a></li>
-                                <li><a href="sch-list.html">schedule list</a></li>
-                                
-                            </ul>
-                        </li>
-                  
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-columns"></i><span> Layout</span>
-                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="layout_fixed.html">Fixed layout</a></li>
-                        <li><a href="layout_boxed.html">Boxed layout</a></li>
-                        <li><a href="layout_collapsed_sidebar.html">collapsed layout</a></li>
-                    </ul>
-                </li>                
-            </ul>
-        </div> <!-- /.sidebar -->
-    </aside>
+	
 
-	<!-- Image Slider -->
+	<!-- ==============	Image Slider  ================= -->
 
 	<div class="container-fluid">
 		<div class="row">
@@ -1306,7 +1290,16 @@
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-</body>
+
+<!-- Mobile Nav Script -->
+	<script type="text/javascript" src="js/stellarnav.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			jQuery('.stellarnav').stellarNav({
+				theme: 'light'
+			});
+		});
+	</script>
 <!-- script used for cart slide -->
     <script src="slidereveal.js"></script>
 
@@ -1395,15 +1388,29 @@
 
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <div class="modal-body" style="padding: 0">
+      		<div class="row">
+      			<div class="col-md-12">
+					<div class="col-md-6" style="padding:0">
+						<img src="images/loginKB.png" class="img-responsive">
+					</div>
+					<div class="col-md-6" style="margin-top: 60px;">
+						<div class="textboxHead">
+							<input type="text" class="form-control textboxes" placeholder="Enter your email address">
+						</div>
+						<div class="textboxHead">
+							<input type="password" class="form-control textboxes" placeholder="Enter password">
+						</div>
+						<div>
+							<input type="button" class="btn textboxexButton" value="LOGIN">
+						</div>
+
+						<div class="signUpStyleHead">
+							<h5 class="signUpStyle">NEW KASHMIR BOX? <a href="#">SIGN UP</a></h5>
+						</div>
+					</div>
+			</div>
+      		</div>
       </div>
     </div>
 
