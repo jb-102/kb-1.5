@@ -12,12 +12,30 @@
 	<link rel="stylesheet" type="text/css" href="custom.css">
 	<link rel="stylesheet" type="text/css" href="mobileNavbar.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.13.0/lazyload.min.js"></script>
+	<link href="css/drawer.css" rel="stylesheet">
 
 </head>
-<body>
+<body class="drawer drawer--right">
+	<!-- cart slide data -->
+<header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger" id="openCart">
+      <span class="sr-only">toggle navigation</span>
+      <span class="fa fa-angle-left" style="font-size: 30px"></span>
+    </button>
+
+    <nav class="drawer-nav" role="navigation">
+      	<h2 class="text-center">Your Cart</h2>
+      	<hr>
+      		<div class="container">
+      			<h3>Cart data goes here</h3>
+      		</div>
+    </nav>
+  </header>
+
+	
 
 	<!-- Normal Screen Header -->
-
+    
 	<header id="mainHeader" class="container-fluid">
 		<nav class="navbar">
 			<div class="container">
@@ -68,7 +86,8 @@
 						<li><a href="#about" class="middle_right_nav_login" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
 						<li><a href="#contact" data-toggle="modal" data-target="#myModal">SIGNUP</a></li>
 						<li><a href="#contact">WISHLIST</a></li>
-						<li><a href="#contact">CART <span class="badge-cart">2</span></a></li>
+						<li><a href="#contact" class="drawer-toggle" id="openHanbergerCart">CART <span class="badge-cart">2</span></a></li>
+
 					</ul>
 				</div>
 			</div>
@@ -792,7 +811,7 @@
 	</div>
 
 
-<aside class="main-sidebar">
+<aside class="main-sidebar hidden-md hidden-lg">
                 <!-- sidebar -->
                 <div class="sidebar" style="height: auto;">
                    
@@ -882,7 +901,7 @@
 							</div>
 
 							<div class="item">
-								<img data-src="images/3.png" class="lazy" alt="Kashmir Box">
+								<img data-src="images/2.png" class="lazy" alt="Kashmir Box">
 							</div>
 						</div>
 
@@ -1286,6 +1305,9 @@
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
+<!-- script used for cart slide -->
+    <script src="slidereveal.js"></script>
+
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/js/superfish.js"></script>
 
 	<!-- Latest compiled and minified JavaScript -->
@@ -1301,7 +1323,43 @@
 <!-- mobile slide navbar -->
     <script src="customNavbar.js" type="text/javascript"></script>
 
+<!-- cart slide -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
+  <script src="js/drawer.js"></script>
+	<script>
+	    $(document).ready(function() {
+	      $('.drawer').drawer();
+	    });
+	</script>
 
+
+<!-- script for cart slide -->
+<script type="text/javascript">
+    	$(function(){
+        slider = $("#slider").slideReveal({
+          width: "50%",
+          // push: false,
+          position: "right",
+          speed: 600,
+          trigger: $("#trigger"),
+          // autoEscape: false,
+          show: function(obj){
+            console.log(obj);
+          },
+          shown: function(obj){
+            console.log(obj);
+          },
+          hide: function(obj){
+            console.log(obj);
+          },
+          hidden: function(obj){
+            console.log(obj);
+          },
+          overlay: true
+        });
+    	});
+
+    </script>
 
 
 <!-- Modal -->
