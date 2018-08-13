@@ -1699,6 +1699,37 @@ p {
 @media (min-width: 280px) and (max-width: 576px)
 {
 
+	#top_nav_head
+	{
+		padding: 0;
+	}
+	.top_nav
+	{
+		display: block !important;
+		padding: 5px;
+	}
+	.top_nav > #top_nav_left
+	{
+		width: 50%;
+		float: left;
+		margin: 0;
+	}
+	.top_nav > #top_nav_right
+	{
+		width: 50%;
+		float: right;
+		margin: 0;
+		text-align: right;
+	}
+	.top_nav > ul > li
+	{
+		display: inline;
+	}
+	.top_nav > ul > li >a
+	{
+		padding: 5px 0 !important;
+		display: initial;
+	}
 	#mainHeader{
 		height: auto;
 	}
@@ -1771,6 +1802,86 @@ p {
 		padding-right: 35px !important;
 		padding-left: 15px;
 	}
+
+	#row_one > div > h1
+	{
+		border: none;
+		border-bottom: 1px solid lightgrey;
+	    padding: 0 !important;
+	    margin: 0 auto;
+	    width: 40%;
+	    padding-bottom: 25px !important;
+	}
+	#row_one > .col-md-9 > h2
+	{
+	    margin: 50px 0px;
+	    padding-left: 0;
+	    line-height: 30px;
+	    font-size: 21px;
+	    text-align: center;
+	}
+	#row_two > div > center > p
+	{
+		text-align: center;
+	    font-size: 14px;
+	    padding: 30px 0px 50px 0px;
+	    width: 100%;
+	}
+	.row_two_buttonDiv
+	{
+		margin-bottom: 50px !important;
+	}
+	.row_two_buttonDiv > input
+	{
+	    padding: 8px 20px;
+	    height: auto !important;
+	    width: auto !important;
+	}
+	.row_two_foot_title
+	{
+		padding: 0;
+	}
+	.row_two_foot_title > h3
+	{
+		font-size: 22px;
+	}
+	.row_three_hr
+	{
+		margin: 15px 0px 50px 0 !important; 
+		padding: 0;
+	}
+	.row_two_onlyButton
+	{
+	    border-radius: 0;
+	    padding: 9px 18px;
+	    width: auto !important;
+	    height: auto !important;
+	}
+	.new-arrivals
+	{
+		text-align: center !important;
+	}
+	.what-sells-best-p
+	{
+		text-align: center !important;
+	}
+	.row_two_onlyButton_div
+	{
+		display: flex;
+		justify-content: center;
+	}
+	#row_two_onlyButton_div2
+	{
+		margin-bottom: 50px !important;
+	}
+	.clientReviewTitle
+	{
+		margin: 0 !important;
+	}
+	#testimonial-slider .testimonial .pic
+	{
+		height: auto;
+	}
 }
 @media (min-width: 577px) and (max-width: 768px)
 {
@@ -1783,9 +1894,45 @@ p {
 	{
 		padding-left: 45px !important;
 	}
+	#top_nav_head
+	{
+		padding: 0;
+	}
+	.top_nav
+	{
+		display: block !important;
+		padding: 10px;
+	}
+	.top_nav > #top_nav_left
+	{
+		width: 50%;
+		float: left;
+		margin: 0;
+	}
+	.top_nav > #top_nav_right
+	{
+		width: 50%;
+		float: right;
+		margin: 0;
+		text-align: right;
+	}
+	.top_nav > ul > li
+	{
+		display: inline;
+	}
+	.top_nav > ul > li >a
+	{
+		padding: 5px 10px !important;
+		display: initial;
+	}
+	#mainHeader
+	{
+		height: auto !important;
+	}
 }
 @media (min-width: 769px) and (max-width: 992px)
-{}
+{
+}
 
 @media (min-width: 993px) and (max-width: 1200px)
 {}
@@ -2302,9 +2449,20 @@ p {
 	{
 		text-align: center;
 		padding: 20px 0 ;
-		font>-weight: bold;
+		font-weight: bold;
 	}
 	.loginMobile
 	{
 		padding-top: 0px;padding-bottom: 0px;margin-top: 10px;color: #363636;font-weight: bolder;font-size: 13px;font-family: Gotham-Medium;position: relative;padding: 0px 8px;border-right: 2px solid;
+	}
+
+.row_three_hr
+	{
+		margin:65px 0; 
+		padding: 0;
+	}
+
+	.clientReviewTitle
+	{
+		text-align: center;font-family: Cormorant-SemiBold !important;color: black !important;margin: 0 0 65px 0;
 	}
