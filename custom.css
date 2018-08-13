@@ -124,8 +124,9 @@ input {
 
 #summary
 {
-	border: 1px solid lightgrey;
-	padding:23px 15px;
+	border: 1px solid #f6f6f6;
+    padding: 25px 15px;
+    background: #f6f6f6;
 }
 
 #summary > p
@@ -302,6 +303,7 @@ header
 	position: relative;
     display: block;
     padding: 0px 8px;
+    cursor: pointer;
 }
 
 #middle_right_nav > li > a:hover
@@ -1055,7 +1057,8 @@ p {
 	border: 1px solid #2b2b2b;
 	margin: 1rem 0;
 	padding: .5rem;
-	background-color: #fff
+	background-color: #fff;
+    cursor: pointer;
 }
 
 .checkout-steps .step .step-title span {
@@ -2109,7 +2112,6 @@ select.form-control-product:focus {
     outline: none;
 }
     
-
 .product-add-to-box {
 	height: 59px;
 	width: 225px;
@@ -2124,15 +2126,60 @@ select.form-control-product:focus {
 	font-size: 15px
 }
 
+.side-cart-footer {
+	position: fixed;
+	bottom: 15px;
+	width: 35%;
+}
+
+.loadMore {
+	margin: 20px auto;
+	padding: 10px;
+	cursor: pointer;
+	font-family: Gotham-Medium
+}
+
 @media (max-width: 767px) {
 	.main-sidebar{
 		padding-top: 0px;
     	margin-top: 0px;
 	}
 }
+.cart-items {
+	padding: 0px 50px;
+}
 
 @media (min-width: 280px) and (max-width: 576px)
 {
+
+	.checkout-sidebar {
+		margin-top: 20px;
+	}
+	.cart-item-name {
+		margin-bottom: 10px;
+	}
+	.fa-minus, .fa-plus {
+	    font-size: 10px;
+	    margin: 0px 5px;
+	}
+	.fa-times {
+	    font-size: 18px !important;
+	    padding: 8px 12px 0px 0px !important;
+	}
+	.cart-item-price {
+		margin-top: 14px;
+	}
+	.cart-items {
+		padding: 0px 25px;
+	}
+	.cart-item-details {
+	     padding: 0; 
+	}
+	.side-cart-footer {
+		position: fixed;
+		bottom: 15px;
+		width: 100%;
+	}
 
 	.product-bold-words-nav {
 	    font-size: 12px;
@@ -2227,7 +2274,9 @@ select.form-control-product:focus {
 	}
 }
 @media (min-width: 769px) and (max-width: 992px)
-{}
+{
+
+}
 
 @media (min-width: 993px) and (max-width: 1200px)
 {}
@@ -2235,6 +2284,9 @@ select.form-control-product:focus {
 @media (min-width: 768px) {
 	.header-inner #toggle-btn {
 		display: none;
+	}
+	.modal-dialog  {
+	    width: 817px !important;
 	}
 }
 @media (max-width: 768px) {
@@ -2355,3 +2407,46 @@ select.form-control-product:focus {
 	.testimonial .post{ font-size: 11px; }
 }
 
+.modal-content  {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important; 
+    border: 0px !important;
+}
+
+.textboxHead
+{
+	margin: 50px 0;
+	border-bottom: 1px solid grey;
+}
+.textboxes
+{
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+.textboxexButton
+{
+	width: 100%;
+	background: #222;
+	color: white;
+	border-radius: 0;
+	padding: 15px 0 ;
+	font-weight: bold;
+}
+
+.signUpStyleHead
+{
+	box-shadow: 0px 3px 20px -6px lightgrey;
+	margin-top: 20px;
+}
+.signUpStyle
+{
+	text-align: center;
+	padding: 20px 0 ;
+	font>-weight: bold;
+}
+.loginMobile
+{
+	padding-top: 0px;padding-bottom: 0px;margin-top: 10px;color: #363636;font-weight: bolder;font-size: 13px;font-family: Gotham-Medium;position: relative;padding: 0px 8px;border-right: 2px solid;
+}

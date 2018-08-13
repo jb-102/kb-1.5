@@ -10,6 +10,9 @@
     Base
 \*!------------------------------------*/
 
+
+
+
 #openCart
 {
   display: none;
@@ -23,7 +26,6 @@
   position: fixed;
   z-index: 101;
   top: 0;
-  overflow: scroll;
   overflow-y: scroll;
   width: 35%;
   height: 100%;
@@ -268,6 +270,7 @@
 }
 
 @media (min-width: 64em) {
+
   .drawer--sidebar .drawer-hamburger {
     display: none;
     visibility: hidden;
@@ -527,5 +530,18 @@
 @media (min-width: 75em) {
   .drawer-container {
     max-width: 70rem;
+  }
+}
+
+
+@media (min-width: 280px) and (max-width: 768px)
+{
+  #cartNav
+  {
+    width:100% !important;
+  }
+  .drawer--right .drawer-nav
+  {
+    right: -100%;
   }
 }
