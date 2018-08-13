@@ -532,3 +532,16 @@
     max-width: 70rem;
   }
 }
+
+
+@media (min-width: 280px) and (max-width: 768px)
+{
+  #cartNav
+  {
+    width:100% !important;
+  }
+  .drawer--right .drawer-nav
+  {
+    right: -100%;
+  }
+}
