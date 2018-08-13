@@ -19,41 +19,43 @@
 
 	<header id="mainHeader" class="container-fluid">
 		<nav class="navbar">
-			<div class="container">
-				<div id="navbar" class="navbar-collapse collapse top_nav">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">KB</a></li>
-						<li><a href="#about">KB CASHMERE</a></li>
-						<li><a href="#contact">KB PASHMINA</a></li>
-						<li><a href="#contact">KB TRESURE BOX</a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Kashmir Wholesale</a></li>
-						<li><a href="#">Services</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Currency : USD <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div><!--/.nav-collapse -->
+			<div class="row" style="margin: 0">
+				<div class="col-md-10 col-md-offset-1">
+					<div id="navbar" class="navbar-collapse collapse top_nav">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">KB</a></li>
+							<li><a href="#about">KB CASHMERE</a></li>
+							<li><a href="#contact">KB PASHMINA</a></li>
+							<li><a href="#contact">KB TRESURE BOX</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Kashmir Wholesale</a></li>
+							<li><a href="#">Services</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Currency : USD <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
 			</div>
 		</nav>
 
-		<div class="container-fluid">
-			<div class="row" style="padding-bottom: 10px">
-				<div class="col-md-3 col-md-offset-1 col-xs-offset-2 padding_left">
+		<div class="row" style="padding: 0px 0px 10px 0; margin: 0">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="col-md-4">
 					<div class="search">
 						<span class="fa fa-search"></span>
 						<input placeholder="Search the store" id="searchbox">
@@ -63,17 +65,17 @@
 					<h2 class="text-center main_heading">KASHMIR BOX</h2>
 				</div>
 				<div class="col-md-4">
-					<ul class="nav navbar-nav" id="middle_right_nav">
+					<ul class="nav navbar-nav pull-right" id="middle_right_nav">
 						<li><a href="#about" class="middle_right_nav_login">LOGIN</a></li>
 						<li><a href="#contact">SIGNUP</a></li>
 						<li><a href="#contact">WISHLIST</a></li>
-						<li><a href="#contact">CART <span class="badge-cart">2</span></a></li>
+						<li><a style="padding-right: 0;" href="#contact">CART <span class="badge-cart">2</span></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
-		<div class="container-fluid hidden-sm hidden-xs" style="padding: 0;">
+		<div class="hidden-sm hidden-xs" style="padding: 0;">
 			<div class="bottom_nav">
 				<nav class="navbar navbar-inverse">
 					<div class="collapse navbar-collapse js-navbar-collapse" style="display: flex !important;justify-content: center;width:100%;background: white;">
@@ -410,18 +412,16 @@
 	<header class="site-header hidden-xs hidden-sm" style="display:none;" id="stickHeader"> 
 		<nav class="navbar navbar-default">
 			<div class="header-inner">
-				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-12">
-
-							<nav class="navbar navbar-inverse" style="float: left;margin-top: 11px;margin-bottom:  0;width:100%;">
+							<nav class="navbar navbar-inverse-sticky" style="float: left;margin-top: 11px;margin-bottom:  0;width:100%;">
 								<div class="collapse navbar-collapse js-navbar-collapse" style="display: flex !important;justify-content: center;width:100%;background: white;">
 									<h2 style="margin-top:8px;margin-right:40px;font-family:times new roman;">
 										<a href="index.html" style="color: black;">
 											KB
 										</a>
 									</h2>
-									<ul class="nav navbar-nav">
+									<ul class="nav navbar-nav navbar-nav-menu">
 
 										<li class="dropdown mega-dropdown">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Men </a>				
@@ -747,7 +747,7 @@
 											<li><a href="#about" class="middle_right_nav_login">LOGIN</a></li>
 											<li><a href="#contact">SIGNUP</a></li>
 											<li><a href="#contact">WISHLIST</a></li>
-											<li><a href="#contact">CART <span class="badge-cart"> 2</span></a></li>
+											<li><a style="padding-right: 0;" href="#contact">CART <span class="badge-cart"> 2</span></a></li>
 										</ul>
 									</div>
 								</div><!-- /.nav-collapse -->
@@ -755,9 +755,7 @@
 							</nav>
 
 						</div>
-
 					</div>
-				</div>
 			</div>
 		</nav>
 	</header>
@@ -765,310 +763,268 @@
 
 
 
-		<!-- Image Slider -->
+	<!-- Image Slider -->
 
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12" style="padding: 0">
-					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12" style="padding: 0">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-						<!-- Wrapper for slides -->
-						<div class="carousel-inner" id="imageSlider">
-							<div class="item active">
-								<img data-src="images/3.png" class="lazy" alt="Kashmir Box">
-							</div>
-
-							<div class="item">
-								<img data-src="images/3.png" class="lazy" alt="Kashmir Box">
-							</div>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" id="imageSlider">
+						<div class="item active">
+							<img data-src="images/3.png" class="lazy" alt="Kashmir Box">
 						</div>
 
-						<!-- Left and right controls -->
-						<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="right carousel-control" href="#myCarousel" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right"></span>
-							<span class="sr-only">Next</span>
-						</a>
+						<div class="item">
+							<img data-src="images/3.png" class="lazy" alt="Kashmir Box">
+						</div>
 					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
 				</div>
 			</div>
-		</div>
-
-		<div class="container">
-			<div class="col-md-10 col-md-offset-1">
-
-			<div class="row" id="row_one">
-				<div class="col-md-3">
-					<h1>KB</h1>
-				</div>
-				<div class="col-md-9">
-					<h2>
-						Kashmir Box prides itself for being an artisan family of more than 1000 artisans, 200 producers and 50+ local brands from the remotest corners of Kashmir.
-					</h2>
-				</div>
-			</div>
-
-			<div class="row" id="row_two">
-				<div class="col-md-12">
-					<h2>WHAT SELLS BEST?</h2>
-					<center>
-						<p>
-							Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor.
-						</p>
-					</center>
-					<div class="col-md-12">
-						<img data-src="images/k10.jpg" class="lazy row_general_image">
-					</div>
-					<div class="col-md-12 row_two_foot_title">
-						<h3>The Dry Fruit Box</h3>
-					</div>
-					<div class="col-md-12 row_two_buttonDiv">
-						<input type="button" name="shopNow" value="Shop Now" class="btn">
-					</div>
-				</div>
-			</div>
-			<div class="doubleBreak"></div>			
-			<div class="row" id="row_three">
-				<div class="col-md-12">
-					<div class="col-md-6 col-xs-6">
-						<img data-src="images/k2.jpg" class="lazy img-responsive row_general_image">
-						<div class="col-md-12 row_two_foot_title">
-							<h3>The Dry Fruit Box</h3>
-						</div>
-						<div class="col-md-12 row_two_buttonDiv">
-							<input type="button" name="shopNow" value="Shop Now" class="btn">
-						</div>
-					</div>
-					<div class="col-md-6 col-xs-6">
-						<img data-src="images/k3.jpg" class="lazy img-responsive row_general_image">
-						<div class="col-md-12 row_two_foot_title">
-							<h3>The Dry Fruit Box</h3>
-						</div>
-						<div class="col-md-12 row_two_buttonDiv">
-							<input type="button" name="shopNow" value="Shop Now" class="btn">
-						</div>
-					</div>
-				</div>
-			</div>
-			<hr>
-			<div class="break"></div>			
-
-			<div class="row">
-				<div class="col-md-7">
-					<img data-src="images/k4.jpg" class="lazy img-responsive row_general_image">
-				</div>
-				<div class="col-md-5">
-					<div style="margin-top: 15%">
-						<h4 class="new-arrivals">NEW ARRIVALS</h4>
-						<h3 class="what-sells-best" >WHAT SELLS BEST?</h3>
-						<p class="what-sells-best-p">
-							Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor.
-						</p>
-
-						<input type="button" name="collection" value="View Collection" class="btn row_two_onlyButton">
-					</div>
-				</div>
-			</div>
-			<div class="doubleBreak"></div>			
-			<div class="break"></div>			
-			
-			<div class="row">
-				<div class="col-md-5">
-					<div style="margin-top: 15%">
-						<h4 class="new-arrivals text-right">NEW ARRIVALS</h4>
-						<h3 class="what-sells-best text-right">WHAT SELLS BEST?</h3>
-						<p class="what-sells-best-p text-right">
-							Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor.
-						</p>
-						<input type="button" name="collection" value="View Collection" class="btn pull-right row_two_onlyButton">
-					</div>
-				</div>
-				<div class="col-md-7">
-					<img data-src="images/k5.jpg" class="lazy img-responsive row_general_image">					
-				</div>
-			</div>
-			
-			<div class="doubleBreak"></div>			
-			<div class="break"></div>			
-
-			<div class="row">
-				<div class="col-md-7">
-					<img data-src="images/k6.jpg" class="lazy img-responsive row_general_image">
-				</div>
-				<div class="col-md-5">
-					<div style="margin-top: 15%">
-						<h4 class="new-arrivals">NEW ARRIVALS</h4>
-						<h3 class="what-sells-best" >WHAT SELLS BEST?</h3>
-						<p class="what-sells-best-p">
-							Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor.
-						</p>
-						<input type="button" name="collection" value="View Collection" class="btn row_two_onlyButton">
-					</div>
-				</div>
-			</div>
-			<div class="break"></div>			
-			<hr>
-			<div class="break"></div>			
-
-			<div class="row">
-				<div class="col-md-12">
-					<img data-src="images/k10.jpg" class="lazy img-responsive row_general_image">
-				</div>
-				<div class="col-md-12">
-					<h2 style="text-align:center;font-family: Cormorant-SemiBold !important;
-	color: black !important;margin-bottom:15px; margin-top:50px">HEADING OF THE BLOG</h2>
-					<center>
-						<p style="text-align:center;width: 65%;font-family:times new roman;font-size:18px;padding:20px 0;">
-							Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor.
-						</p>
-					</center>
-					<div class="col-md-12" style="display:flex; justify-content: center;">
-						<input type="button" name="shopNow" value="Shop Now" class="btn row_two_onlyButton">
-					</div>
-				</div>
-			</div>
-
-			<div class="break"></div>			
-			<hr>
-			<div class="break"></div>			
-
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
-
-
-			<div class="row">
-				<div class="col-md-12">
-					<h2 style="text-align:center;font-family: Cormorant-SemiBold !important;
-	color: black !important;margin-bottom:50px; margin-top:10px;">WHAT OUR CUSTOMERS SAY</h2>
-					<div id="testimonial-slider" class="owl-carousel">
-						<div class="testimonial">
-							<div class="pic">
-								<img data-src="images/k7.jpg" class="lazy"  alt="">
-							</div>
-							<h3 class="title">williamson
-								<span class="post"> -India</span>
-							</h3>
-
-							<p class="">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor ipsum molestias mollitia ut. Aliquam aperiam corporis cumque debitis delectus dignissimos.
-							</p>
-						</div>
-
-						<div class="testimonial">
-							<div class="pic">
-								<img data-src="images/k8.jpg" class="lazy" alt="">
-							</div>
-
-							<h3 class="title">Kristina
-								<span class="post"> -India</span>
-							</h3>
-
-							<p class="">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor ipsum molestias mollitia ut. Aliquam aperiam corporis cumque debitis delectus dignissimos.
-							</p>
-						</div>
-
-						<div class="testimonial">
-							<div class="pic">
-								<img data-src="images/k7.jpg" class="lazy" alt="">
-							</div>
-							<h3 class="title">williamson
-								<span class="post"> -India</span>
-							</h3>
-
-							<p class="">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor ipsum molestias mollitia ut. Aliquam aperiam corporis cumque debitis delectus dignissimos.
-							</p>
-						</div>
-
-						<div class="testimonial">
-							<div class="pic">
-								<img data-src="images/k8.jpg" class="lazy" alt="">
-							</div>
-
-							<h3 class="title">Kristina
-								<span class="post"> -India</span>
-							</h3>
-
-							<p class="">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor ipsum molestias mollitia ut. Aliquam aperiam corporis cumque debitis delectus dignissimos.
-							</p>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<br>
-			<br>
-
-			<div class="row" style="background-color: #fdfdfd">
-				<div class="col-md-8 col-md-offset-2">
-					<h2 style="    text-align: center;
-    font-family: Cormorant-SemiBold !important;
-    color: black !important;">MEDIA</h2>				
-
-					<section class="customer-logos slider">
-						<div class="slide">
-							<img data-src="images/kb.png" class="lazy" style="height:40px">
-						</div>
-						<div class="slide">
-							<img data-src="images/ec.png" class="lazy">
-						</div>
-						<div class="slide">
-							<img data-src="images/bl.png" class="lazy">
-						</div>
-						<div class="slide">
-							<img data-src="images/kb.png" style="height:40px" class="lazy">
-						</div>
-						<div class="slide">
-							<img data-src="images/ec.png" class="lazy">
-						</div>
-						<div class="slide">
-							<img data-src="images/bl.png" class="lazy">
-						</div>
-						<div class="slide">
-							<img data-src="images/ec.png" class="lazy">
-						</div>
-						<div class="slide">
-							<img data-src="images/bl.png" class="lazy">
-						</div>
-					</section>
-				</div>
-			</div>
-
-			<br>
-			<div class="break"></div>			
-
-			<div class="row">
-				<div class="col-md-12" style="display: flex;justify-content: center;text-align: center;">
-					<div class="col-md-6">
-						<h3 style="font-family: Cormorant-Regular !important;
-	color: black !important;text-align: center;font-size: 19pt">
-							Sign up to get first access, curated notes about new styles, sales and events.
-						</h3>
-			<div class="break"></div>			
-
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="your email address" style="border-radius:0;border-color: black;padding:25px 20px;">
-							<span class="input-group-btn">
-								<button class="btn" type="button" style="background: #222;color:white;font-size:15px;padding: 14.5px 25px;border-radius:0;">SUBSCRIBE</button>
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="doubleBreak"></div>			
-			
 		</div>
 	</div>
-		<hr>
+	<div  class="container-fluid">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="row" id="row_one">
+					<div class="col-md-3">
+						<h1>KB</h1>
+					</div>
+					<div class="col-md-9">
+						<h2>
+							Kashmir Box prides itself for being an artisan family of more than 1000 artisans, 200 producers and 50+ local brands from the remotest corners of Kashmir.
+						</h2>
+					</div>
+				</div>
+				<div class="row" id="row_two">
+					<div class="col-md-12">
+						<h2>WHAT SELLS BEST?</h2>
+						<center>
+							<p>
+								Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor.
+							</p>
+						</center>
+						<div class="col-md-12">
+							<img data-src="images/k10.jpg" class="lazy row_general_image">
+						</div>
+						<div class="col-md-12 row_two_foot_title">
+							<h3>The Dry Fruit Box</h3>
+						</div>
+						<div class="col-md-12 row_two_buttonDiv padding-bottom-70">
+							<input type="button" name="shopNow" value="Shop Now" class="btn">
+						</div>
+					</div>
+				</div>
+				<div class="doubleBreak"></div>			
+				<div class="row" id="row_three">
+					<div class="col-md-12">
+						<div class="col-md-6 col-xs-6">
+							<img data-src="images/k2.jpg" class="lazy img-responsive row_general_image">
+							<div class="col-md-12 row_two_foot_title">
+								<h3>The Dry Fruit Box</h3>
+							</div>
+							<div class="col-md-12 row_two_buttonDiv">
+								<input type="button" name="shopNow" value="Shop Now" class="btn">
+							</div>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<img data-src="images/k3.jpg" class="lazy img-responsive row_general_image">
+							<div class="col-md-12 row_two_foot_title">
+								<h3>The Dry Fruit Box</h3>
+							</div>
+							<div class="col-md-12 row_two_buttonDiv">
+								<input type="button" name="shopNow" value="Shop Now" class="btn">
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr style="margin: 65px 0px; padding: 0;">
+				<div class="break"></div>			
+				<div class="row">
+					<div class="col-md-7">
+						<img data-src="images/k4.jpg" class="lazy img-responsive row_general_image">
+					</div>
+					<div class="col-md-5">
+						<div style="margin-top: 15%">
+							<h4 class="new-arrivals">NEW ARRIVALS</h4>
+							<h3 class="what-sells-best" >WHAT SELLS BEST?</h3>
+							<p class="what-sells-best-p">
+								Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor.
+							</p>
 
+							<input type="button" name="collection" value="View Collection" class="btn row_two_onlyButton">
+						</div>
+					</div>
+				</div>
+				<div class="doubleBreak"></div>			
+				<div class="break"></div>			
+				<div class="row">
+					<div class="col-md-5">
+						<div style="margin-top: 15%">
+							<h4 class="new-arrivals text-right">NEW ARRIVALS</h4>
+							<h3 class="what-sells-best text-right">WHAT SELLS BEST?</h3>
+							<p class="what-sells-best-p text-right">
+								Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor.
+							</p>
+							<input type="button" name="collection" value="View Collection" class="btn pull-right row_two_onlyButton">
+						</div>
+					</div>
+					<div class="col-md-7">
+						<img data-src="images/k5.jpg" class="lazy img-responsive row_general_image">					
+					</div>
+				</div>
+				<div class="doubleBreak"></div>			
+				<div class="break"></div>			
+				<div class="row">
+					<div class="col-md-7">
+						<img data-src="images/k6.jpg" class="lazy img-responsive row_general_image">
+					</div>
+					<div class="col-md-5">
+						<div style="margin-top: 15%">
+							<h4 class="new-arrivals">NEW ARRIVALS</h4>
+							<h3 class="what-sells-best" >WHAT SELLS BEST?</h3>
+							<p class="what-sells-best-p">
+								Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor.
+							</p>
+							<input type="button" name="collection" value="View Collection" class="btn row_two_onlyButton">
+						</div>
+					</div>
+				</div>
+				<hr style="margin: 65px 0px; padding: 0;">
+				<div class="row">
+					<div class="col-md-12">
+						<img data-src="images/k10.jpg" class="lazy img-responsive row_general_image">
+					</div>
+					<div class="col-md-12">
+						<h2 style="text-align:center;font-family: Cormorant-SemiBold !important;color: black !important;margin-bottom: 35px;margin-top: 50px;font-size: 28px;">HEADING OF THE BLOG</h2>
+						<center>
+							<p style="text-align: center;width: 70%;font-size: 16px;margin-bottom: 35px;">
+								Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor.
+							</p>
+						</center>
+						<div class="col-md-12" style="display:flex; justify-content: center;">
+							<input type="button" name="shopNow" value="Shop Now" class="btn row_two_onlyButton">
+						</div>
+					</div>
+				</div>
+				<hr style="margin: 65px 0px; padding: 0;">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 style="text-align: center;font-family: Cormorant-SemiBold !important;color: black !important;margin: 0 0 65px 0;">WHAT OUR CUSTOMERS SAY</h2>
+						<div id="testimonial-slider" class="owl-carousel">
+							<div class="testimonial">
+								<div class="pic">
+									<img data-src="images/k7.jpg" class="lazy"  alt="">
+								</div>
+								<h3 class="title">williamson
+									<span class="post"> -India</span>
+								</h3>
 
+								<p class="">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor ipsum molestias mollitia ut. Aliquam aperiam corporis cumque debitis delectus dignissimos.
+								</p>
+							</div>
+
+							<div class="testimonial">
+								<div class="pic">
+									<img data-src="images/k8.jpg" class="lazy" alt="">
+								</div>
+
+								<h3 class="title">Kristina
+									<span class="post"> -India</span>
+								</h3>
+
+								<p class="">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor ipsum molestias mollitia ut. Aliquam aperiam corporis cumque debitis delectus dignissimos.
+								</p>
+							</div>
+
+							<div class="testimonial">
+								<div class="pic">
+									<img data-src="images/k7.jpg" class="lazy" alt="">
+								</div>
+								<h3 class="title">williamson
+									<span class="post"> -India</span>
+								</h3>
+
+								<p class="">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor ipsum molestias mollitia ut. Aliquam aperiam corporis cumque debitis delectus dignissimos.
+								</p>
+							</div>
+
+							<div class="testimonial">
+								<div class="pic">
+									<img data-src="images/k8.jpg" class="lazy" alt="">
+								</div>
+
+								<h3 class="title">Kristina
+									<span class="post"> -India</span>
+								</h3>
+
+								<p class="">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor ipsum molestias mollitia ut. Aliquam aperiam corporis cumque debitis delectus dignissimos.
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+			</div>
+			<div class="col-md-12" style="background-color: #f7f7f7">
+				<h2 style="text-align: center;font-family: Cormorant-Bold !important;color: #2b2b2b !important;margin: 50px 0px 0px 0px;font-size: 28px;">MEDIA</h2>				
+
+				<section class="col-md-8 col-md-offset-2 customer-logos slider">
+					<div class="slide">
+						<img data-src="images/bl.png" class="lazy">
+					</div>
+					<div class="slide">
+						<img data-src="images/bl.png" class="lazy">
+					</div>
+					<div class="slide">
+						<img data-src="images/bl.png" class="lazy">
+					</div>
+					<div class="slide">
+						<img data-src="images/bl.png" class="lazy">
+					</div>
+				</section>
+			</div>
+			<div class="col-md-10 col-md-offset-1">
+				<div class="row">
+					<div class="col-md-12" style="display: flex;justify-content: center;text-align: center;">
+						<div class="col-md-7">
+							<h3 style="font-family: Cormorant-Regular !important;color: black !important;text-align: center;font-size: 32px;margin: 50px 0;">
+								Sign up to get first access, curated notes about new styles, sales and events.
+							</h3>
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="your email address" style="border-radius:0;border-color: black;padding:20px; height: 55px;">
+								<span class="input-group-btn">
+									<button class="btn" type="button" style="background: #222;color:white;font-size:15px;padding: 14.5px 25px;border-radius:0;">SUBSCRIBE</button>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="doubleBreak"></div>			
+			</div>
+		</div>
+	<div>
+	<hr>
 	<!-- Footer Section -->
 
 	<footer>

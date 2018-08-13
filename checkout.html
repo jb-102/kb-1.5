@@ -13,104 +13,15 @@
 	<!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
 
 	<style type="text/css">
-
-	a:hover,a:focus{
-		    text-decoration: none;
-		    outline: none;
-	}
-	#accordion .panel{
-		    border: none;
-		    border-radius: 0;
-		    box-shadow :none;
-		    margin-bottom: 10px;
-		    position: relative;
-	}
-
-
-
-
-
-	#accordion .panel-heading{
-		    position: relative;
-		background-color: white;
-		padding: 10px 20px;
-		cursor: pointer;
-		color: #2b2b2b;
-	}
-	#accordion .panel-heading:before{
-		    content: "";
-		    width: 40px;
-		    height: 100%;
-		    background: #eb65a0;
-		    position: absolute;
-		    top: 0;
-		    left: 0;
-		    z-index: 1;
-	}
-	#accordion .panel-title a{
-		    display: block;
-		    padding: 10px 30px 10px 60px;
-		    background: #f5f5f5;
-		    font-size: 18px;
-		    font-weight: 700;
-		    letter-spacing: 1px;
-		    color: #000;
-		    overflow: hidden;
-		    position: relative;
-	}
-	#accordion .panel-title a:before,
-	#accordion .panel-title a.collapsed:before,
-	#accordion .panel-title a:after,
-	#accordion .panel-title a.collapsed:after{
-		    content: "\f068";
-		    font-family: "Font Awesome 5 Free";
-		    font-weight: 900;
-		    font-size: 15px;
-		    color: #fff;
-		    position: absolute;
-		    top: 13px;
-		    left: 13px;
-		    z-index: 2;
-		    transition: all 0.3s ease 0s;
-	}
-	#accordion .panel-title a:after,
-	#accordion .panel-title a.collapsed:after{
-		    content: "\f067";
-		    transform: translateY(50px);
-	}
-	#accordion .panel-title a.collapsed:before{ transform: translateY(-50px); }
-	#accordion .panel-title a.collapsed:after{ transform: translateY(0); }
-	#accordion .panel-body{
-		    padding: 10px 30px 10px 60px;
-		    background: #f5f5f5;
-		    border-top: none;
-		    font-size: 15px;
-		    color: #6f6f6f;
-		    letter-spacing: 1px;
-		    line-height: 28px;
-		    position: relative;
-	}
-	#accordion .panel-body:before{
-		    content: "";
-		    display: block;
-		    width: 40px;
-		    height: 100%;
-		    background: rgba(0,0,0,0.05);
-		    position: absolute;
-		    top: 0;
-		    left: 0;
-	}
-	.checkoutTextbox
-	{
-		padding: 15px 10px;
-		border-radius:0;
-		width:100%;
-	}
-</style>	
+		a:hover,a:focus{
+			    text-decoration: none;
+			    outline: none;
+		}
+	</style>	
 
 </head>
 <body style="font-family: Gotham-Book">
-	<div style="margin-top:20px;">
+	<div class="container-fluid" style="margin-top:20px;">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="row">
@@ -133,11 +44,11 @@
 				</div>
 				<div class="break"></div>
 				<div class="row">
-					<div class="col-md-6 col-md-offset-3" style="display: flex;justify-content: center;">
+					<div class="col-md-8 col-md-offset-2" style="display: flex;justify-content: center;">
 						<span style="z-index: 99;">
 							<img src="images/cart.png" style="width:55px;border-radius:100px;">
 						</span>
-						<span style="padding: 8px 20px 8px 50px;font-family: Gotham-Book; margin-left: -30px;#color: #2b2b2b;background:#e6e6e6;font-size: 12pt; border-bottom-left-radius:20px;border-top-left-radius:20px;">
+						<span class="kb-trusted">
 							KashmirBox is trusted by more than 1 million customers worldwide
 						</span>
 					</div>
@@ -209,7 +120,7 @@
 
 							</div>
 						</div>
-						<div class="step open done" id="step2">
+						<div class="step open" id="step2">
 							<div class="step-title"><span class="index">2</span><span>Delivery Address</span></div>
 							<div class="step-complete-panel clearfix" data-step-id="#step1">
 								<div class="index text-center"><span>2</span></div>
@@ -218,122 +129,41 @@
 									<p class="user"><span class="street-address">BarBarshah</span><span class="city">Srinagar</span><span class="state">Jammu and Kashmir</span><span class="pincode">190001 </span></p>
 								</div>
 							</div>
-							<div class="step-content collapse" id="pAddress"> 
+							<div class="step-content collapse in" id="pAddress"> 
 								<div class="address">
 									<p class="alert alert-success">Please select an address to continue</p>
 									<div class="address-forms">
 										<div class="address-form-wrap first clearfix saved">
 											<div class="address-form-edit-panel" id="address24380">
 												<div class="address-toggle">
-													<div class="radio radio-primary">
+													<div class="address-radio radio radio-primary">
 														<input class="address-toggle" id="edit-panel-address-toggle24380" type="radio" name="payment_address" value="existing">
-														<label for="edit-panel-address-toggle24380"> </label>
+														<label  for="edit-panel-address-toggle24380">
+															<div class="address-summary">
+																<input type="hidden" name="address_1" value="">
+																<input type="hidden" name="address_2" value="">
+																<input type="hidden" name="address_id" value="24380">
+																<input type="hidden" name="city" value="">
+																<input type="hidden" name="company" value="">
+																<input type="hidden" name="country_id" value="99">
+																<input type="hidden" name="firstname" value="">
+																<input type="hidden" name="lastname" value="">
+																<input type="hidden" name="postcode" value="191121">
+																<input type="hidden" name="shipping_address" value="existing">
+																<input type="hidden" name="zone_id" value="1488">
+																<input type="hidden" name="custom_field[1]" value="7006403179">
+																<p><span class="name">Junaid Bhat</span></p>
+																<p class="delivery-address"><span class="street-address">nishat</span><span class="city">SRINAGAR</span><span class="state">Jammu and Kashmir, India</span><span class="pincode">191121</span></p>
+																<!--  <p class="pin-error">The pincode is not servicable</p> -->
+																<p class="pin-error"></p>
+															</div>
+														</label>
 													</div>
-												</div>
-												<div class="address-summary">
-													<input type="hidden" name="address_1" value="">
-													<input type="hidden" name="address_2" value="">
-													<input type="hidden" name="address_id" value="24380">
-													<input type="hidden" name="city" value="">
-													<input type="hidden" name="company" value="">
-													<input type="hidden" name="country_id" value="99">
-													<input type="hidden" name="firstname" value="">
-													<input type="hidden" name="lastname" value="">
-													<input type="hidden" name="postcode" value="191121">
-													<input type="hidden" name="shipping_address" value="existing">
-													<input type="hidden" name="zone_id" value="1488">
-													<input type="hidden" name="custom_field[1]" value="7006403179">
-													<p><span class="name">Junaid Bhat</span></p>
-													<p class="delivery-address"><span class="street-address">nishat</span><span class="city">SRINAGAR</span><span class="state">Jammu and Kashmir, India</span><span class="pincode">191121</span></p>
-													<!--  <p class="pin-error">The pincode is not servicable</p> -->
-													<p class="pin-error"></p>
-												</div>
-												<!-- <div class="address-edit"><a><span class="fa fa-edit"></span><span>Edit</span></a></div> -->
-											</div>
-											<div class="address-form-edit-panel" id="address24381">
-												<div class="address-toggle">
-													<div class="radio radio-primary">
-														<input class="address-toggle" id="edit-panel-address-toggle24381" type="radio" name="payment_address" value="existing">
-														<label for="edit-panel-address-toggle24381"> </label>
-													</div>
-												</div>
-												<div class="address-summary">
-													<input type="hidden" name="address_1" value="">
-													<input type="hidden" name="address_2" value="">
-													<input type="hidden" name="address_id" value="24381">
-													<input type="hidden" name="city" value="">
-													<input type="hidden" name="company" value="">
-													<input type="hidden" name="country_id" value="99">
-													<input type="hidden" name="firstname" value="">
-													<input type="hidden" name="lastname" value="">
-													<input type="hidden" name="postcode" value="kajhsdkjah">
-													<input type="hidden" name="shipping_address" value="existing">
-													<input type="hidden" name="zone_id" value="1488">
-													<input type="hidden" name="custom_field[1]" value="khaksjh">
-													<p><span class="name">Bhat Junaid</span></p>
-													<p class="delivery-address"><span class="street-address">hkasjdh</span><span class="city">kjashdkjhas</span><span class="state">Jammu and Kashmir, India</span><span class="pincode">kajhsdkjah</span></p>
-													<!--  <p class="pin-error">The pincode is not servicable</p> -->
-													<p class="pin-error"></p>
-												</div>
-												<!-- <div class="address-edit"><a><span class="fa fa-edit"></span><span>Edit</span></a></div> -->
-											</div>
-
-											<div class="address-form-edit-panel" id="address36927">
-												<div class="address-toggle">
-													<div class="radio radio-primary">
-														<input class="address-toggle" id="edit-panel-address-toggle36927" type="radio" name="payment_address" value="existing">
-														<label for="edit-panel-address-toggle36927"> </label>
-													</div>
-												</div>
-												<div class="address-summary">
-													<input type="hidden" name="address_1" value="">
-													<input type="hidden" name="address_2" value="">
-													<input type="hidden" name="address_id" value="36927">
-													<input type="hidden" name="city" value="">
-													<input type="hidden" name="company" value="">
-													<input type="hidden" name="country_id" value="107">
-													<input type="hidden" name="firstname" value="">
-													<input type="hidden" name="lastname" value="">
-													<input type="hidden" name="postcode" value="kjhdsakjh">
-													<input type="hidden" name="shipping_address" value="existing">
-													<input type="hidden" name="zone_id" value="1662">
-													<input type="hidden" name="custom_field[1]" value="kdjhaksjhdk">
-													<p><span class="name">qkjdhk jhaksjhd</span></p>
-													<p class="delivery-address"><span class="street-address">aksjhd@kajshd.aksjhd</span><span class="city">kjhdakjdh</span><span class="state">Fukui, Japan</span><span class="pincode">kjhdsakjh</span></p>
-													<!--  <p class="pin-error">The pincode is not servicable</p> -->
-													<p class="pin-error"></p>
-												</div>
-												<!-- <div class="address-edit"><a><span class="fa fa-edit"></span><span>Edit</span></a></div> -->
-											</div>
-											<div class="address-form-edit-panel" id="address36928">
-												<div class="address-toggle">
-													<div class="radio radio-primary">
-														<input class="address-toggle" id="edit-panel-address-toggle36928" type="radio" name="payment_address" value="existing">
-														<label for="edit-panel-address-toggle36928"> </label>
-													</div>
-												</div>
-												<div class="address-summary">
-													<input type="hidden" name="address_1" value="">
-													<input type="hidden" name="address_2" value="">
-													<input type="hidden" name="address_id" value="36928">
-													<input type="hidden" name="city" value="">
-													<input type="hidden" name="company" value="">
-													<input type="hidden" name="country_id" value="109">
-													<input type="hidden" name="firstname" value="">
-													<input type="hidden" name="lastname" value="">
-													<input type="hidden" name="postcode" value="jhdkajshdk">
-													<input type="hidden" name="shipping_address" value="existing">
-													<input type="hidden" name="zone_id" value="1719">
-													<input type="hidden" name="custom_field[1]" value="hkdjahskdjhk">
-													<p><span class="name">kjajhsdk jhdkajshk</span></p>
-													<p class="delivery-address"><span class="street-address">kjhkajhsdkj</span><span class="city">kjhdakjsdhk</span><span class="state">Aqtobe, Kazakhstan</span><span class="pincode">jhdkajshdk</span></p>
-													<!--  <p class="pin-error">The pincode is not servicable</p> -->
-													<p class="pin-error"></p>
 												</div>
 												<!-- <div class="address-edit"><a><span class="fa fa-edit"></span><span>Edit</span></a></div> -->
 											</div>
 										</div>
-										<div class="address-form-wrap new editing hidden clearfix">
+										<div class="address-form-wrap new editing clearfix">
 											<div class="address-form">
 												<div class="col-xs-12">
 													<div class="radio radio-primary">
@@ -647,7 +477,7 @@
 													<div class="form-group">
 														<div class="col-xs-12">
 															<button id="button-payment-address" class="btn btn-orange save-address" type="button">Save</button>
-															<button class="btn btn-default cancel-address" type="button">Cancel</button>
+															<button class="btn cancel-address" type="button">Cancel</button>
 														</div>
 													</div>
 												</form>
@@ -660,7 +490,7 @@
 									<a><span class="fa fa-plus"></span><span>Add new address</span></a>
 								</div>
 								<div id="proceed-to-payment-step">
-									<button id="payment-step" class="btn btn-orange hidden">Proceed to Payment</button>
+									<button id="payment-step" class="btn">Proceed to Payment</button>
 								</div>
 							</div>
 						</div>
@@ -728,283 +558,6 @@
 					</div>
 				</div>
 			</div>
-<!-- 			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="row">
-						<div class="col-md-8">
-							<div class="col-md-12">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tablist" id="headingOne">
-											<h4 class="panel-title">
-												<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-													1 Login <span class="fa fa-check"></span>
-												</a>
-											</h4>
-										</div>
-										<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-											<div class="panel-body">
-												<div class="col-md-6">
-													<h5 class="font-gotham-book" style="font-family: inherit;font-weight: bold;line-height: 1.1;font-size: 1.125em">Returning Customer</h5>
-													<form>
-														<input type="email" name="email" placeholder="Email" class="form-control checkoutTextbox" >
-														<div class="doubleBreak"></div>
-														<input type="password" class="form-control checkoutTextbox" name="password" placeholder="Password">
-														<div class="text-red font-gotham-book text-right" style="cursor: pointer;">forgot password?</div>
-														<div class="doubleBreak"></div>
-
-														<button type="button" class="btn btn-default" name="submit" id="facebookLogin">
-															Connect with <b>Facebook</b>
-														</button>
-														<div class="doubleBreak"></div>
-
-														<input type="button" name="submit" value="Login" style="background: #2b2b2b;color:white; padding: 10px;border: 0; font-size:16px; border-radius:0;width:100%;">
-
-													</form>
-												</div>
-												<div class="col-md-6">
-													<h5 class="font-gotham-book" style="font-family: inherit;font-weight: bold;line-height: 1.1;font-size: 1.125em">Create Account</h5>
-													<input type="email" class="form-control checkoutTextbox" name="email" placeholder="email address">
-													<div class="doubleBreak"></div>
-
-													<input type="button" name="submit" value="Continue" style="background: #2b2b2b;color: white;border: 0; padding: 10px;font-size:16px; border-radius:0;width:100%;">
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tablist" id="headingTwo">
-											<h4 class="panel-title">
-												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2 Delivery Address <span class="fa fa-check"></span>
-												</a>
-											</h4>
-										</div>
-										<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-											<div class="panel-body">
-												<div>
-													<div>
-														<p id="alertMessage" class="alert">Please select an address to continue</p>
-														<div class="row single-address">
-															<div class="col-md-1 text-center">
-																<input type="radio" name="radio" style="margin-top:15px;">
-															</div>
-															<div class="col-md-11">
-																<h4 class="address-name">Junaid Bhat</h4>
-																<p>nishat, Lalchowk, Srinagar, India</p>
-															</div>
-														</div>
-
-														<div class="row single-address">
-
-															<div class="col-md-1 text-center">
-																<input type="radio" name="radio" style="margin-top:15px;">
-															</div>
-															<div class="col-md-11">
-																<h4 class="address-name">Majic Bhat</h4>
-																<p>Dalgate, Lalchowk, Srinagar, India</p>
-															</div>
-														</div>
-													</div>
-													<div id="new-address">
-														<div class="row">
-															<h4 style="font-weight:normal;font-family:sans-serif;padding:5px 12px;">Your Personal Details</h4>
-
-															<div class="col-md-12" style="padding: 0">
-																<div class="col-md-3">
-																	<input type="text" name="email" placeholder="First Name" class="form-control checkoutTextbox" >
-																</div>
-																<div class="col-md-3">
-																	<input type="text" class="form-control checkoutTextbox" name="password" placeholder="Last Name">
-																</div>
-
-																<div class="col-md-6">
-																	<input type="number" name="mobile" placeholder="Mobile Number" class="form-control checkoutTextbox" >
-																</div>
-															</div>
-															<div class="col-md-12" style="margin-top:20px;padding: 0">
-																<div class="col-md-6">
-																	<input type="email" name="email" placeholder="E-Mail" class="form-control checkoutTextbox" >
-																</div>
-																<div class="col-md-3">
-																	<input type="password" class="form-control checkoutTextbox" name="password" placeholder="Password">
-																</div>
-
-																<div class="col-md-3">
-																	<input type="password" name="password" placeholder="Confirm Password" class="form-control checkoutTextbox" >
-																</div>
-															</div>
-														</div>
-
-
-														<div class="row">
-															<h4 style="font-weight:normal;font-family:sans-serif;padding:10px 12px;">Your Address</h4>
-
-															<div class="col-md-12" style="padding: 0">
-																<div class="col-md-6">
-																	<input type="text" name="address1" placeholder="Address 1" class="form-control checkoutTextbox" >
-																</div>
-																<div class="col-md-6">
-																	<input type="text" class="form-control checkoutTextbox" name="password" placeholder="Address 2">
-																</div>
-															</div>
-															<div class="col-md-12" style="margin-top:20px;padding: 0">
-																<div class="col-md-6">
-																	<input type="text" name="city" placeholder="City" class="form-control checkoutTextbox" >
-																</div>
-																<div class="col-md-6">
-																	<input type="number" class="form-control checkoutTextbox" name="mobile" placeholder="Pincode">
-																</div>
-
-																<div class="col-md-6" style="margin-top: 20px;">
-																	<input type="number" class="form-control checkoutTextbox" name="add_mobile" placeholder="Additional Mobile Number">
-																</div>
-
-															</div>
-
-															<div class="col-md-12" style="margin-top:20px;padding: 0">
-																<div class="col-md-6">
-																	<select class="form-control">
-																		<option>--- Please Select ---</option>
-																		<option>India</option>
-																		<option>England</option>
-																		<option>New Zealand</option>
-																	</select>
-																</div>
-																<div class="col-md-6">
-																	<select class="form-control">
-																		<option>--- Please Select ---</option>
-																		<option>India</option>
-																		<option>England</option>
-																		<option>New Zealand</option>
-																	</select>
-																</div>
-															</div>
-														</div>
-
-														<div style="margin-top: 20px;padding: 0">
-															<input type="button" name="submit" class="btn" value="Continue"/>
-														</div>
-													</div>
-												</div>
-												<div style="margin-top: 20px;padding: 0">
-													<h4 id="btn-new-address" style="padding: 10px;cursor: pointer; font-size:16px;color:#1e90ff;"><i class="fa fa-plus"></i> Add new address</h4>
-												</div>
-												<div style="margin-top: 20px;padding: 0">
-													<input type="button" class="btn" name="submit" value="Proceed to Payment">
-												</div>
-											</div>
-										</div>
-									</div>
-
-
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tablist" id="headingThree">
-											<h4 class="panel-title">
-												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-												3 Payment</span>
-											</a>
-										</h4>
-									</div>
-									<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-										<div class="panel-body">
-											<div class="row">
-												<div class="col-md-12">
-													<div class="break"></div>
-													<div style="box-shadow:0px 0px 1px 0px grey;padding:15px;">
-														<div style="float:left;">
-															<input type="radio" name="radio" checked>
-															<span> CC Avenue</span>
-														</div>
-														<div style="display: flex;justify-content: center;">
-															<img src="images/d.png" style="width: 40px;height: 20px;margin-right:5px;">
-															<img src="images/m.png" style="width: 40px;height: 20px;margin-right:5px;">
-															<img src="images/v.png" style="width: 40px;height: 20px;margin-right:5px;">
-															<img src="images/a.png" style="width: 40px;height: 20px;margin-right:5px;">
-														</div>
-													</div>
-													<div class="break"></div>
-
-													<div style="box-shadow:0px 0px 1px 0px grey;padding:15px;">
-														<div style="float:left;">
-															<input type="radio" name="radio">
-															<span> PayU Money</span>
-														</div>
-														<div style="display: flex;justify-content: center;">
-															<img src="images/d.png" style="width: 40px;height: 20px;margin-right:5px;">
-															<img src="images/m.png" style="width: 40px;height: 20px;margin-right:5px;">
-															<img src="images/v.png" style="width: 40px;height: 20px;margin-right:5px;">
-															<img src="images/a.png" style="width: 40px;height: 20px;margin-right:5px;">
-														</div>
-													</div>
-													<div class="break"></div>
-
-													<div style="box-shadow:0px 0px 1px 0px grey;padding:15px;">
-														<div style="float:left;">
-															<input type="radio" name="radio">
-															<span> Cash on Delivery</span>
-														</div>
-														<div style="display: flex;justify-content: center;">
-															<span>Not Available at your Address</span>
-														</div>
-													</div>
-													<div class="break"></div>
-
-													<div style="box-shadow:0px 0px 1px 0px grey;padding:15px;">
-														<div>
-															<input type="radio" name="radio">
-															<span> MobiKwik Wallet</span>
-														</div>
-													</div>
-													<div class="doubleBreak"></div>
-													<input type="button" class="btn" value="PAY NOW" style="background: #2b2b2b;color:white;width:100%;border-radius:0;padding:12px 0">
-
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4" id="checkoutRight">
-						<div class="features hidden-xs">
-							<ul class="features-list">
-								<li> 
-									<span class="fa fa-check">
-									</span>
-									<span>Authenticity Guaranteed
-									</span>
-								</li>
-								<li> 
-									<span class="fa fa-lock">
-									</span>
-									<span>100% Safe &amp; Secure Payments Process
-									</span>
-								</li>
-								<li> 
-									<span class="fa fa-refresh">
-									</span>
-									<span>Easy Returns
-									</span>
-								</li>
-							</ul>
-						</div>
-						<h4 style="font-family: Gotham-Medium">Order Summary</h4>
-						<div class="break"></div>
-						<div id="summary">
-							<p><b>Total:</b>&nbsp;&nbsp; 7,000</p>
-							<p><b>Discount:</b>&nbsp;&nbsp; 300</p>
-							<p><b>GST:</b>&nbsp;&nbsp; 600</p>
-							<p><b>Shipping:</b> &nbsp;&nbsp;Free</p>
-							<p><b>Grand Total:</b>&nbsp;&nbsp; 7,300</p>
-						</div>
-					</div>
-				</div>
-			</div> -->
-
 		</div>
 		<hr/>
 		<div>

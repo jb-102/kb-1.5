@@ -87,7 +87,7 @@ $(document).ready(function() {
 
 $(window).scroll(function() {
 	var wS = $(this).scrollTop();
-    if (wS < 270){
+    if (wS < 145){
         $('#stickHeader').css('display','none');
 	} else {
 		$('#stickHeader').css('display','block');
