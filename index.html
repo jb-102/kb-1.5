@@ -12,12 +12,70 @@
 	<link rel="stylesheet" type="text/css" href="mobileNavbar.css">
 	<link rel="stylesheet" type="text/css" href="custom.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.13.0/lazyload.min.js"></script>
+	<link href="css/drawer.css" rel="stylesheet">
 
 </head>
-<body>
+<body class="drawer drawer--right">
+	<!-- cart slide data -->
+	<header role="banner">
+		<!--     <button type="button" class="drawer-toggle drawer-hamburger" id="openCart">
+	      <span class="sr-only">toggle navigation</span>
+	      <span class="fa fa-angle-left" style="font-size: 30px"></span>
+	    </button> -->
+
+	    <nav class="drawer-nav" role="navigation">
+	      	<h2 class="row">
+	      		<span class="col-md-4 fa fa-angle-left drawer-toggle" style="font-size: 30px; padding-left: 30px; cursor: pointer;" ></span>
+	      		<span class="col-md-8" style="font-family: Gotham-Medium;" >Your Cart</span>
+	      	</h2>
+	      	<hr/>
+	      	<div class="container">
+		      	<div class="row">
+		      		<div class="col-md-6 col-xs-6 col-sm-6" style="overflow: auto !important;">
+		      			<div class="row" id="row_1">
+		      				<div class="col-md-3  col-xs-3 col-sm-3">
+		      					<img src="images/cart1.png" class="img-responsive">
+		      				</div>
+		      				<div class="col-md-6  col-xs-6 col-sm-6 cart-item-details-slider">
+		      					<p class="cart-item-name">Aftaab Garden Silk Saree</p>
+		      					<div style="display: flex; justify-content: space-between;">
+		      						<span><i class="fa fa-minus cursor"></i> <span class="badge-cart-main"> 1</span> <i class="fa fa-plus cursor"></i></span><i style="padding: 8px 0px 0px 0px;font-size: 20px; cursor: pointer;" class="fa fa-times" data-value="row_1"></i>
+		      					</div>
+		      					<h4 class="cart-item-price">Rs. 1,852</h4>
+		      				</div>
+		      			</div>
+		      			<hr id="row_1_hr">
+		      			<div class="row" id="row_2">
+		      				<div class="col-md-3  col-xs-3 col-sm-3">
+		      					<img src="images/cart1.png" class="img-responsive">
+		      				</div>
+		      				<div class="col-md-6  col-xs-6 col-sm-6 cart-item-details-slider">
+		      					<p class="cart-item-name">Aftaab Garden Silk Saree</p>
+		      					<div style="display: flex; justify-content: space-between;">
+		      						<span><i class="fa fa-minus cursor"></i> <span class="badge-cart-main"> 1</span> <i class="fa fa-plus cursor"></i></span><i style="padding: 8px 0px 0px 0px;font-size: 20px; cursor: pointer;" class="fa fa-times" data-value="row_2"></i>
+		      					</div>
+		      					<h4 class="cart-item-price">Rs. 1,852</h4>
+		      				</div>
+		      			</div>
+		      			<hr id="row_2_hr">
+		      			<div class="row" style="position: fixed; bottom: 15px; width: 35%;">
+	      					<div class="col-md-12">
+	      						<div>
+	      							<h4 class="text-center font-gotham-book"><span>SUBTOTAL: </span><span>Rs. 3704</span></h4>
+	      							<input type="button" class="btn" value="CHECKOUT" style="background: #2b2b2b; font-family: Gotham-Book !important; color:white;width:100%;border-radius:0;padding:12px 0">
+	      						</div>
+	      					</div>
+		      			</div>
+		      		</div>
+		      	</div>
+	      	</div>
+	    </nav>
+  	</header>
+
+	
 
 	<!-- Normal Screen Header -->
-
+    
 	<header id="mainHeader" class="container-fluid">
 		<nav class="navbar">
 			<div class="row" style="margin: 0">
@@ -71,7 +129,9 @@
 						<li><a class="middle_right_nav_login" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
 						<li><a data-toggle="modal" data-target="#myModal">SIGNUP</a></li>
 						<li><a href="#contact">WISHLIST</a></li>
-						<li><a style="padding-right: 0;" href="#contact">CART <span class="badge-cart">2</span></a></li>
+						<li><a style="padding-right: 0;" class="drawer-toggle" id="openHanbergerCart" href="#contact">CART <span class="badge-cart"> 2</span></a></li>
+						
+
 					</ul>
 				</div>
 			</div>
@@ -792,6 +852,7 @@
 
 
 	<aside class="main-sidebar hidden-lg hidden-md">
+
                 <!-- sidebar -->
                 <div class="sidebar" style="height: auto;">
                    
@@ -873,7 +934,6 @@
 		<div class="row">
 			<div class="col-md-12" style="padding: 0">
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" id="imageSlider">
 						<div class="item active">
@@ -1246,6 +1306,9 @@
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</body>
+<!-- script used for cart slide -->
+    <script src="slidereveal.js"></script>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/js/superfish.js"></script>
 
@@ -1262,7 +1325,68 @@
 <!-- mobile slide navbar -->
     <script src="customNavbar.js" type="text/javascript"></script>
 
+<!-- cart slide -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
+  <script src="js/drawer.js"></script>
+	<script>
+	    $(document).ready(function() {
+	      $('.drawer').drawer();
+	    });
+	</script>
 
+
+<!-- script for cart slide -->
+<script type="text/javascript">
+    	$(function(){
+        slider = $("#slider").slideReveal({
+          width: "50%",
+          // push: false,
+          position: "right",
+          speed: 600,
+          trigger: $("#trigger"),
+          // autoEscape: false,
+          show: function(obj){
+            console.log(obj);
+          },
+          shown: function(obj){
+            console.log(obj);
+          },
+          hide: function(obj){
+            console.log(obj);
+          },
+          hidden: function(obj){
+            console.log(obj);
+          },
+          overlay: true
+        });
+    	});
+
+    	$('.fa-minus').click(function (e){
+			let span = $(e.target).parent().find( "span" )
+			let value = span.text()
+			value = parseInt(value)
+			if(value > 1) {
+				value--;
+				span.text(value)
+			}
+		})
+		$('.fa-plus').click(function(e){
+			let span = $(e.target).parent().find( "span" )
+			let value = span.text()
+			value = parseInt(value)
+			value++;
+			span.text(value)
+		})
+		$('.fa-times').click(function(e){
+			let row_id = '#' + $(e.target).data('value')
+			let hr_id = '#' + $(e.target).data('value') + '_hr'
+			console.log(row_id)
+			console.log(hr_id)
+			$(row_id).remove();
+			$(hr_id).remove();
+		})
+
+    </script>
 
 
 <!-- Modal -->

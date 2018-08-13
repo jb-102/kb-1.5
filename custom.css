@@ -297,7 +297,7 @@ header
 	margin-top:10px;
 	color: #363636;
 	font-weight: bolder;
-	font-size: 12px;
+	font-size: 13px;
 	font-family: Gotham-Medium;
 	position: relative;
     display: block;
@@ -780,6 +780,10 @@ p {
 
 .cart-item-details {
 	padding: 40px 15px;
+}
+
+.cart-item-details-slider {
+	padding: 15px 15px;
 }
 
 .badge-cart-main {
