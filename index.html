@@ -480,9 +480,9 @@
 					<div class="col-xs-12" id="top_nav_head">
 						<div id="navbar" class="navbar-collapse collapse top_nav">
 							<ul class="row" style="margin-bottom: 0;padding: 0;">
-								<li class="col-xs-4"><a href="#about" style="color: #2b2b2b;">KB CASHMERE</a></li>
-								<li class="col-xs-4"><a href="#contact" style="color: #2b2b2b;">KB PASHMINA</a></li>
-								<li class="col-xs-4"><a href="#contact" style="color: #2b2b2b;">KB TRESURE BOX</a></li>
+								<li class="col-xs-4 text-center" style="padding-right: 3px; padding-left:3px"><a href="#about" style="color: #2b2b2b;">KB CASHMERE</a></li>
+								<li class="col-xs-4 text-center" style="padding-right: 3px; padding-left:3px"><a href="#contact" style="color: #2b2b2b;">KB PASHMINA</a></li>
+								<li class="col-xs-4 text-center" style="padding-right: 3px; padding-left:3px"><a href="#contact" style="color: #2b2b2b;">KB TRESURE BOX</a></li>
 							</ul>
 						</div><!--/.nav-collapse -->
 					</div>
@@ -1011,7 +1011,7 @@
 							<div class="col-md-12 row_two_foot_title">
 								<h3>The Dry Fruit Box</h3>
 							</div>
-							<div class="col-md-12 row_two_buttonDiv">
+							<div class="col-md-12 row_two_buttonDiv hidden-xs">
 								<input type="button" name="shopNow" value="Shop Now" class="btn">
 							</div>
 						</div>
@@ -1020,7 +1020,7 @@
 							<div class="col-md-12 row_two_foot_title">
 								<h3>The Dry Fruit Box</h3>
 							</div>
-							<div class="col-md-12 row_two_buttonDiv">
+							<div class="col-md-12 row_two_buttonDiv hidden-xs">
 								<input type="button" name="shopNow" value="Shop Now" class="btn">
 							</div>
 						</div>
@@ -1192,10 +1192,16 @@
 							<h3 style="font-family: Cormorant-Regular !important;color: black !important;text-align: center;font-size: 32px;margin: 50px 0;">
 								Sign up to get first access, curated notes about new styles, sales and events.
 							</h3>
-							<div class="input-group">
+							<div class="input-group hidden-xs hidden-sm">
 								<input type="text" class="form-control" placeholder="your email address" style="border-radius:0;border-color: black;padding:20px; height: 55px;">
 								<span class="input-group-btn">
 									<button class="btn" type="button" style="background: #222;color:white;font-size:15px;padding: 14.5px 25px;border-radius:0;">SUBSCRIBE</button>
+								</span>
+							</div>
+							<div class="hidden-lg hidden-md">
+								<input type="text" class="form-control" placeholder="your email address" style="border-radius:0;border-color: black;padding:20px; height: 55px;">
+								<span>
+									<button class="btn" type="button" style="background: #222;color:white;font-size:15px;padding: 14.5px 25px;border-radius:0; width: 100%">SUBSCRIBE</button>
 								</span>
 							</div>
 						</div>
@@ -1324,7 +1330,7 @@
 			
 		}
         function toogleHeader() {
-        	$('.menu-toggle').find('.fa').css("cssText", "padding: 0px !important;")
+        	$('.menu-toggle').find('.fa').css("cssText", "padding: 0px !important; font-size: 20px !important;")
 			if($('.menu-toggle').find('.fa').hasClass('fa-bars')){
 				$('.menu-toggle').find('.fa').removeClass('fa-bars')
 				$('.menu-toggle').find('.fa').addClass('fa-times')
