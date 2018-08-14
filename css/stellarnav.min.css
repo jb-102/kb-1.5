@@ -176,7 +176,8 @@ body.stellarnav-noscroll-x{
     text-decoration:none;
     color:#777;
     padding:15px;
-    box-sizing:border-box
+    box-sizing:border-box;
+    font-size:20px;
 }
 .stellarnav .full{
     width:100%
@@ -271,7 +272,7 @@ body.stellarnav-noscroll-x{
 }
 .stellarnav.mobile .call-btn-mobile,.stellarnav.mobile .close-menu,.stellarnav.mobile .dd-toggle,.stellarnav.mobile .location-btn-mobile,.stellarnav.mobile .menu-toggle{
     display:inline-block;
-    width: 16%;
+    width: 10%;
 }
 .stellarnav.mobile li.call-btn-mobile{
     border-right:1px solid rgba(255,255,255,.1);

@@ -2821,7 +2821,16 @@ select.form-control-product:focus {
 }
 .loginMobile
 {
-	padding-top: 0px;padding-bottom: 0px;margin-top: 10px;color: #363636;font-weight: bolder;font-size: 13px;font-family: Gotham-Medium;position: relative;padding: 0px 8px;border-right: 2px solid;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 10px;
+	color: #363636;
+	font-weight: bolder;
+	font-size: 13px;
+	font-family: Gotham-Medium;
+	position: relative;
+	padding: 0px 4px;
+	border-right: 1px solid;
 }
 .signUpStyleHead
 {
@@ -2833,10 +2842,6 @@ select.form-control-product:focus {
 	text-align: center;
 	padding: 20px 0 ;
 	font-weight: bold;
-}
-.loginMobile
-{
-	padding-top: 0px;padding-bottom: 0px;margin-top: 10px;color: #363636;font-weight: bolder;font-size: 13px;font-family: Gotham-Medium;position: relative;padding: 0px 8px;border-right: 2px solid;
 }
 
 .row_three_hr
