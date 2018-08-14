@@ -87,7 +87,7 @@
     <!-- overlay search section -->
 	<div id="morphsearch" class="morphsearch">
 		<form class="morphsearch-form">
-			<span class="fa fa-search" style="padding-left: 10px;"></span>
+			<span id="searchIcon" class="fa fa-search" style="padding-left: 15px;"></span>
 			<input class="morphsearch-input" type="search" placeholder="Search..."/>
 		</form>
 		<span class="morphsearch-close"></span>
@@ -1399,6 +1399,7 @@
 			(function() {
 				var morphSearch = document.getElementById( 'morphsearch' ),
 					input = morphSearch.querySelector( 'input.morphsearch-input' ),
+					searchIcon = morphSearch.querySelector( '#searchIcon' ),
 					ctrlClose = morphSearch.querySelector( 'span.morphsearch-close' ),
 					isOpen = isAnimating = false,
 					// show/hide search area
@@ -1432,6 +1433,7 @@
 
 				// events
 				input.addEventListener( 'focus', toggleSearch );
+				searchIcon.addEventListener( 'click', toggleSearch );
 				ctrlClose.addEventListener( 'click', toggleSearch );
 				// esc key closes search overlay
 				// keyboard navigation events

@@ -966,7 +966,15 @@ p {
 }
 .owl-next:after{ content: "\f105"; }
 
+.morphsearch.open .morphsearch-form .fa {
+	font-size: 45px !important;
+    color: #6f6f6f;
+    padding-right: 10px;
+}
 
+.morphsearch.open .morphsearch-form {
+	margin-top: 50px;
+}
 
 #catRightSide > div
 {
@@ -1700,9 +1708,27 @@ p {
     height: 55px !important;
 }
 
+.morphsearch.open .morphsearch-form .morphsearch-input {
+	font-size: 50px;
+}
+
 @media (min-width: 280px) and (max-width: 576px)
 {
 
+	.morphsearch.open .morphsearch-form .fa {
+		font-size: 25px !important;
+	}
+	.morphsearch .morphsearch-form .fa {
+		font-size: 20px !important;
+	}
+	.morphsearch.open .morphsearch-form .morphsearch-input {
+	    display: inline-block !important;
+		width: 80%;
+		font-size: 25px;
+	}
+	.morphsearch .morphsearch-form .morphsearch-input {
+	    display: none !important;
+	}
 	#top_nav_head
 	{
 		padding: 0;
