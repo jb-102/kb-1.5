@@ -975,9 +975,10 @@ p {
 
 #catRightSide > div > p
 {
-	margin-bottom:0; 
-	line-height:50px;
-	color:black;
+    margin-bottom: 0;
+    line-height: 60px;
+    color: #202122 !important;
+    font-size: 17px;
 }
 
 #catRightSide > div > center > strike
