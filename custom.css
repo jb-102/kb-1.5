@@ -424,7 +424,7 @@ header
 
 
 #row_two {
-    margin-top: -500px;
+    
 }
 
 .background-row-two {
@@ -1828,7 +1828,7 @@ p {
 	{
 		text-align: center;
 	    font-size: 14px;
-	    padding: 30px 0px 50px 0px;
+	    padding: 30px 2px 50px 2px;
 	    width: 100%;
 	}
 	.row_two_buttonDiv
@@ -1896,6 +1896,12 @@ p {
 	#testimonial-slider .testimonial .pic
 	{
 		height: auto;
+	}
+	.background-row-two
+	{
+	    background: #f7f7f7;
+	    height: 330px;
+	    margin-bottom: 260px;
 	}
 }
 @media (min-width: 577px) and (max-width: 768px)
@@ -2864,4 +2870,16 @@ select.form-control-product:focus {
 .clientReviewTitle
 {
 	text-align: center;font-family: Cormorant-SemiBold !important;color: black !important;margin: 0 0 65px 0;
+}
+.sliderButton
+{
+	background: white;
+    color: black !important;
+    border-radius: 0;
+    width: 129px;
+    height: 46px;
+    padding: 0;
+    border: none;
+    box-shadow: 0 1px 1px -2px black;
+
 }
