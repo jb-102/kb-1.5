@@ -1048,10 +1048,10 @@ p {
 
 .features .features-list li span {
 	color: #2b2b2b;
-	font-size: 15px;
+	font-size: 14px;
 	display: inline-block;
 	vertical-align: top;
-	line-height: 3rem;
+	line-height: 2.5rem;
 }
 
 .features .features-list li span:last-child {
@@ -1063,9 +1063,9 @@ p {
 	margin-right: .625rem;
 	background-color: #2b2b2b;
 	color: white;
-	width: 3rem;
-	height: 3rem;
-	line-height: 3rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
 	text-align: center;
 	border-radius: 50%
 }
@@ -3588,7 +3588,6 @@ a:hover,a:focus{
 .cartParent
 {
 	margin-top:20px; 
-	padding: 0;
 }
 
 .cartHeading
@@ -3681,8 +3680,84 @@ a:hover,a:focus{
 	font-family: Gotham-Book;
 }
 
+
+
+
+
+
 .checkoutParent
 {
 	margin-top:20px; 
+}
+
+.accordionRightDesc > div {
+    font-size: 14px;
+}
+.product-add-to-box {
+    border: 1px solid black;
+    box-shadow: none;
+    outline: none;
+}   
+.product-wishlist {
+    box-shadow: none;
+    outline: none;
+} 
+@media (max-width: 370px) and (min-width: 280px)
+{
+	.product-wishlist {
+	    width: 120px;
+	    font-size: 11px;
+	    height: 50px;
+	}
+	.product-add-to-box {
+	    width: 165px;
+	    font-size: 11px;
+	    height: 50px;
+	}
+	.product-bold-words-nav {
+	    font-size: 10px;
+	}
+	.productSlider {
+	    margin-top: 0px;
+	    padding: 0;
+	}
+}
+@media (max-width: 550px) and (min-width: 370px)
+{
+	.product-bold-words-nav {
+	    font-size: 15px;
+	}
+	.productSlider {
+	    margin-top: 0px;
+	    padding: 0;
+	}
+}
+
+
+
+.padding-0 {
 	padding: 0;
+}
+.mediaStyle > section {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.carousel-caption {
+	text-shadow: none;
+}
+
+@media (max-width: 370px) and (min-width: 280px)
+{
+	.top_nav > ul > li >a {
+	    padding: 5px 5px !important;
+	    display: initial;
+	    font-size: 8px !important;
+	}
+	.loginMobile {
+		font-size: 10px; 
+	}
+	.what-sells-best {
+	    font-size: 23pt !important;
+	    text-align: center;
+	}
 }

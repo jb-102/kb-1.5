@@ -9,57 +9,13 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="mobileNavbar.css">
 	<link rel="stylesheet" type="text/css" href="custom.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.13.0/lazyload.min.js"></script>
 	<link href="css/drawer.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="all" href="css/stellarnav.min.css">
 	<link rel="stylesheet" type="text/css" media="all" href="css/overlaysearch.css">
-
-	<style type="text/css">
-		.accordionRightDesc > div {
-		    font-size: 14px;
-		}
-		.product-add-to-box {
-		    border: 1px solid black;
-		    box-shadow: none;
-		    outline: none;
-		}   
-		.product-wishlist {
-		    box-shadow: none;
-		    outline: none;
-		} 
-		@media (max-width: 370px) and (min-width: 280px)
-		{
-			.product-wishlist {
-			    width: 120px;
-			    font-size: 11px;
-			    height: 50px;
-			}
-			.product-add-to-box {
-			    width: 165px;
-			    font-size: 11px;
-			    height: 50px;
-			}
-			.product-bold-words-nav {
-			    font-size: 10px;
-			}
-			.productSlider {
-			    margin-top: 0px;
-			    padding: 0;
-			}
-		}
-		@media (max-width: 550px) and (min-width: 370px)
-		{
-			.product-bold-words-nav {
-			    font-size: 15px;
-			}
-			.productSlider {
-			    margin-top: 0px;
-			    padding: 0;
-			}
-		}
-	</style>
 
 </head>
 <body class="drawer drawer--right">
@@ -1341,7 +1297,7 @@
 
 
 
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript">
 		function toogleHamburger() {
 			
@@ -1543,3 +1499,65 @@
 
 </body>
 </html>
+<script>
+let el = document.getElementById('myCarousel')
+$(document).ready(function() {
+	$("#myCarousel").carousel({
+	    interval: false
+	}); 
+	swipedetect(el, function(moment){
+		if(moment == 'right') {
+			$("#myCarousel").carousel('prev');
+		} else if(moment == 'left') {
+			$("#myCarousel").carousel('next');
+		}
+	})
+
+	function swipedetect(el, callback){
+	  
+	    var touchsurface = el,
+	    swipedir,
+	    startX,
+	    startY,
+	    distX,
+	    distY,
+	    threshold = 50, //required min distance traveled to be considered swipe
+	    restraint = 100, // maximum distance allowed at the same time in perpendicular direction
+	    allowedTime = 2000, // maximum time allowed to travel that distance
+	    elapsedTime,
+	    startTime,
+	    handleswipe = callback || function(swipedir){}
+	  
+	    touchsurface.addEventListener('touchstart', function(e){
+	        var touchobj = e.changedTouches[0]
+	        swipedir = 'none'
+	        dist = 0
+	        startX = touchobj.pageX
+	        startY = touchobj.pageY
+	        startTime = new Date().getTime() // record time when finger first makes contact with surface
+	        e.preventDefault()
+	    }, false)
+	  
+	    touchsurface.addEventListener('touchmove', function(e){
+	        e.preventDefault() // prevent scrolling when inside DIV
+	    }, false)
+	  
+	    touchsurface.addEventListener('touchend', function(e){
+	        var touchobj = e.changedTouches[0]
+	        distX = touchobj.pageX - startX // get horizontal dist traveled by finger while in contact with surface
+	        distY = touchobj.pageY - startY // get vertical dist traveled by finger while in contact with surface
+	        elapsedTime = new Date().getTime() - startTime // get time elapsed
+	        if (elapsedTime <= allowedTime){ // first condition for awipe met
+	            if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint){ // 2nd condition for horizontal swipe met
+	                swipedir = (distX < 0)? 'left' : 'right' // if dist traveled is negative, it indicates left swipe
+	            }
+	            else if (Math.abs(distY) >= threshold && Math.abs(distX) <= restraint){ // 2nd condition for vertical swipe met
+	                swipedir = (distY < 0)? 'up' : 'down' // if dist traveled is negative, it indicates up swipe
+	            }
+	        }
+	        handleswipe(swipedir)
+	        e.preventDefault()
+	    }, false)
+	}
+});
+</script>
