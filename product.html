@@ -9,173 +9,156 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="mobileNavbar.css">
 	<link rel="stylesheet" type="text/css" href="custom.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.13.0/lazyload.min.js"></script>
-
-<style type="text/css">
-
-	a:hover,a:focus{
-		text-decoration: none;
-		outline: none;
-	}
-	#accordion .panel{
-		border: none;
-		border-radius: 3px;
-		box-shadow: none;
-		margin-bottom: 15px;
-	}
-	#accordion .panel-heading{
-		padding: 0;
-		border: none;
-		border-radius: 3px;
-	}
-	#accordion .panel-title a{
-		display: block;
-		padding: 12px 15px;
-		background: #fff;
-		font-size: 18px;
-		font-weight: bold;
-		color: #f81ac1;
-		border: 1px solid #ececec;
-		box-shadow: 0 0 10px rgba(0,0,0,.05);
-		position: relative;
-		transition: all 0.5s ease 0s;
-	}
-	#accordion .panel-title a.collapsed{
-		box-shadow: none;
-		color: #676767;
-	}
-	#accordion .panel-title a:before,
-	#accordion .panel-title a.collapsed:before{
-		content: "\f067";
-		font-family: "fontawesome";
-		width: 25px;
-		height: 25px;
-		line-height: 28px;
-		font-size: 15px;
-		font-weight: 900;
-		color: #f81ac1;
-		text-align: center;
-		position: absolute;
-		top: 8px;
-		right: 15px;
-		transform: rotate(135deg);
-		transition: all 0.3s ease 0s;
-	}
-	#accordion .panel-title a.collapsed:before{
-		color: #676767;
-		transform: rotate(0);
-	}
-	#accordion .panel-title a:after{
-		content: "";
-		width: 1px;
-		height: 100%;
-		background: #ececec;
-		position: absolute;
-		top: 0;
-		right: 55px;
-	}
-	#accordion .panel-body{
-		padding: 10px 15px 15px;
-		border: none;
-		font-size: 15px;
-		color: #615f5f;
-		line-height: 27px;
-	}
-	.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
-	{
-		border-bottom: 2px solid black !important;
-		border: none;
-	}
-	.nav-tabs
-	{
-		border: none;
-		margin-bottom: 10px;
-	}
-	.nav-tabs>li>a:hover
-	{
-		border-color: transparent;
-	}
-	.nav>li>a:focus, .nav>li>a:hover
-	{
-		background: transparent;
-	}
-	.nav-tabs>li>a
-	{
-		color: black;
-	}
-</style>
+	<link href="css/drawer.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="all" href="css/stellarnav.min.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/overlaysearch.css">
 
 </head>
-<body>
+<body class="drawer drawer--right">
+	<!-- cart slide data -->
+	<header role="banner">
+	    <nav class="drawer-nav" role="navigation" id="cartNav">
+	      	<h2 class="row">
+	      		<span class="col-md-4 fa fa-angle-left drawer-toggle" id="span1"></span>
+	      		<span class="col-md-8 span2">Your Cart</span>
+	      	</h2>
+	      	<hr/>
+	      	<div class="container">
+		      	<div class="row">
+		      		<div class="col-md-6 col-xs-12 col-sm-6 inCart">
+		      			<div class="row" id="row_1">
+		      				<div class="col-md-3  col-xs-4 col-sm-3">
+		      					<img src="images/cart1.png" class="img-responsive">
+		      				</div>
+		      				<div class="col-md-6  col-xs-8 col-sm-6 cart-item-details-slider">
+		      					<p class="cart-item-name">Aftaab Garden Silk Saree</p>
+		      					<div class="inCartFlex">
+		      						<span>
+		      							<i class="fa fa-minus cursor"></i> 
+		      						<span class="badge-cart-main"> 1</span> 
+		      							<i class="fa fa-plus cursor"></i>
+		      						</span>
+		      						<i class="fa fa-times inCartI" data-value="row_1"></i>
+		      					</div>
+		      					<h4 class="cart-item-price">Rs. 1,852</h4>
+		      				</div>
+		      			</div>
+		      			<hr id="row_1_hr">
+		      			<div class="row" id="row_2">
+		      				<div class="col-md-3  col-xs-4 col-sm-3">
+		      					<img src="images/cart1.png" class="img-responsive">
+		      				</div>
+		      				<div class="col-md-6  col-xs-8 col-sm-6 cart-item-details-slider">
+		      					<p class="cart-item-name">Aftaab Garden Silk Saree</p>
+		      					<div class="inCartFlex">
+		      						<span>
+		      							<i class="fa fa-minus cursor"></i> 
+		      						<span class="badge-cart-main"> 1</span> 
+		      							<i class="fa fa-plus cursor"></i>
+		      						</span>
+		      						<i class="fa fa-times inCartI" data-value="row_1"></i>
+		      					</div>
+		      					<h4 class="cart-item-price">Rs. 1,852</h4>
+		      				</div>
+		      			</div>
+		      			<hr id="row_2_hr">
+		      			<div class="row side-cart-footer">
+	      					<div class="col-md-12">
+	      						<div>
+	      							<h4 class="text-center font-gotham-book"><span>SUBTOTAL: </span><span>Rs. 3704</span></h4>
+	      							<input type="button" class="btn inCartCheckout" value="CHECKOUT">
+	      						</div>
+	      					</div>
+		      			</div>
+		      		</div>
+		      	</div>
+	      	</div>
+	    </nav>
+  	</header>
 
-	<!-- Normal Screen Header -->
+    <!-- overlay search section -->
+	<div id="morphsearch" class="morphsearch">
+		<form class="morphsearch-form">
+			<span id="searchIcon" class="fa fa-search"></span>
+			<input class="morphsearch-input" type="search" placeholder="Search..."/>
+		</form>
+		<span class="morphsearch-close"></span>
+	</div>
+
+	<header class="codrops-header">
+	</header>
+	<div class="overlay">
+	</div>
 
 	<header id="mainHeader" class="container-fluid">
 		<nav class="navbar">
-			<div class="container">
-				<div id="navbar" class="navbar-collapse collapse top_nav">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">KB</a></li>
-						<li><a href="#about">KB CASHMERE</a></li>
-						<li><a href="#contact">KB PASHMINA</a></li>
-						<li><a href="#contact">KB TRESURE BOX</a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Kashmir Wholesale</a></li>
-						<li><a href="#">Services</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Currency : USD <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div><!--/.nav-collapse -->
+			<div class="row" id="topNavMargin">
+				<div class="col-md-10 col-md-offset-1" id="top_nav_head">
+					<div id="navbar" class="navbar-collapse collapse top_nav">
+						<ul class="nav navbar-nav" id="top_nav_left">
+							<li class="active hidden-xs hidden-sm"><a href="#">KB</a></li>
+							<li><a href="#about">KB CASHMERE</a></li>
+							<li><a href="#contact">KB PASHMINA</a></li>
+							<li class="hidden-xs hidden-sm"><a href="#contact">KB TRESURE BOX</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right" id="top_nav_right">
+							<li class="hidden-xs hidden-sm"><a href="#">Kashmir Wholesale</a></li>
+							<li class="hidden-xs hidden-sm"><a href="#">Services</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Currency : USD <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another </a></li>
+									<li><a href="#">Something</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another</a></li>
+									<li><a href="#">Something </a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
 			</div>
 		</nav>
 
-		<div class="container-fluid">
-			<div class="row" style="padding-bottom: 10px">
-				<div class="col-md-3 col-md-offset-1 col-xs-offset-2 padding_left">
-					<div class="search">
-						<span class="fa fa-search"></span>
-						<input placeholder="Search the store" id="searchbox">
-					</div>
+		<div class="row hidden-xs" id="middleLeftPart">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="col-md-4 col-xs-4">
+
+					
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-xs-4">
 					<h2 class="text-center main_heading">KASHMIR BOX</h2>
 				</div>
-				<div class="col-md-4">
-					<ul class="nav navbar-nav" id="middle_right_nav">
-						<li><a href="#about" class="middle_right_nav_login">LOGIN</a></li>
-						<li><a href="#contact">SIGNUP</a></li>
+				<div class="col-md-4 col-xs-4">
+					<ul class="nav navbar-nav pull-right" id="middle_right_nav">
+						<li><a class="middle_right_nav_login" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
+						<li><a data-toggle="modal" data-target="#myModal">SIGNUP</a></li>
 						<li><a href="#contact">WISHLIST</a></li>
-						<li><a href="#contact">CART <span class="badge-cart">2</span></a></li>
+						<li><a class="drawer-toggle" id="openHanbergerCart" href="#">CART <span class="badge-cart"> 2</span></a></li>
+
 					</ul>
 				</div>
 			</div>
 		</div>
 
-		<div class="container-fluid hidden-sm hidden-xs" style="padding: 0;">
+		<div class="hidden-xs" id="megaNavParent">
 			<div class="bottom_nav">
 				<nav class="navbar navbar-inverse">
-					<div class="collapse navbar-collapse js-navbar-collapse" style="display: flex !important;justify-content: center;width:100%;background: white;">
+					<div class="collapse navbar-collapse js-navbar-collapse" id="magaNavParent2Div">
 						<ul class="nav navbar-nav">
 
 							<li class="dropdown mega-dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Men </a>				
-								<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+								<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 									<li class="col-sm-2 col-md-offset-1">
 										<ul>
 											<li class="dropdown-header">Features</li>
@@ -236,7 +219,7 @@
 							</li>
 							<li class="dropdown mega-dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Women </a>				
-								<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+								<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 									<li class="col-sm-2 col-md-offset-1">
 										<ul>
 											<li class="dropdown-header">Features</li>
@@ -298,7 +281,7 @@
 
 							<li class="dropdown mega-dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Food </a>				
-								<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+								<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 									<li class="col-sm-2 col-md-offset-1">
 										<ul>
 											<li class="dropdown-header">Features</li>
@@ -359,7 +342,7 @@
 							</li>
 							<li class="dropdown mega-dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Home & Decor </a>				
-								<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+								<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 									<li class="col-sm-2 col-md-offset-1">
 										<ul>
 											<li class="dropdown-header">Features</li>
@@ -421,7 +404,7 @@
 
 							<li class="dropdown mega-dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Beauty </a>				
-								<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+								<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 									<li class="col-sm-2 col-md-offset-1">
 										<ul>
 											<li class="dropdown-header">Features</li>
@@ -488,7 +471,7 @@
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
 							</li>
 							<li class="dropdown mega-dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:red;">Sale!</a>
+								<a href="#" class="dropdown-toggle" id="saleRed" data-toggle="dropdown" >Sale!</a>
 							</li>
 
 						</ul>
@@ -498,28 +481,47 @@
 		</div>
 	</header>
 
+	<header id="mainHeaderGrey" class="container-fluid hidden">
+		<nav>
+			<div class="row" id="topNavHambergClickRow">
+				<div class="col-xs-12" id="top_nav_head">
+					<div id="navbar" class="navbar-collapse collapse top_nav">
+						<ul class="row" id="topNavHambergClick">
+							<li class="col-xs-4 text-center">
+								<a href="#about">KB CASHMERE</a>
+							</li>
+							<li class="col-xs-4 text-center">
+								<a href="#contact">KB PASHMINA</a>
+							</li>
+							<li class="col-xs-4 text-center">
+								<a href="#contact">KB TRESURE BOX</a>
+							</li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</nav>
+	</header>
 
 	<!-- Sticky Header -->
 
-	<header class="site-header hidden-xs hidden-sm" style="display:none;" id="stickHeader"> 
+	<header class="site-header hidden-xs hidden-sm" id="stickHeader"> 
 		<nav class="navbar navbar-default">
 			<div class="header-inner">
-				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-12">
-
-							<nav class="navbar navbar-inverse" style="float: left;margin-top: 11px;margin-bottom:  0;width:100%;">
-								<div class="collapse navbar-collapse js-navbar-collapse" style="display: flex !important;justify-content: center;width:100%;background: white;">
-									<h2 style="margin-top:8px;margin-right:40px;font-family:times new roman;">
-										<a href="index.html" style="color: black;">
+							<nav class="navbar navbar-inverse-sticky" id="stickyNavStyle">
+								<div class="collapse navbar-collapse js-navbar-collapse">
+									<h2>
+										<a href="index.html">
 											KB
 										</a>
 									</h2>
-									<ul class="nav navbar-nav">
+									<ul class="nav navbar-nav navbar-nav-menu">
 
 										<li class="dropdown mega-dropdown">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Men </a>				
-											<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+											<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 												<li class="col-sm-2 col-md-offset-1">
 													<ul>
 														<li class="dropdown-header">Features</li>
@@ -580,7 +582,7 @@
 										</li>
 										<li class="dropdown mega-dropdown">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Women </a>				
-											<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+											<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 												<li class="col-sm-2 col-md-offset-1">
 													<ul>
 														<li class="dropdown-header">Features</li>
@@ -642,7 +644,7 @@
 
 										<li class="dropdown mega-dropdown">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Food </a>				
-											<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+											<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 												<li class="col-sm-2 col-md-offset-1">
 													<ul>
 														<li class="dropdown-header">Features</li>
@@ -703,7 +705,7 @@
 										</li>
 										<li class="dropdown mega-dropdown">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Home & Decor </a>				
-											<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+											<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 												<li class="col-sm-2 col-md-offset-1">
 													<ul>
 														<li class="dropdown-header">Features</li>
@@ -765,7 +767,7 @@
 
 										<li class="dropdown mega-dropdown">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Beauty </a>				
-											<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+											<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 												<li class="col-sm-2 col-md-offset-1">
 													<ul>
 														<li class="dropdown-header">Features</li>
@@ -832,16 +834,16 @@
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
 										</li>
 										<li class="dropdown mega-dropdown">
-											<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:red;">Sale!</a>
+											<a href="#" class="dropdown-toggle" id="saleRed" data-toggle="dropdown">Sale!</a>
 										</li>
 
 									</ul>
 									<div id="stickRight">
 										<ul class="nav navbar-nav" id="middle_right_nav">
 											<li><a href="#about" class="middle_right_nav_login">LOGIN</a></li>
-											<li><a href="#contact">SIGNUP</a></li>
-											<li><a href="#contact">WISHLIST</a></li>
-											<li><a href="#contact">CART <span class="badge-cart"> 2</span></a></li>
+											<li><a href="#">SIGNUP</a></li>
+											<li><a href="#">WISHLIST</a></li>
+											<li><a href="#" class="drawer-toggle" id="openHanbergerCart" >CART <span class="badge-cart"> 2</span></a></li>
 										</ul>
 									</div>
 								</div><!-- /.nav-collapse -->
@@ -849,20 +851,111 @@
 							</nav>
 
 						</div>
-
 					</div>
-				</div>
 			</div>
 		</nav>
 	</header>
 
-		<!-- Image Slider -->
+		<!-- ========	New mobile nav  ========= -->
+	<div id="main-nav" class="stellarnav hidden-sm hidden-md hidden-lg">
 
-	<div class="container-fluid" style="font-family: Gotham-Book">
+		<span id="newMobileNavTopnav">
+			<div class="row">
+				<div class="col-xs-4" id="newMobileNavTopnavLeft1">
+				</div>
+				<div class="col-xs-2" id="newMobileNavTopnavLeft2">
+					<span>KB</span>
+				</div>
+				<div class="col-xs-6 text-right" id="newMobileNavTopnavLeft3">
+					<a href="#about" class="loginMobile" data-toggle="modal" data-target="#myModal">LOGIN</a>
+					<a href="#" data-toggle="modal" data-target="#myModal" class="loginMobile" id="newMobileNavTopnavSignup">SIGNUP</a>
+					<a href="#" class="drawer-toggle" id="openHanbergerCart"> 
+						<span id="newMobileNavTopnavBadge" class="badge-cart">2</span>
+					</a>
+				</div>
+			</div>
+		</span>
+
+		<ul class="firstDDLayer">
+			<li><a href="">MEN</a>
+		    	<ul class="secondDDLayer">
+		    		<li><a href="">Dropdown2</a>
+		    			<ul class="thirdDDLayer">
+				    		<li><a href="#">How deep?</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+				    		<li><a href="#">Item</a></li>
+				    	</ul>
+		    		</li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+		    		<li><a href="#">Item</a></li>
+		    	</ul>
+		    </li>
+		    <li><a href="">WOMEN</a>
+		    	<ul class="secondDDLayer">
+		    		<li><a href="">Dropdown2</a>
+		    			<ul class="thirdDDLayer">
+				    		<li><a href="#">How deep?</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+				    		<li><a href="#">Item</a></li>
+				    	</ul>
+		    		</li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+		    		<li><a href="#">Item</a></li>
+		    	</ul>
+		    </li>
+		    <li><a href="">FOOD</a>
+		    	<ul class="secondDDLayer">
+		    		<li><a href="">Dropdown2</a>
+		    			<ul class="thirdDDLayer">
+				    		<li><a href="#">How deep?</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+				    		<li><a href="#">Item</a></li>
+				    	</ul>
+		    		</li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+		    		<li><a href="#">Item</a></li>
+		    	</ul>
+		    </li>
+		    <li><a href="">DECOR</a>
+		    	<ul class="secondDDLayer">
+		    		<li><a href="">Dropdown2</a>
+		    			<ul class="thirdDDLayer">
+				    		<li><a href="#">How deep?</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+				    		<li><a href="#">Item</a></li>
+				    	</ul>
+		    		</li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+		    		<li><a href="#">Item</a></li>
+		    	</ul>
+		    </li>
+		</ul>
+	</div>
+
+
+		<!-- Main page content starts from here -->
+
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1 col-xs-12">
 				<div class="row">
-					<div class="col-md-6 col-xs-12">
+					<div class="col-md-6 col-xs-12 productSlider" >
 						<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
 							<!-- Wrapper for slides -->
@@ -886,15 +979,17 @@
 								<span class="sr-only">Next</span>
 							</a>
 						</div>
+
 						<div>
-							<div class="col-md-4 col-xs-4 text-center" style="height: 64px; padding:5px 5px 5px 0px;">
-								<div class="text-center" style="height: 100%; width: 100%; background: #f7f7f7; line-height: 54px;">Handspun</div>
+							<div class="col-md-4 col-xs-4 text-center sliderFooter1">
+								<div class="text-center sliderFooter2" >Handspun</div>
 							</div>
-							<div class="col-md-4 col-xs-4 text-center" style="height: 64px; padding:5px 0px 5px 0px;">
-								<div style="height: 100%; width: 100%; background: #f7f7f7; line-height: 54px;" >Handwoolen</div>
+							<div class="col-md-4 col-xs-4 text-center sliderFooter1">
+								<div class="text-center sliderFooter2" >Handspun</div>
 							</div>
-							<div class="col-md-4 col-xs-4 text-center" style="height: 64px; padding:5px 0px 5px 5px;">
-								<div style="height: 100%; width: 100%; background: #f7f7f7; line-height: 54px;" >Ready to ship</div>
+							<div class="col-md-4 col-xs-4 text-center sliderFooter1">
+								<div class="text-center sliderFooter2" >Ready to ship</div>
+								<div></div>
 							</div>
 						</div>
 					</div>
@@ -908,51 +1003,52 @@
 							<li><i class="fa fa-star product-fa"></i></li>
 						</ul>
 						<span class="product-bold-words" >&nbsp; (12 Reviews)</span>
-						<h4 style="line-height:40px; margin: 30px 0px">
-							<strike class="product-price" style="margin-right: 20px;">	Rs. 1,200	</strike>
+						<h4 class="productPrice">
+							<strike class="product-price">	Rs. 1,200	</strike>
 							<strong class="product-discounted-price" >	Rs. 3,546	</strong>
 						</h4>
-						<h4 class="product-bold-words" style="margin: 30px 0px;">
+						<h4 class="product-bold-words chooseType">
 							CHOOSE TYPE
 						</h4>
 						<select class="form-control product-type form-control-product">
 							<option>unstiched</option>
 							<option>stiched</option>
 						</select>
-						<button type="button" class="product-add-to-box" style="background: #151414;color: white;">ADD TO BOX</button>
+						<button type="button" class="product-add-to-box addToBox">ADD TO BOX</button>
 
-						<button type="button" class="product-wishlist" style="background: white;border: 1px solid grey;">ADD TO WISHLIST</button>
+						<button type="button" class="product-wishlist addToWishlist
+						">ADD TO WISHLIST</button>
 						<div class="doubleBreak"></div>
 
 						<p>
-							<span style="font-size:12px;padding-top:2px;font-weight: bold"> SHARE </span>
-							<span style="margin-left: 20px;margin-top:-2px;">
+							<span class="productSocial1"> SHARE </span>
+							<span class="productSocial2">
 								<a href="#"> 
-									<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
+									<img src="images/fb.png" > 
 								</a>
 								<a href="#"> 
-									<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
+									<img src="images/fb.png" > 
 								</a>
 								<a href="#"> 
-									<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
+									<img src="images/fb.png" > 
 								</a>
 								<a href="#"> 
-									<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
+									<img src="images/fb.png" > 
 								</a>	
 								<a href="#"> 
-									<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
+									<img src="images/fb.png" > 
 								</a>
 								<a href="#"> 
-									<img style="width:20px;height:20px;margin-right:0px;" src="images/fb.png" > 
+									<img src="images/fb.png" > 
 								</a>
 							</span>
 						</p>
-						<h5 style="font-family: Gotham-Medium; margin-top: 50px;">	CHECK COD AVAILABILITY	</h5>
-						<div style="width:200px;box-shadow: none;border-bottom: 1px solid #d1d1d1;margin-bottom: 50px;/* box-shadow: 0px 1px 0.2px -1px grey; */">
-							<input type="text" placeholder="enter pincode" style="width:170px;border: none;padding:5px;">
-							<span class="fa fa-search" style="padding-left:3px;cursor: pointer;"></span>
+						<h5 class="cod">	CHECK COD AVAILABILITY	</h5>
+						<div class="pincodeDiv">
+							<input type="text" placeholder="enter pincode">
+							<span class="fa fa-search"></span>
 						</div>
-	                	<div class="col-md-12" style="padding:0;">
+	                	<div class="col-md-12 accordionRight">
 		                    <div class="card">
 		                        <ul class="nav nav-tabs"  role="tablist">
 		                            <li role="presentation" class="active"><a class="product-bold-words-nav" href="#home" aria-controls="home" role="tab" data-toggle="tab">DESCRIPTION</a></li>
@@ -961,8 +1057,8 @@
 		                        </ul>
 
 		                        <!-- Tab panes -->
-		                        <div class="tab-content">
-		                            <div role="tabpanel" class="tab-pane active" id="home" style="font-size:13px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</div>
+		                        <div class="tab-content accordionRightDesc">
+		                            <div role="tabpanel" class="tab-pane active" id="home">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</div>
 		                            <div role="tabpanel" class="tab-pane" id="profile">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
 		                            <div role="tabpanel" class="tab-pane" id="messages">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type psum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
 		                        </div>
@@ -971,7 +1067,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-12" style="margin-top: 40px;">
+					<div class="col-md-12 accordionBelow">
 	                    <div class="card">
 	                        <ul class="nav nav-tabs" role="tablist">
 	                            <li role="presentation" class="active"><a class="product-bold-words-nav" href="#abtCraft" aria-controls="abtCraft" role="tab" data-toggle="tab">ABOUNT THE CRAFT</a></li>
@@ -979,8 +1075,8 @@
 	                        </ul>
 
 	                        <!-- Tab panes -->
-	                        <div class="tab-content">
-	                            <div role="tabpanel" class="tab-pane active" id="abtCraft" style="font-size:13px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</div>
+	                        <div class="tab-content accordionRightDesc">
+	                            <div role="tabpanel" class="tab-pane active" id="abtCraft">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</div>
 	                            <div role="tabpanel" class="tab-pane" id="reviews">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
 	                        </div>
 	                    </div>
@@ -1068,15 +1164,15 @@
 		</div>
 		<hr>
 		<div class="row">
-			<div class="col-md-12" style="display: flex;justify-content: center;text-align: center;">
+			<div class="col-md-12 newsletter">
 				<div class="col-md-7">
-					<h3 style="font-family: Cormorant-Regular !important;color: black !important;text-align: center;font-size: 32px;margin: 50px 0;">
+					<h3>
 						Sign up to get first access, curated notes about new styles, sales and events.
 					</h3>
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="your email address" style="border-radius:0;border-color: black;padding:20px; height: 55px;">
+					<div class="input-group" id="subscribeMobile">
+						<input type="text" class="form-control newsletterTextbox" placeholder="your email address">
 						<span class="input-group-btn">
-							<button class="btn" type="button" style="background: #222;color:white;font-size:15px;padding: 14.5px 25px;border-radius:0;">SUBSCRIBE</button>
+							<button class="btn newsletterButton" type="button">SUBSCRIBE</button>
 						</span>
 					</div>
 				</div>
@@ -1091,6 +1187,7 @@
 
 
 	<!-- Footer Section -->
+
 
 	<footer>
 		<div class="container">
@@ -1133,45 +1230,45 @@
 					</ul>
 				</div>
 				<div class="col-md-3" id="foot_4">
-					<img data-src="images/original.png" class="lazy" style="">
+					<img data-src="images/original.png" class="lazy">
 					<br>
 					<br>
-					<img data-src="images/return.png" class="lazy" style="">
+					<img data-src="images/return.png" class="lazy">
 					<br>
 					<br>
-					<img data-src="images/freeshipping.png" class="lazy" style="">
+					<img data-src="images/freeshipping.png" class="lazy">
 
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 footer3rd">
 					<h4>Connect with us</h4>
-					<a href="#"> <img data-src="images/fb.png" class="lazy" style="width:30px;height:25px;margin-right:5px;"> </a>
-					<a href="#"> <img data-src="images/fb.png" class="lazy" style="width:30px;height:25px;margin-right:5px;"> </a>
-					<a href="#"> <img data-src="images/fb.png" class="lazy" style="width:30px;height:25px;margin-right:5px;"> </a>
-					<a href="#"> <img data-src="images/fb.png" class="lazy" style="width:30px;height:25px;margin-right:5px;"> </a>
-					<a href="#"> <img data-src="images/fb.png" class="lazy" style="width:30px;height:25px;margin-right:5px;"> </a>
-					<a href="#"> <img data-src="images/fb.png" class="lazy" style="width:30px;height:25px;margin-right:5px;"> </a>
+					<a href="#"> <img data-src="images/fb.png" class="lazy"> </a>
+					<a href="#"> <img data-src="images/fb.png" class="lazy"> </a>
+					<a href="#"> <img data-src="images/fb.png" class="lazy"> </a>
+					<a href="#"> <img data-src="images/fb.png" class="lazy"> </a>
+					<a href="#"> <img data-src="images/fb.png" class="lazy"> </a>
+					<a href="#"> <img data-src="images/fb.png" class="lazy"> </a>
 					<br>
 					<br>
 					<br>
-					<h4 style="font-family:times new roman;font-weight:bold;margin-bottom:20px;">Need Help?</h4>
+					<h4 class="footer3rdHeadingF">Need Help?</h4>
 					<h5><b>Email : </b><span>care@kashmirbox.com</span></h5>
 					<h5><b>Contact : </b> <span>+91-9796-659-999</span></h5>
 				</div>
 			</div>
 			<br>
 			<div class="row">
-				<div class="col-md-12">
-					<h4 style="font-family: Cormorant-Bold;font-size: 18pt;">
+				<div class="col-md-12 footer2Row">
+					<h4>
 						Your Convenient Connection to the best of Kashmir
 					</h4>
-					<h2 style="padding: 40px 30px;margin-top: 0;margin-right: 20px;float: left;background: #222;color: white;font-size: 60pt;font-family: Cormorant-Medium;">KB</h2>
-					<p style="font-size: 14px;color: #777;font-family: calibri;font-weight: 500;text-align: justify;">
+					<h2>KB</h2>
+					<p>
 						Kashmir Box prides itself for being an artisan family of more than 1000 artisans, 200 producers and 50+ local brands from the remotest corners of Kashmir. We aim to bring the most cherished and glorious of authentic Kashmiri Crafts and produce to our valued customers, giving them the most seamless shopping experience ever. Whether you are looking for the soft embrace of Pashmina &amp; Cashmere, or to charm up your attire with the best of Kashmiri Embroideries like Aari, Sozni &amp; Tilla or to décor up your home with Paper Machie &amp; Walnut Wood beauties or simply to treat yourself to the exquisite Kashmiri Kahwa, Dry Fruits, Saffron and Wazwan, or to benefit from the age old health boosters like Mountain Shilajit, we have got you covered. We are your convenient connection to the best of Kashmir, an easy way to get all the beautiful products as easily and hassle free as is possible.
 
 					</p>
-					<h4>
-						<b style="font-family:  times new roman;font-size: 14px;">GSTIN: </b>
-						<span style="color:  #888;font-size: 13px;"> 01AAECK9299A1ZN</span>
+					<h4 class="footer2RowHeading">
+						<b>GSTIN: </b>
+						<span> 01AAECK9299A1ZN</span>
 					</h4>
 
 				</div>
@@ -1180,22 +1277,22 @@
 		<hr>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12 paymentPartners">
 					<center>
-						<span style="font-family:times new roman;font-size:22px;">Payment Partners</span>
+						<span>Payment Partners</span>
 					</center>
-					<div style="display: flex;justify-content: center;padding-top: 20px;">
-						<img data-src="images/d.png" class="lazy" style="width: 40px;height: 20px;margin-right:5px;">
-						<img data-src="images/m.png" class="lazy" style="width: 40px;height: 20px;margin-right:5px;">
-						<img data-src="images/v.png" class="lazy" style="width: 40px;height: 20px;margin-right:5px;">
-						<img data-src="images/a.png" class="lazy" style="width: 40px;height: 20px;margin-right:5px;">
+					<div>
+						<img data-src="images/d.png" class="lazy">
+						<img data-src="images/m.png" class="lazy">
+						<img data-src="images/v.png" class="lazy">
+						<img data-src="images/a.png" class="lazy">
 					</div>
 				</div>
 			</div>
 		</div>
 		<br>
-		<div class="container-fluid" style="background: black;text-align:  center;padding: 8px 0;">
-			<small class="copyright-footer" style="text-align:center;color: white;">
+		<div class="row footReserved">
+			<small class="copyright-footer">
 				Copyright © KashmirBox.com  2017-18. All Rights Reserved
 			</small>
 		</div>
@@ -1203,12 +1300,204 @@
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		function toogleHamburger() {
+			
+			
+		}
+        function toogleHeader() {
+        	$('.menu-toggle').find('.fa').css("cssText", "padding: 0px !important; font-size: 20px !important;")
+			if($('.menu-toggle').find('.fa').hasClass('fa-bars')){
+				$('.menu-toggle').find('.fa').removeClass('fa-bars')
+				$('.menu-toggle').find('.fa').addClass('fa-times')
+				$('#mainHeader').addClass('hidden')
+				$('#mainHeaderGrey').removeClass('hidden')
+			} else {
+				$('.menu-toggle').find('.fa').addClass('fa-bars')
+				$('.menu-toggle').find('.fa').removeClass('fa-times')
+				$('#mainHeader').removeClass('hidden')
+				$('#mainHeaderGrey').addClass('hidden')
+			}
+		}
+	</script>
+
+<!-- Mobile Nav Script -->
+	<script type="text/javascript" src="js/stellarnav.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			jQuery('.stellarnav').stellarNav({
+				theme: 'light'
+			});
+		});
+	</script>
+<!-- script used for cart slide -->
+    <script src="slidereveal.js"></script>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/js/superfish.js"></script>
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
 	<script type="text/javascript" src="custom.js"></script>
+
+<!-- mobile slide navbar -->
+    <script src="customNavbar.js" type="text/javascript"></script>
+
+<!-- cart slide -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
+  <script src="js/drawer.js"></script>
+	<script>
+	    $(document).ready(function() {
+	      $('.drawer').drawer();
+	    });
+	</script>
+
+<!-- script for overlay search -->
+    <script src="js/overlaysearch.js" type="text/javascript"></script>
+
+	<script>
+			(function() {
+				var morphSearch = document.getElementById( 'morphsearch' ),
+					input = morphSearch.querySelector( 'input.morphsearch-input' ),
+					searchIcon = morphSearch.querySelector( '#searchIcon' ),
+					ctrlClose = morphSearch.querySelector( 'span.morphsearch-close' ),
+					isOpen = isAnimating = false,
+					// show/hide search area
+					toggleSearch = function(evt) {
+						// return if open and the input gets focused
+						if( evt.type.toLowerCase() === 'focus' && isOpen ) return false;
+
+						var offsets = morphsearch.getBoundingClientRect();
+						if( isOpen ) {
+							classie.remove( morphSearch, 'open' );
+
+							// trick to hide input text once the search overlay closes 
+							// todo: hardcoded times, should be done after transition ends
+							if( input.value !== '' ) {
+								setTimeout(function() {
+									classie.add( morphSearch, 'hideInput' );
+									setTimeout(function() {
+										classie.remove( morphSearch, 'hideInput' );
+										input.value = '';
+									}, 300 );
+								}, 500);
+							}
+							
+							input.blur();
+						}
+						else {
+							classie.add( morphSearch, 'open' );
+						}
+						isOpen = !isOpen;
+					};
+
+				// events
+				input.addEventListener( 'focus', toggleSearch );
+				searchIcon.addEventListener( 'click', toggleSearch );
+				ctrlClose.addEventListener( 'click', toggleSearch );
+				// esc key closes search overlay
+				// keyboard navigation events
+				document.addEventListener( 'keydown', function( ev ) {
+					var keyCode = ev.keyCode || ev.which;
+					if( keyCode === 27 && isOpen ) {
+						toggleSearch(ev);
+					}
+				} );
+
+			})();
+	</script>
+<!-- script for cart slide -->
+	<script type="text/javascript">
+    	$(function(){
+        slider = $("#slider").slideReveal({
+          width: "50%",
+          // push: false,
+          position: "right",
+          speed: 600,
+          trigger: $("#trigger"),
+          // autoEscape: false,
+          show: function(obj){
+            console.log(obj);
+          },
+          shown: function(obj){
+            console.log(obj);
+          },
+          hide: function(obj){
+            console.log(obj);
+          },
+          hidden: function(obj){
+            console.log(obj);
+          },
+          overlay: true
+        });
+    	});
+
+    	$('.fa-minus').click(function (e){
+			let span = $(e.target).parent().find( "span" )
+			let value = span.text()
+			value = parseInt(value)
+			if(value > 1) {
+				value--;
+				span.text(value)
+			}
+		})
+		$('.fa-plus').click(function(e){
+			let span = $(e.target).parent().find( "span" )
+			let value = span.text()
+			value = parseInt(value)
+			value++;
+			span.text(value)
+		})
+		$('.fa-times').click(function(e){
+			let row_id = '#' + $(e.target).data('value')
+			let hr_id = '#' + $(e.target).data('value') + '_hr'
+			console.log(row_id)
+			console.log(hr_id)
+			$(row_id).remove();
+			$(hr_id).remove();
+		})
+    </script>
+
+<!-- Modal -->
+	<div id="myModal" class="modal fade modalLogin" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+      		<div class="row">
+      			<button type="button" class="close modalLoginClose" data-dismiss="modal">&times;</button>
+      			<div class="col-md-12 modalLoginMain">
+					<div class="col-md-6 modalLoginMainD1">
+						<img src="images/loginKB.png" class="img-responsive">
+					</div>
+					<div class="col-md-6 modalLoginMainD2">
+						<div class="textboxHead">
+							<input type="text" class="form-control textboxes" placeholder="Enter your email address">
+						</div>
+						<div class="textboxHead" id="modalLoginMainD3">
+							<input type="password" class="form-control textboxes" placeholder="Enter password">
+							<a id="lnkforget" class="hyperlink">Forgot?</a>
+						</div>
+						<div>
+							<input type="button" class="btn textboxexButton" value="LOGIN">
+						</div>
+
+						<div class="signUpStyleHead">
+							<h5 class="signUpStyle">NEW KASHMIR BOX? <a href="#">SIGN UP</a></h5>
+						</div>
+					</div>
+			</div>
+      		</div>
+      </div>
+    </div>
+
+  </div>
+	</div>
 
 </body>
 </html>
-
