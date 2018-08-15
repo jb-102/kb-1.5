@@ -3585,7 +3585,104 @@ a:hover,a:focus{
 	padding: 0;
 }
 
+.cartParent
+{
+	margin-top:20px; 
+	padding: 0;
+}
 
+.cartHeading
+{
+	 display: flex;
+	 justify-content: center;
+}
+.cartHeadingSpan
+{
+	z-index: 9999;
+}
+.cartHeading > span > img
+{
+	width:55px;
+	border-radius:100px;
+}
 
+.cartProductDiv
+{
+	display: flex; 
+	justify-content: space-between;
+}
 
+#cartProductDivI
+{
+	padding: 8px 0px 0px 0px;
+	font-size: 20px; 
+	cursor: pointer;
+}
 
+.cartHorizontal
+{
+	margin: 30px 0px;
+}
+.totalSpan
+{
+	font-family: Gotham-Medium;
+}
+.couponSpan
+{
+	font-family: Gotham-Medium; 
+	cursor: pointer; 
+	color:red;
+}
+
+.couponTextbox
+{
+	border-radius:0;
+	border-color: black;
+	padding:25px 20px;
+}
+
+.applyCoupon
+{
+	background: #2b2b2b;
+	color:white;
+	font-size:15px;
+	padding: 14.5px 25px;
+	border-radius:0;
+}
+
+.totalSpan1
+{
+	font-family: Gotham-BooKItalic;
+}
+
+.inclusive
+{
+	color: #949494; 
+	font-family: Gotham-Book;
+}
+.footImages
+{
+	display: flex;
+	justify-content: center;
+	padding-top: 20px; 
+	padding-bottom: 20px;
+}
+
+.footImages > img
+{
+	width: 40px;
+	height: 20px;
+	margin-right:5px;
+}
+
+.cartFootBottom
+{
+	margin-bottom: 20px; 
+	font-family: Gotham-Book;
+}
+
+.checkoutParent
+{
+	margin-top:20px; 
+	padding: 0;
+}
