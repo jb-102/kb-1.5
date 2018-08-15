@@ -3746,6 +3746,13 @@ a:hover,a:focus{
 	text-shadow: none;
 }
 
+@media (max-width: 767px) and (min-width: 0px)
+{
+	.col-xs-offsett-3 {
+		margin-left: 25%;
+	}
+}
+
 @media (max-width: 370px) and (min-width: 280px)
 {
 	.top_nav > ul > li >a {
