@@ -3680,3 +3680,9 @@ a:hover,a:focus{
 	margin-bottom: 20px; 
 	font-family: Gotham-Book;
 }
+
+.checkoutParent
+{
+	margin-top:20px; 
+	padding: 0;
+}
