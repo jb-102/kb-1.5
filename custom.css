@@ -351,6 +351,7 @@ header
 	font-family: Gotham-Book !important;
 	color: #7f7f7f !important;
 	padding: 3px 5px;
+	font-size: 13px;
 }
 
 .mega-dropdown-menu > li ul > li > a:hover,
@@ -359,12 +360,11 @@ header
 }
 
 .mega-dropdown-menu .dropdown-header {
-	font-size: 18px;
-	color: #333;
-	padding: 5px 60px 5px 5px;
+	font-size: 13px;
+	padding: 5px;
+	text-transform: uppercase;
 	line-height: 30px;
 	text-align: left;
-	padding-left:0 !important;
 	font-family: Gotham-Medium !important;
 	color: black !important;
 }
