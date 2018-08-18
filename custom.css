@@ -56,6 +56,7 @@ input {
 	outline: none;
 }
 
+
 #mainHeader {
 	height: 145px;
 }
@@ -1741,6 +1742,8 @@ p {
 	    display: inline-block !important;
 		width: 80%;
 		font-size: 25px;
+	    -webkit-appearance: none;
+	    border-radius: 0px !important;
 	}
 	.morphsearch .morphsearch-form .morphsearch-input {
 	    display: none !important;
@@ -1931,6 +1934,14 @@ p {
 }
 @media (min-width: 280px) and (max-width: 577px)
 {
+
+	.load-more {
+	    width: auto !important;
+	    margin: 30px 5px !important;
+	    padding: 10px 20px !important;
+	    height: auto !important; 
+	    font-size: 12px !important;
+	}
 	#showFooter {
 		height: 70px !important;
 	}
@@ -2060,7 +2071,7 @@ p {
 	}
 	.newsletter > div > h3 {
 	    font-size: 25px !important;
-	    padding: 0 50px;
+	    padding: 0 50px !important;
 	    line-height: 35px;
 	}
 	.marginTop15 {
@@ -3375,7 +3386,7 @@ select.form-control-product:focus {
 	margin: 50px 0;
     padding-left: 0;
     line-height: 30px;
-    font-size: 21px;
+    font-size: 32px;
 }
 
 .newsletterTextbox
@@ -4002,11 +4013,24 @@ a:hover,a:focus{
 	    font-size: 8px !important;
 	}
 	.loginMobile {
-		font-size: 10px; 
+		font-size: 9px; 
+	}
+	.badge-cart {
+	    font-size: 10px;
+	    padding: 2px;
+	    width: 15px;
+	    height: 15px;
+	    border-radius: 30px;
 	}
 	.what-sells-best {
 	    font-size: 23pt !important;
 	    text-align: center;
+	}
+	.product-add-to-box {
+		font-size: 10px !important;
+	}
+	.product-wishlist {
+		font-size: 10px !important;
 	}
 }
 
@@ -4040,6 +4064,7 @@ a:hover,a:focus{
 {
 	margin-bottom: 4px;
 }
+
 .foot_4_row > div
 {		
 	width: 85%;
@@ -4063,4 +4088,12 @@ a:hover,a:focus{
     bottom: 0;
     width: 100%;
     left: 0;
+    right: 0;
+    top: auto;
+	-webkit-appearance: none !important;
+
+}
+
+#foot_4 {
+	padding-top: 10px
 }

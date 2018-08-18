@@ -28,7 +28,7 @@
 	<header role="banner">
 	    <nav class="drawer-nav" role="navigation" id="cartNav">
 	      	<h2 class="row">
-	      		<span class="col-md-4 fa fa-angle-left drawer-toggle" id="span1"></span>
+	      		<span class="col-md-4 fa fa-angle-right drawer-toggle" id="span1"></span>
 	      		<span class="col-md-8 span2">Your Cart</span>
 	      	</h2>
 	      	<hr/>
@@ -883,9 +883,9 @@
 		</span>
 
 		<ul class="firstDDLayer">
-			<li><a href="">MEN</a>
+			<li><a class="dd-toggle-whole">MEN</a>
 		    	<ul class="secondDDLayer">
-		    		<li><a href="">Dropdown2</a>
+		    		<li><a class="dd-toggle-whole">Dropdown2</a>
 		    			<ul class="thirdDDLayer">
 				    		<li><a href="#">How deep?</a></li>
 				    		<li><a href="#">Item</a></li>
@@ -900,9 +900,9 @@
 		    		<li><a href="#">Item</a></li>
 		    	</ul>
 		    </li>
-		    <li><a href="">WOMEN</a>
+		    <li><a class="dd-toggle-whole">WOMEN</a>
 		    	<ul class="secondDDLayer">
-		    		<li><a href="">Dropdown2</a>
+		    		<li><a class="dd-toggle-whole">Dropdown2</a>
 		    			<ul class="thirdDDLayer">
 				    		<li><a href="#">How deep?</a></li>
 				    		<li><a href="#">Item</a></li>
@@ -917,9 +917,9 @@
 		    		<li><a href="#">Item</a></li>
 		    	</ul>
 		    </li>
-		    <li><a href="">FOOD</a>
+		    <li><a class="dd-toggle-whole">FOOD</a>
 		    	<ul class="secondDDLayer">
-		    		<li><a href="">Dropdown2</a>
+		    		<li><a class="dd-toggle-whole">Dropdown2</a>
 		    			<ul class="thirdDDLayer">
 				    		<li><a href="#">How deep?</a></li>
 				    		<li><a href="#">Item</a></li>
@@ -934,9 +934,9 @@
 		    		<li><a href="#">Item</a></li>
 		    	</ul>
 		    </li>
-		    <li><a href="">DECOR</a>
+		    <li><a class="dd-toggle-whole">DECOR</a>
 		    	<ul class="secondDDLayer">
-		    		<li><a href="">Dropdown2</a>
+		    		<li><a class="dd-toggle-whole">Dropdown2</a>
 		    			<ul class="thirdDDLayer">
 				    		<li><a href="#">How deep?</a></li>
 				    		<li><a href="#">Item</a></li>
@@ -958,7 +958,7 @@
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-12 imageSliderPadding">
+			<div class="col-md-12 col-lg-12 hidden-xs hidden-sm imageSliderPadding">
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" id="imageSlider">
@@ -974,6 +974,44 @@
 						</div>
 						<div class="item">
 							<img data-src="images/3.png" class="lazy" alt="Kashmir Box">
+							<div class="carousel-caption">
+					          <p>BLOSSOM LIKE FLORALS</p>
+					          <h2>EMBROIDERED ETHNIC KURTIS!</h2>
+					          <div class="break"></div>
+					          <input type="button" class="btn btn-default btn-xs sliderButton" value="Explore">
+					        </div>
+						</div>
+
+						
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 hidden-md hidden-lg imageSliderPadding">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" id="imageSlider">
+						<div class="item active">
+							<img data-src="images/bg.jpg" class="lazy" alt="Kashmir Box">
+							<div class="carousel-caption">
+					          <p>BLOSSOM LIKE FLORALS</p>
+					          <h2>EMBROIDERED ETHNIC KURTIS!</h2>
+					          <div class="break"></div>
+
+					          <input type="button" class="btn btn-default btn-xs sliderButton" value="Explore">
+					        </div>
+						</div>
+						<div class="item">
+							<img data-src="images/bg.jpg" class="lazy" alt="Kashmir Box">
 							<div class="carousel-caption">
 					          <p>BLOSSOM LIKE FLORALS</p>
 					          <h2>EMBROIDERED ETHNIC KURTIS!</h2>
@@ -1280,7 +1318,6 @@
 					</ul>
 				</div>
 				<div class="col-md-3 col-xs-6 col-sm-3" id="foot_4">
-					<h4>More...</h4>
 						<div class="foot_4_row">
 							<img src="images/originalKB.png" class="pull-left">
 							<div>
@@ -1518,15 +1555,13 @@
 		$('.fa-times').click(function(e){
 			let row_id = '#' + $(e.target).data('value')
 			let hr_id = '#' + $(e.target).data('value') + '_hr'
-			console.log(row_id)
-			console.log(hr_id)
 			$(row_id).remove();
 			$(hr_id).remove();
 		})
     </script>
 
 <!-- Modal -->
-	<div id="myModal" class="modal fade modalLogin" role="dialog">
+<div id="myModal" class="modal fade modalLogin" role="dialog">
   <div class="modal-dialog">
     <!-- Modal content-->
     <div class="modal-content">
@@ -1560,7 +1595,7 @@
     </div>
 
   </div>
-	</div>
+</div>
 
 </body>
 </html>

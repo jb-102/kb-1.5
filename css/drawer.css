@@ -540,6 +540,7 @@
   #cartNav
   {
     width:100% !important;
+    height: 100vh !important;
   }
   .drawer--right .drawer-nav
   {
