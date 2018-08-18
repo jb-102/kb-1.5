@@ -16,36 +16,14 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-	$('.customer-logos').slick({
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 1500,
-		arrows: false,
-		dots: false,
-		pauseOnHover: false,
-		responsive: [{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 4
-			}
-		}, {
-			breakpoint: 520,
-			settings: {
-				slidesToShow: 3
-			}
-		}]
-	});
-});
-
-$(document).ready(function(){
 	$("#testimonial-slider").owlCarousel({
 		items:2,
-		itemsDesktop:[1000,1],
-		itemsDesktopSmall:[979,1],
-		itemsTablet:[768,1],
+		itemsDesktop:[1000,2],
+		itemsDesktopSmall:[979,2],
+		itemsTablet:[768,2],
 		pagination:false,
 		navigation:true,
+		margin:10,
 		navigationText:["",""],
 		autoPlay:true
 	});
@@ -127,3 +105,19 @@ $(document).ready(function () {
         $('#wrapper').toggleClass('toggled');
     });
 });
+
+$("#showFooter").click(function (){
+	if($('footer').is(":hidden")) {
+		$('footer').slideDown();
+		$('html, body').animate({
+	        'scrollTop' : $("footer").position().top
+	    });
+	    $("#showFooter span i").removeClass("fa-angle-down");
+	    $("#showFooter span i").addClass("fa-angle-up");
+	} else {
+		$('footer').slideUp();
+	    $("#showFooter span i").removeClass("fa-angle-up");
+	    $("#showFooter span i").addClass("fa-angle-down");
+	}
+	
+})
