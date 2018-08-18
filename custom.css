@@ -4036,3 +4036,31 @@ a:hover,a:focus{
 	margin-left: 20px;
 }
 
+.foot_4_row > img
+{
+	margin-bottom: 4px;
+}
+.foot_4_row > div
+{		
+	width: 85%;
+	position: relative;
+	left: 12px;
+}
+
+.foot_4_row > div > p
+{
+	font-size: 13px;
+}
+.foot_4_row > div > b
+{
+	font-size: 13px;
+    font-family: Gotham-Medium;
+}
+
+.cartFoot
+{
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
