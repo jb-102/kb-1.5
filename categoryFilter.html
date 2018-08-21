@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   	<link rel="stylesheet" href="https:/resources/demos/style.css">
 
+
 </head>
 <body>
 
@@ -773,7 +774,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="container-fluid" id="mainContainerCategory">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1 col-xs-12">
@@ -953,6 +954,44 @@
 			</div>		
 		</div>
 	</div>
+	
+
+<style type="text/css">
+	.footerSticky
+	{
+		background-color: #fff;
+	    position: fixed;
+	    bottom: 0;
+	    width: 100%;
+	    padding: .5rem;
+	    z-index: 100;
+	    -webkit-box-shadow: 0 -3px 5px #999;
+	    -moz-box-shadow: 0 -3px 5px #999;
+	    box-shadow: 0 -3px 5px #999;
+	    display: flex;
+	}
+	.footerSticky > div
+	{
+		width: 49%;
+		text-align: center;
+		padding: 10px 0;
+	}
+	.footerStickyLeft
+	{
+		border-right: 1px solid grey;
+	}
+
+</style>
+
+	<div class="footerSticky hidden-md hidden-lg">
+        <div class="footerStickyLeft">
+        	<a href="#" data-toggle="modal" data-target="#product-sort-modal"><span class="fa fa-sort"></span> Sort</a>
+        </div>
+        <div class="footerStickyRight">
+        	<a href="#" data-toggle="modal" data-target="#product-filter-modal"><span class="fa fa-filter"></span> Filter</a>
+        </div>
+    </div>
+
 	<hr>
 
 
