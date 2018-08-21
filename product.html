@@ -957,7 +957,7 @@
 			<div class="col-md-10 col-md-offset-1 col-xs-12">
 				<div class="row">
 					<div class="col-md-6 col-xs-12 productSlider" >
-						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<div id="myProductCarousel" class="carousel slide" data-ride="carousel">
 
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" id="imageSlider">
@@ -971,11 +971,11 @@
 							</div>
 
 							<!-- Left and right controls -->
-							<a class="left carousel-control hidden-xs" href="#myCarousel" data-slide="prev">
+							<a class="left carousel-control hidden-xs" href="#myProductCarousel" data-slide="prev">
 								<span class="glyphicon glyphicon-chevron-left"></span>
 								<span class="sr-only">Previous</span>
 							</a>
-							<a class="right carousel-control hidden-xs" href="#myCarousel" data-slide="next">
+							<a class="right carousel-control hidden-xs" href="#myProductCarousel" data-slide="next">
 								<span class="glyphicon glyphicon-chevron-right"></span>
 								<span class="sr-only">Next</span>
 							</a>
@@ -1359,55 +1359,54 @@
     <script src="js/overlaysearch.js" type="text/javascript"></script>
 
 	<script>
-			(function() {
-				var morphSearch = document.getElementById( 'morphsearch' ),
-					input = morphSearch.querySelector( 'input.morphsearch-input' ),
-					searchIcon = morphSearch.querySelector( '#searchIcon' ),
-					ctrlClose = morphSearch.querySelector( 'span.morphsearch-close' ),
-					isOpen = isAnimating = false,
-					// show/hide search area
-					toggleSearch = function(evt) {
-						// return if open and the input gets focused
-						if( evt.type.toLowerCase() === 'focus' && isOpen ) return false;
+		(function() {
+			var morphSearch = document.getElementById( 'morphsearch' ),
+				input = morphSearch.querySelector( 'input.morphsearch-input' ),
+				searchIcon = morphSearch.querySelector( '#searchIcon' ),
+				ctrlClose = morphSearch.querySelector( 'span.morphsearch-close' ),
+				isOpen = isAnimating = false,
+				// show/hide search area
+				toggleSearch = function(evt) {
+					// return if open and the input gets focused
+					if( evt.type.toLowerCase() === 'focus' && isOpen ) return false;
 
-						var offsets = morphsearch.getBoundingClientRect();
-						if( isOpen ) {
-							classie.remove( morphSearch, 'open' );
+					var offsets = morphsearch.getBoundingClientRect();
+					if( isOpen ) {
+						classie.remove( morphSearch, 'open' );
 
-							// trick to hide input text once the search overlay closes 
-							// todo: hardcoded times, should be done after transition ends
-							if( input.value !== '' ) {
+						// trick to hide input text once the search overlay closes 
+						// todo: hardcoded times, should be done after transition ends
+						if( input.value !== '' ) {
+							setTimeout(function() {
+								classie.add( morphSearch, 'hideInput' );
 								setTimeout(function() {
-									classie.add( morphSearch, 'hideInput' );
-									setTimeout(function() {
-										classie.remove( morphSearch, 'hideInput' );
-										input.value = '';
-									}, 300 );
-								}, 500);
-							}
-							
-							input.blur();
+									classie.remove( morphSearch, 'hideInput' );
+									input.value = '';
+								}, 300 );
+							}, 500);
 						}
-						else {
-							classie.add( morphSearch, 'open' );
-						}
-						isOpen = !isOpen;
-					};
-
-				// events
-				input.addEventListener( 'focus', toggleSearch );
-				searchIcon.addEventListener( 'click', toggleSearch );
-				ctrlClose.addEventListener( 'click', toggleSearch );
-				// esc key closes search overlay
-				// keyboard navigation events
-				document.addEventListener( 'keydown', function( ev ) {
-					var keyCode = ev.keyCode || ev.which;
-					if( keyCode === 27 && isOpen ) {
-						toggleSearch(ev);
+						
+						input.blur();
 					}
-				} );
+					else {
+						classie.add( morphSearch, 'open' );
+					}
+					isOpen = !isOpen;
+				};
 
-			})();
+			// events
+			input.addEventListener( 'focus', toggleSearch );
+			searchIcon.addEventListener( 'click', toggleSearch );
+			ctrlClose.addEventListener( 'click', toggleSearch );
+			// esc key closes search overlay
+			// keyboard navigation events
+			document.addEventListener( 'keydown', function( ev ) {
+				var keyCode = ev.keyCode || ev.which;
+				if( keyCode === 27 && isOpen ) {
+					toggleSearch(ev);
+				}
+			} );
+		})();
 	</script>
 <!-- script for cart slide -->
 	<script type="text/javascript">
@@ -1500,18 +1499,18 @@
 </body>
 </html>
 <script>
-let el = document.getElementById('myCarousel')
+let el = document.getElementById('myProductCarousel')
 $(document).ready(function() {
 
-	$("#myCarousel").carousel({
+	$("#myProductCarousel").carousel({
 	    interval: false
 	}); 
 
 	el.addEventListener('swr',function(){
-		$("#myCarousel").carousel('prev')
+		$("#myProductCarousel").carousel('prev')
 	},false);
 	el.addEventListener('swl',function(){
-		$("#myCarousel").carousel('next')
+		$("#myProductCarousel").carousel('next')
 	},false);
 
 	window.onload=function(){

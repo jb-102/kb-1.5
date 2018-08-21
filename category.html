@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kashmir Box</title>
+	<title>Welcome to Kashmir Box</title>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,81 +9,161 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link rel="stylesheet" type="text/css" href="mobileNavbar.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.13.0/lazyload.min.js"></script>
+	<link href="css/drawer.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="all" href="css/stellarnav.min.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/overlaysearch.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  	<link rel="stylesheet" href="https:/resources/demos/style.css">
+	<link rel="stylesheet" type="text/css" href="custom.css">
 
 </head>
-<body>
+<body class="drawer drawer--right">
+	<!-- cart slide data -->
+	<header role="banner">
+	    <nav class="drawer-nav" role="navigation" id="cartNav">
+	      	<h2 class="row">
+	      		<span class="col-md-4 fa fa-angle-right drawer-toggle" id="span1"></span>
+	      		<span class="col-md-8 span2">Your Cart</span>
+	      	</h2>
+	      	<hr/>
+	      	<div class="container">
+		      	<div class="row">
+		      		<div class="col-md-6 col-xs-12 col-sm-12 inCart">
+		      			<div class="row" id="row_1">
+		      				<div class="col-md-3  col-xs-4 col-sm-4">
+		      					<img src="images/cart1.png" class="img-responsive">
+		      				</div>
+		      				<div class="col-md-6  col-xs-8 col-sm-8 cart-item-details-slider">
+		      					<p class="cart-item-name">Aftaab Garden Silk Saree</p>
+		      					<div class="inCartFlex">
+		      						<span>
+		      							<i class="fa fa-minus cursor"></i> 
+		      						<span class="badge-cart-main"> 1</span> 
+		      							<i class="fa fa-plus cursor"></i>
+		      						</span>
+		      						<i class="fa fa-times inCartI" data-value="row_1"></i>
+		      					</div>
+		      					<h4 class="cart-item-price">Rs. 1,852</h4>
+		      				</div>
+		      			</div>
+		      			<hr id="row_1_hr">
+		      			<div class="row" id="row_2">
+		      				<div class="col-md-3  col-xs-4 col-sm-4">
+		      					<img src="images/cart1.png" class="img-responsive">
+		      				</div>
+		      				<div class="col-md-6  col-xs-8 col-sm-8 cart-item-details-slider">
+		      					<p class="cart-item-name">Aftaab Garden Silk Saree</p>
+		      					<div class="inCartFlex">
+		      						<span>
+		      							<i class="fa fa-minus cursor"></i> 
+		      						<span class="badge-cart-main"> 1</span> 
+		      							<i class="fa fa-plus cursor"></i>
+		      						</span>
+		      						<i class="fa fa-times inCartI" data-value="row_1"></i>
+		      					</div>
+		      					<h4 class="cart-item-price">Rs. 1,852</h4>
+		      				</div>
+		      			</div>
+		      			<hr id="row_2_hr">
+		      			<div class="row side-cart-footer">
+	      					<div class="col-md-12">
+	      						<div class="cartFoot">
+	      							<h4 class="text-center font-gotham-book"><span>SUBTOTAL: </span><span>Rs. 3704</span></h4>
+	      							<input type="button" class="btn inCartCheckout" value="CHECKOUT">
+	      						</div>
+	      					</div>
+		      			</div>
+		      		</div>
+		      	</div>
+	      	</div>
+	    </nav>
+  	</header>
 
-	<!-- Normal Screen Header -->
+    <!-- overlay search section -->
+	<div id="morphsearch" class="morphsearch">
+		<form class="morphsearch-form">
+			<span id="searchIcon" class="fa fa-search"></span>
+			<input class="morphsearch-input" type="search" placeholder="Search..."/>
+		</form>
+		<span class="morphsearch-close"></span>
+	</div>
+
+	<header class="codrops-header">
+	</header>
+	<div class="overlay">
+	</div>
 
 	<header id="mainHeader" class="container-fluid">
 		<nav class="navbar">
-			<div class="container">
-				<div id="navbar" class="navbar-collapse collapse top_nav">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">KB</a></li>
-						<li><a href="#about">KB CASHMERE</a></li>
-						<li><a href="#contact">KB PASHMINA</a></li>
-						<li><a href="#contact">KB TRESURE BOX</a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Kashmir Wholesale</a></li>
-						<li><a href="#">Services</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Currency : USD <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div><!--/.nav-collapse -->
+			<div class="row" id="topNavMargin">
+				<div class="col-md-10 col-md-offset-1" id="top_nav_head">
+					<div id="navbar" class="navbar-collapse collapse top_nav">
+						<ul class="nav navbar-nav" id="top_nav_left">
+							<li class="active hidden-xs hidden-sm"><a href="#">KB</a></li>
+							<li><a href="#about">KB CASHMERE</a></li>
+							<li><a href="#contact">KB PASHMINA</a></li>
+							<li class="hidden-xs hidden-sm"><a href="#contact">KB TRESURE BOX</a></li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right" id="top_nav_right">
+							  <button class="dropbtn hidden-xs">Kashmir Wholesale</button>
+							  <button class="dropbtn hidden-xs">Services</button>
+							  <div class="dropdown">
+							    <button class="dropbtn">Currency:USD <i class="fa fa-caret-down"></i></button>
+							    <div class="dropdown-content">
+							      <a href="#">Link 1</a>
+							      <a href="#">Link 2</a>
+							      <a href="#">Link 3</a>
+							    </div>
+							  </div>
+							  <div class="dropdown">
+							    <button class="dropbtn">Help <i class="fa fa-caret-down"></i></button>
+							    <div class="dropdown-content">
+							      <a href="#">Link 1</a>
+							      <a href="#">Link 2</a>
+							      <a href="#">Link 3</a>
+							    </div>
+							  </div>
+						</ul>
+
+					</div><!--/.nav-collapse -->
+				</div>
 			</div>
 		</nav>
 
-		<div class="container-fluid">
-			<div class="row" style="padding-bottom: 10px">
-				<div class="col-md-3 col-md-offset-1 col-xs-offset-2 padding_left">
-					<div class="search">
-						<span class="fa fa-search"></span>
-						<input placeholder="Search the store" id="searchbox">
-					</div>
+		<div class="row hidden-xs hidden-sm" id="middleLeftPart">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="col-md-4 col-xs-4">
+
+					
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-xs-4">
 					<h2 class="text-center main_heading">KASHMIR BOX</h2>
 				</div>
-				<div class="col-md-4">
-					<ul class="nav navbar-nav" id="middle_right_nav">
-						<li><a href="#about" class="middle_right_nav_login">LOGIN</a></li>
-						<li><a href="#contact">SIGNUP</a></li>
+				<div class="col-md-4 col-xs-4">
+					<ul class="nav navbar-nav pull-right" id="middle_right_nav">
+						<li><a class="middle_right_nav_login" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
+						<li><a data-toggle="modal" data-target="#myModal">SIGNUP</a></li>
 						<li><a href="#contact">WISHLIST</a></li>
-						<li><a href="#contact">CART <span class="badge-cart">2</span></a></li>
+						<li><a class="drawer-toggle" id="openHanbergerCart" href="#">CART <span class="badge-cart"> 2</span></a></li>
+
 					</ul>
 				</div>
 			</div>
 		</div>
 
-		<div class="container-fluid hidden-sm hidden-xs" style="padding: 0;">
+		<div class="hidden-xs hidden-sm" id="megaNavParent">
 			<div class="bottom_nav">
 				<nav class="navbar navbar-inverse">
-					<div class="collapse navbar-collapse js-navbar-collapse" style="display: flex !important;justify-content: center;width:100%;background: white;">
+					<div class="collapse navbar-collapse js-navbar-collapse" id="magaNavParent2Div">
 						<ul class="nav navbar-nav">
 
 							<li class="dropdown mega-dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Men </a>				
-								<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+								<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 									<li class="col-sm-2 col-md-offset-1">
 										<ul>
 											<li class="dropdown-header">Features</li>
@@ -144,7 +224,7 @@
 							</li>
 							<li class="dropdown mega-dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Women </a>				
-								<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+								<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 									<li class="col-sm-2 col-md-offset-1">
 										<ul>
 											<li class="dropdown-header">Features</li>
@@ -206,7 +286,7 @@
 
 							<li class="dropdown mega-dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Food </a>				
-								<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+								<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 									<li class="col-sm-2 col-md-offset-1">
 										<ul>
 											<li class="dropdown-header">Features</li>
@@ -267,7 +347,7 @@
 							</li>
 							<li class="dropdown mega-dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Home & Decor </a>				
-								<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+								<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 									<li class="col-sm-2 col-md-offset-1">
 										<ul>
 											<li class="dropdown-header">Features</li>
@@ -329,7 +409,7 @@
 
 							<li class="dropdown mega-dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Beauty </a>				
-								<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+								<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 									<li class="col-sm-2 col-md-offset-1">
 										<ul>
 											<li class="dropdown-header">Features</li>
@@ -396,7 +476,7 @@
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
 							</li>
 							<li class="dropdown mega-dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:red;">Sale!</a>
+								<a href="#" class="dropdown-toggle" id="saleRed" data-toggle="dropdown" >Sale!</a>
 							</li>
 
 						</ul>
@@ -406,28 +486,47 @@
 		</div>
 	</header>
 
+	<header id="mainHeaderGrey" class="container-fluid hidden">
+		<nav>
+			<div class="col-md-12" id="topNavHambergClickRow">
+				<div class="col-xs-12" id="top_nav_head">
+					<div id="navbar" class="navbar-collapse collapse top_nav">
+						<ul class="row" id="topNavHambergClick">
+							<li class="col-xs-4 text-center">
+								<a href="#about">KB CASHMERE</a>
+							</li>
+							<li class="col-xs-4 text-center">
+								<a href="#contact">KB PASHMINA</a>
+							</li>
+							<li class="col-xs-4 text-center">
+								<a href="#contact">KB TRESURE BOX</a>
+							</li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</nav>
+	</header>
 
 	<!-- Sticky Header -->
 
-	<header class="site-header hidden-xs hidden-sm" style="display:none;" id="stickHeader"> 
+	<header class="site-header hidden-xs hidden-sm" id="stickHeader"> 
 		<nav class="navbar navbar-default">
 			<div class="header-inner">
-				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-12">
-
-							<nav class="navbar navbar-inverse" style="float: left;margin-top: 11px;margin-bottom:  0;width:100%;">
-								<div class="collapse navbar-collapse js-navbar-collapse" style="display: flex !important;justify-content: center;width:100%;background: white;">
-									<h2 style="margin-top:8px;margin-right:40px;font-family:times new roman;">
-										<a href="index.html" style="color: black;">
+							<nav class="navbar navbar-inverse-sticky" id="stickyNavStyle">
+								<div class="collapse navbar-collapse js-navbar-collapse">
+									<h2>
+										<a href="index.html">
 											KB
 										</a>
 									</h2>
-									<ul class="nav navbar-nav">
+									<ul class="nav navbar-nav navbar-nav-menu">
 
 										<li class="dropdown mega-dropdown">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Men </a>				
-											<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+											<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 												<li class="col-sm-2 col-md-offset-1">
 													<ul>
 														<li class="dropdown-header">Features</li>
@@ -488,7 +587,7 @@
 										</li>
 										<li class="dropdown mega-dropdown">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Women </a>				
-											<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+											<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 												<li class="col-sm-2 col-md-offset-1">
 													<ul>
 														<li class="dropdown-header">Features</li>
@@ -550,7 +649,7 @@
 
 										<li class="dropdown mega-dropdown">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Food </a>				
-											<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+											<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 												<li class="col-sm-2 col-md-offset-1">
 													<ul>
 														<li class="dropdown-header">Features</li>
@@ -611,7 +710,7 @@
 										</li>
 										<li class="dropdown mega-dropdown">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Home & Decor </a>				
-											<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+											<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 												<li class="col-sm-2 col-md-offset-1">
 													<ul>
 														<li class="dropdown-header">Features</li>
@@ -673,7 +772,7 @@
 
 										<li class="dropdown mega-dropdown">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Beauty </a>				
-											<ul class="dropdown-menu mega-dropdown-menu" style="border:none">
+											<ul class="dropdown-menu mega-dropdown-menu megaNavParentUL">
 												<li class="col-sm-2 col-md-offset-1">
 													<ul>
 														<li class="dropdown-header">Features</li>
@@ -740,16 +839,16 @@
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
 										</li>
 										<li class="dropdown mega-dropdown">
-											<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:red;">Sale!</a>
+											<a href="#" class="dropdown-toggle" id="saleRed" data-toggle="dropdown">Sale!</a>
 										</li>
 
 									</ul>
 									<div id="stickRight">
 										<ul class="nav navbar-nav" id="middle_right_nav">
 											<li><a href="#about" class="middle_right_nav_login">LOGIN</a></li>
-											<li><a href="#contact">SIGNUP</a></li>
-											<li><a href="#contact">WISHLIST</a></li>
-											<li><a href="#contact">CART <span class="badge-cart"> 2</span></a></li>
+											<li><a href="#">SIGNUP</a></li>
+											<li><a href="#">WISHLIST</a></li>
+											<li><a href="#" class="drawer-toggle" id="openHanbergerCart" >CART <span class="badge-cart"> 2</span></a></li>
 										</ul>
 									</div>
 								</div><!-- /.nav-collapse -->
@@ -757,325 +856,435 @@
 							</nav>
 
 						</div>
-
 					</div>
-				</div>
 			</div>
 		</nav>
 	</header>
 
-	<!-- Image Slider -->
+		<!-- ========	New mobile nav  ========= -->
+	<div id="main-nav" class="stellarnav hidden-md hidden-lg">
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12 categoryBanner">
-				<img data-src="images/banner.jpg" class="lazy img-responsive" alt="Kashmir Box">
+		<span id="newMobileNavTopnav">
+			<div class="row">
+				<div class="col-xs-4" id="newMobileNavTopnavLeft1">
+				</div>
+				<div class="col-xs-2 text-center" id="newMobileNavTopnavLeft2">
+					<span>KB</span>
+				</div>
+				<div class="col-xs-6 text-right" id="newMobileNavTopnavLeft3">
+					<a href="#about" class="loginMobile" data-toggle="modal" data-target="#myModal">LOGIN</a>
+					<a href="#" data-toggle="modal" data-target="#myModal" class="loginMobile" id="newMobileNavTopnavSignup">SIGNUP</a>
+					<a href="#" class="drawer-toggle" id="openHanbergerCart"> 
+						<span id="newMobileNavTopnavBadge" class="badge-cart">2</span>
+					</a>
+				</div>
+			</div>
+		</span>
+
+		<ul class="firstDDLayer">
+			<li><a class="dd-toggle-whole">MEN</a>
+		    	<ul class="secondDDLayer">
+		    		<li><a class="dd-toggle-whole">Dropdown2</a>
+		    			<ul class="thirdDDLayer">
+				    		<li><a href="#">How deep?</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+				    		<li><a href="#">Item</a></li>
+				    	</ul>
+		    		</li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+		    		<li><a href="#">Item</a></li>
+		    	</ul>
+		    </li>
+		    <li><a class="dd-toggle-whole">WOMEN</a>
+		    	<ul class="secondDDLayer">
+		    		<li><a class="dd-toggle-whole">Dropdown2</a>
+		    			<ul class="thirdDDLayer">
+				    		<li><a href="#">How deep?</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+				    		<li><a href="#">Item</a></li>
+				    	</ul>
+		    		</li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+		    		<li><a href="#">Item</a></li>
+		    	</ul>
+		    </li>
+		    <li><a class="dd-toggle-whole">FOOD</a>
+		    	<ul class="secondDDLayer">
+		    		<li><a class="dd-toggle-whole">Dropdown2</a>
+		    			<ul class="thirdDDLayer">
+				    		<li><a href="#">How deep?</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+				    		<li><a href="#">Item</a></li>
+				    	</ul>
+		    		</li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+		    		<li><a href="#">Item</a></li>
+		    	</ul>
+		    </li>
+		    <li><a class="dd-toggle-whole">DECOR</a>
+		    	<ul class="secondDDLayer">
+		    		<li><a class="dd-toggle-whole">Dropdown2</a>
+		    			<ul class="thirdDDLayer">
+				    		<li><a href="#">How deep?</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Item</a></li>
+				    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+				    		<li><a href="#">Item</a></li>
+				    	</ul>
+		    		</li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Item</a></li>
+		    		<li><a href="#">Here's a very long item. It can be as long as you want</a></li>
+		    		<li><a href="#">Item</a></li>
+		    	</ul>
+		    </li>
+		</ul>
+	</div>
+
+	<!-- ==============	Image Slider  ================= -->
+
+	<div class="content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 categoryBanner">
+					<img data-src="images/banner.jpg" class="lazy img-responsive" alt="Kashmir Box">
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" id="mainContainerCategory">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 col-xs-12">
+					<div class="row">
+						<div class="col-md-3 col-xs-12 hidden-xs hidden-sm categoryFilters">
+							<h3>FILTERS</h3>
+				            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				                <div class="panel panel-default">
+				                    <div class="panel-heading" role="tab" id="headingOne">
+				                        <h4 class="panel-title">
+				                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				                                Price
+				                            </a>
+				                        </h4>
+				                    </div>
+				                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				                        <div class="panel-body">
+				                            <div id="slider-range"></div>
+				                            <div><span id="min" class="pull-left">99</span><span id="max" class="pull-right">99999</span></div>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div class="panel panel-default">
+				                    <div class="panel-heading" role="tab" id="headingTwo">
+				                        <h4 class="panel-title">
+				                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				                                Color
+				                            </a>
+				                        </h4>
+				                    </div>
+				                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				                        <div class="panel-body">
+			                            	<div class="checkbox">
+										      <label><input type="checkbox" value="">Option 1</label>
+										    </div>
+										    <div class="checkbox">
+										      <label><input type="checkbox" value="">Option 2</label>
+										    </div>
+										    <div class="checkbox">
+										      <label><input type="checkbox" value="" disabled>Option 3</label>
+										    </div>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div class="panel panel-default">
+				                    <div class="panel-heading" role="tab" id="headingThree">
+				                        <h4 class="panel-title">
+				                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				                                Fabric
+				                            </a>
+				                        </h4>
+				                    </div>
+				                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				                        <div class="panel-body">
+				                            <div class="checkbox">
+										      <label><input type="checkbox" value="">Option 1</label>
+										    </div>
+										    <div class="checkbox">
+										      <label><input type="checkbox" value="">Option 2</label>
+										    </div>
+										    <div class="checkbox">
+										      <label><input type="checkbox" value="" disabled>Option 3</label>
+										    </div>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div class="panel panel-default">
+				                    <div class="panel-heading" role="tab" id="headingFour">
+				                        <h4 class="panel-title">
+				                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+				                                Embriodery
+				                            </a>
+				                        </h4>
+				                    </div>
+				                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+				                        <div class="panel-body">
+				                            <div class="checkbox">
+										      <label><input type="checkbox" value="">Option 1</label>
+										    </div>
+										    <div class="checkbox">
+										      <label><input type="checkbox" value="">Option 2</label>
+										    </div>
+										    <div class="checkbox">
+										      <label><input type="checkbox" value="" disabled>Option 3</label>
+										    </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+						</div>
+						<div class="col-md-9 col-xs-12" id="catRightSide">
+							<div class="col-md-12 hidden-sm hidden-xs">
+								<select class="form-control form-control-product">
+									<option>Sort</option>
+									<option>price</option>
+									<option>color</option>
+									<option>Rated</option>
+								</select>
+							</div>
+							<div class="col-md-4 col-xs-6 col-sm-4">
+								<img data-src="images/cat1.jpg" class="lazy img-responsive" alt="Kashmir Box">
+								<p class="text-center">Aftab Garden Silk Saree</p>
+								<center>
+									<strike>Rs. 4,500</strike>
+									<span>Rs. 3,344</span>
+								</center>
+							</div>
+							<div class="col-md-4 col-xs-6 col-sm-4">
+								<img data-src="images/cat1.jpg" class="lazy img-responsive" alt="Kashmir Box">
+								<p class="text-center">Aftab Garden Silk Saree</p>
+								<center>
+									<strike>Rs. 4,500</strike>
+									<span>Rs. 3,344</span>
+								</center>
+							</div>
+							<div class="col-md-4 col-xs-6 col-sm-4">
+								<img data-src="images/cat1.jpg" class="lazy img-responsive" alt="Kashmir Box">
+								<p class="text-center">Aftab Garden Silk Saree</p>
+								<center>
+									<strike>Rs. 4,500</strike>
+									<span>Rs. 3,344</span>
+								</center>
+							</div>
+							<div class="col-md-4 col-xs-6 col-sm-4">
+								<img data-src="images/cat1.jpg" class="lazy img-responsive" alt="Kashmir Box">
+								<p class="text-center">Aftab Garden Silk Saree</p>
+								<center>
+									<strike>Rs. 4,500</strike>
+									<span>Rs. 3,344</span>
+								</center>
+							</div>
+							<div class="col-md-4 col-xs-6 col-sm-4">
+								<img data-src="images/cat1.jpg" class="lazy img-responsive" alt="Kashmir Box">
+								<p class="text-center">Aftab Garden Silk Saree</p>
+								<center>
+									<strike>Rs. 4,500</strike>
+									<span>Rs. 3,344</span>
+								</center>
+							</div>
+							<div class="col-md-4 col-xs-6 col-sm-4">
+								<img data-src="images/cat1.jpg" class="lazy img-responsive" alt="Kashmir Box">
+								<p class="text-center">Aftab Garden Silk Saree</p>
+								<center>
+									<strike>Rs. 4,500</strike>
+									<span>Rs. 3,344</span>
+								</center>
+							</div>
+							<div class="col-md-4 col-xs-6 col-sm-4">
+								<img data-src="images/cat1.jpg" class="lazy img-responsive" alt="Kashmir Box">
+								<p class="text-center">Aftab Garden Silk Saree</p>
+								<center>
+									<strike>Rs. 4,500</strike>
+									<span>Rs. 3,344</span>
+								</center>
+							</div>
+							<div class="col-md-4 col-xs-6 col-sm-4">
+								<img data-src="images/cat1.jpg" class="lazy img-responsive" alt="Kashmir Box">
+								<p class="text-center">Aftab Garden Silk Saree</p>
+								<center>
+									<strike>Rs. 4,500</strike>
+									<span>Rs. 3,344</span>
+								</center>
+							</div>
+							<div class="col-md-4 col-xs-6 col-sm-4">
+								<img data-src="images/cat1.jpg" class="lazy img-responsive" alt="Kashmir Box">
+								<p class="text-center">Aftab Garden Silk Saree</p>
+								<center>
+									<strike>Rs. 4,500</strike>
+									<span>Rs. 3,344</span>
+								</center>
+							</div>
+						</div>
+						<div class="col-md-9 col-md-offset-3 col-xs-12 col-sm-12">
+							<center><span class="btn load-more">Next 30</span><span class="btn load-more">Continue Loading</span></center>
+						</div>
+					</div>
+				</div>		
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid" id="mainContainerCategory">
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1 col-xs-12">
-				<div class="row">
-					<div class="col-md-3 col-xs-12 hidden-xs hidden-sm categoryFilters">
-						<h3>FILTERS</h3>
-			            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-			                <div class="panel panel-default">
-			                    <div class="panel-heading" role="tab" id="headingOne">
-			                        <h4 class="panel-title">
-			                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			                                Price
-			                            </a>
-			                        </h4>
-			                    </div>
-			                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-			                        <div class="panel-body">
-			                            <div id="slider-range"></div>
-			                            <div><span id="min" class="pull-left">99</span><span id="max" class="pull-right">99999</span></div>
-			                        </div>
-			                    </div>
-			                </div>
-			                <div class="panel panel-default">
-			                    <div class="panel-heading" role="tab" id="headingTwo">
-			                        <h4 class="panel-title">
-			                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			                                Color
-			                            </a>
-			                        </h4>
-			                    </div>
-			                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-			                        <div class="panel-body">
-		                            	<div class="checkbox">
-									      <label><input type="checkbox" value="">Option 1</label>
-									    </div>
-									    <div class="checkbox">
-									      <label><input type="checkbox" value="">Option 2</label>
-									    </div>
-									    <div class="checkbox">
-									      <label><input type="checkbox" value="" disabled>Option 3</label>
-									    </div>
-			                        </div>
-			                    </div>
-			                </div>
-			                <div class="panel panel-default">
-			                    <div class="panel-heading" role="tab" id="headingThree">
-			                        <h4 class="panel-title">
-			                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-			                                Fabric
-			                            </a>
-			                        </h4>
-			                    </div>
-			                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-			                        <div class="panel-body">
-			                            <div class="checkbox">
-									      <label><input type="checkbox" value="">Option 1</label>
-									    </div>
-									    <div class="checkbox">
-									      <label><input type="checkbox" value="">Option 2</label>
-									    </div>
-									    <div class="checkbox">
-									      <label><input type="checkbox" value="" disabled>Option 3</label>
-									    </div>
-			                        </div>
-			                    </div>
-			                </div>
-			                <div class="panel panel-default">
-			                    <div class="panel-heading" role="tab" id="headingFour">
-			                        <h4 class="panel-title">
-			                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-			                                Embriodery
-			                            </a>
-			                        </h4>
-			                    </div>
-			                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-			                        <div class="panel-body">
-			                            <div class="checkbox">
-									      <label><input type="checkbox" value="">Option 1</label>
-									    </div>
-									    <div class="checkbox">
-									      <label><input type="checkbox" value="">Option 2</label>
-									    </div>
-									    <div class="checkbox">
-									      <label><input type="checkbox" value="" disabled>Option 3</label>
-									    </div>
-			                        </div>
-			                    </div>
-			                </div>
-			            </div>
-					</div>
-					<div class="col-md-9 col-xs-12" id="catRightSide">
-						<div class="col-md-12 hidden-sm hidden-xs">
-							<select class="form-control form-control-product">
-								<option>Sort</option>
-								<option>price</option>
-								<option>color</option>
-								<option>Rated</option>
-							</select>
-						</div>
-						<div class="col-md-4 col-xs-6 col-sm-4">
-							<img data-src="images/cat1.jpg" class="lazy img-responsive" alt="Kashmir Box">
-							<p class="text-center">Aftab Garden Silk Saree</p>
-							<center>
-								<strike>Rs. 4,500</strike>
-								<span>Rs. 3,344</span>
-							</center>
-						</div>
-						<div class="col-md-4 col-xs-6 col-sm-4">
-							<img data-src="images/cat2.jpg" class="lazy img-responsive" alt="Kashmir Box">
-							<p class="text-center">Aftab Garden Silk Saree</p>
-							<center>
-								<strike>Rs. 4,500</strike>
-								<span>Rs. 3,344</span>
-							</center>
-						</div>
-						<div class="col-md-4 col-xs-6 col-sm-4">
-							<img data-src="images/cat3.jpg" class="lazy img-responsive" alt="Kashmir Box">
-							<p class="text-center">Aftab Garden Silk Saree</p>
-							<center>
-								<strike>Rs. 4,500</strike>
-								<span>Rs. 3,344</span>
-							</center>
-						</div>
-						<div class="col-md-4 col-xs-6 col-sm-4">
-							<img data-src="images/cat1.jpg" class="lazy img-responsive" alt="Kashmir Box">
-							<p class="text-center">Aftab Garden Silk Saree</p>
-							<center>
-								<strike>Rs. 4,500</strike>
-								<span>Rs. 3,344</span>
-							</center>
-						</div>
-						<div class="col-md-4 col-xs-6 col-sm-4">
-							<img data-src="images/cat2.jpg" class="lazy img-responsive" alt="Kashmir Box">
-							<p class="text-center">Aftab Garden Silk Saree</p>
-							<center>
-								<strike>Rs. 4,500</strike>
-								<span>Rs. 3,344</span>
-							</center>
-						</div>
-						<div class="col-md-4 col-xs-6 col-sm-4">
-							<img data-src="images/cat3.jpg" class="lazy img-responsive" alt="Kashmir Box">
-							<p class="text-center">Aftab Garden Silk Saree</p>
-							<center>
-								<strike>Rs. 4,500</strike>
-								<span>Rs. 3,344</span>
-							</center>
-						</div>
-						<div class="col-md-4 col-xs-6 col-sm-4">
-							<img data-src="images/cat1.jpg" class="lazy img-responsive" alt="Kashmir Box">
-							<p class="text-center">Aftab Garden Silk Saree</p>
-							<center>
-								<strike>Rs. 4,500</strike>
-								<span>Rs. 3,344</span>
-							</center>
-						</div>
-						<div class="col-md-4 col-xs-6 col-sm-4">
-							<img data-src="images/cat2.jpg" class="lazy img-responsive" alt="Kashmir Box">
-							<p class="text-center">Aftab Garden Silk Saree</p>
-							<center>
-								<strike>Rs. 4,500</strike>
-								<span>Rs. 3,344</span>
-							</center>
-						</div>
-						<div class="col-md-4 col-xs-6 col-sm-4">
-							<img data-src="images/cat3.jpg" class="lazy img-responsive" alt="Kashmir Box">
-							<p class="text-center">Aftab Garden Silk Saree</p>
-							<center>
-								<strike>Rs. 4,500</strike>
-								<span>Rs. 3,344</span>
-							</center>
-						</div>
-					</div>
-					<div class="col-md-9 col-md-offset-3 col-xs-12 col-sm-12">
-						<center><span class="btn load-more">Next 30</span><span class="btn load-more">Continue Loading</span></center>
-					</div>
-				</div>
-			</div>		
+
+	<div class="container-fluid footer">
+		<hr class="hidden-sm hidden-xs">
+		<!-- Footer Section -->
+		<div id="showFooter" class="row hidden-md hidden-lg">
+			<h5>More about online shoping at Kashmir Box<span><i class="fa fa-angle-down"></i></span></h5>
 		</div>
-	</div>
-	<hr>
-
-
-	<!-- Footer Section -->
-
-	<footer>
-		<div class="container">
-			<div class="row" id="top_footer">
-				<div class="col-md-2">
-					<h4>Our Company</h4>
-					<ul>
-						<li><a href=""> About Us</a></li>
-						<li><a href="">Careers</a></li>
-						<li><a href="">Shiping</a></li>
-						<li><a href="">Return Policy</a></li>
-						<li><a href="">Terms & Conditions</a></li>
-						<li><a href="">Privacy</a></li>
-						<li><a href="">Contact Us</a></li>
-						<li><a href="">Gift Vouchers</a></li>
-						<li><a href="">Affiliate</a></li>
-					</ul>
+		<footer>
+			<div class="container">
+				<div class="row" id="top_footer">
+					<div class="col-md-2 col-xs-12 col-sm-2">
+						<h4>Our Company</h4>
+						<ul>
+							<li><a href=""> About Us</a></li>
+							<li><a href="">Careers</a></li>
+							<li><a href="">Shiping</a></li>
+							<li><a href="">Return Policy</a></li>
+							<li><a href="">Terms & Conditions</a></li>
+							<li><a href="">Privacy</a></li>
+							<li><a href="">Contact Us</a></li>
+							<li><a href="">Gift Vouchers</a></li>
+							<li><a href="">Affiliate</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 col-xs-12 col-sm-2">
+						<h4>Our Categories</h4>
+						<ul>
+							<li><a href=""> Paper Mache</a></li>
+							<li><a href=""> Walnut Woor</a></li>
+							<li><a href=""> Chain Stitch</a></li>
+							<li><a href=""> Timeless Tilla</a></li>
+							<li><a href=""> Walnut Woor</a></li>
+							<li><a href=""> Chain Stitch</a></li>
+							<li><a href=""> Timeless Tilla</a></li>
+							<li><a href=""> Paper Mache</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 col-xs-12 col-sm-2">
+						<h4>More...</h4>
+						<ul>
+							<li><a href=""> Bulk Orders</a></li>
+							<li><a href=""> Customisation</a></li>
+							<li><a href=""> Gifting</a></li>
+							<li><a href=""> Product Development</a></li>
+							<li><a href=""> Kashmir Tales</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-xs-12 col-sm-3" id="foot_4">
+							<div class="foot_4_row">
+								<div>
+									<img src="images/originalKB.png">
+								</div>
+								<div>
+									<b>100% original gurantee</b>
+									<p>for all products</p>
+								</div>
+							</div>
+							<div class="foot_4_row">
+								<div>
+									<img src="images/returnKB.png">
+								</div>
+								<div>
+									<b>30 Days easy return</b>
+									<p>policy for all orders placed</p>
+								</div>
+							</div>
+							<div class="foot_4_row">
+								<div>
+									<img src="images/freeshippingKB.png">
+								</div>
+								<div>
+									<b>Free delivery</b>
+									<p>On all orders above Rs. 499</p>
+								</div>
+							</div>
+							
+					</div>
+					<div class="col-md-3 col-xs-12 col-sm-3 footer3rd">
+						<h4>Connect with us</h4>
+						<a href="#"> <img data-src="images/fb.png" class="lazy"> </a>
+						<a href="#"> <img data-src="images/fb.png" class="lazy"> </a>
+						<a href="#"> <img data-src="images/fb.png" class="lazy"> </a>
+						<a href="#"> <img data-src="images/fb.png" class="lazy"> </a>
+						<a href="#"> <img data-src="images/fb.png" class="lazy"> </a>
+						<a href="#"> <img data-src="images/fb.png" class="lazy"> </a>
+						<h4 class="footer3rdHeadingF">Need Help?</h4>
+						<h5 class="footer3rdSubHeading"><b>Email : </b><span>care@kashmirbox.com</span></h5>
+						<h5 class="footer3rdSubHeading"><b>Contact : </b> <span>+91-9796-659-999</span></h5>
+					</div>
 				</div>
-				<div class="col-md-2">
-					<h4>Our Categories</h4>
-					<ul>
-						<li><a href=""> Paper Mache</a></li>
-						<li><a href=""> Walnut Woor</a></li>
-						<li><a href=""> Chain Stitch</a></li>
-						<li><a href=""> Timeless Tilla</a></li>
-						<li><a href=""> Walnut Woor</a></li>
-						<li><a href=""> Chain Stitch</a></li>
-						<li><a href=""> Timeless Tilla</a></li>
-						<li><a href=""> Paper Mache</a></li>
-					</ul>
-				</div>
-				<div class="col-md-2">
-					<h4>More...</h4>
-					<ul>
-						<li><a href=""> Bulk Orders</a></li>
-						<li><a href=""> Customisation</a></li>
-						<li><a href=""> Gifting</a></li>
-						<li><a href=""> Product Development</a></li>
-						<li><a href=""> Kashmir Tales</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3" id="foot_4">
-					<img data-src="images/original.png" class="lazy" style="">
-					<br>
-					<br>
-					<img data-src="images/return.png" class="lazy" style="">
-					<br>
-					<br>
-					<img data-src="images/freeshipping.png" class="lazy" style="">
+				<br>
+				<div class="row">
+					<div class="col-md-12 footer2Row">
+						<h4>
+							Your Convenient Connection to the best of Kashmir
+						</h4>
+						<h2>KB</h2>
+						<p>
+							Kashmir Box prides itself for being an artisan family of more than 1000 artisans, 200 producers and 50+ local brands from the remotest corners of Kashmir. We aim to bring the most cherished and glorious of authentic Kashmiri Crafts and produce to our valued customers, giving them the most seamless shopping experience ever. Whether you are looking for the soft embrace of Pashmina &amp; Cashmere, or to charm up your attire with the best of Kashmiri Embroideries like Aari, Sozni &amp; Tilla or to décor up your home with Paper Machie &amp; Walnut Wood beauties or simply to treat yourself to the exquisite Kashmiri Kahwa, Dry Fruits, Saffron and Wazwan, or to benefit from the age old health boosters like Mountain Shilajit, we have got you covered. We are your convenient connection to the best of Kashmir, an easy way to get all the beautiful products as easily and hassle free as is possible.
 
+						</p>
+						<h4 class="footer2RowHeading">
+							<b>GSTIN: </b>
+							<span> 01AAECK9299A1ZN</span>
+						</h4>
+
+					</div>
 				</div>
-				<div class="col-md-3">
-					<h4>Connect with us</h4>
-					<a href="#"> <img data-src="images/fb.png" class="lazy" style="width:30px;height:25px;margin-right:5px;"> </a>
-					<a href="#"> <img data-src="images/fb.png" class="lazy" style="width:30px;height:25px;margin-right:5px;"> </a>
-					<a href="#"> <img data-src="images/fb.png" class="lazy" style="width:30px;height:25px;margin-right:5px;"> </a>
-					<a href="#"> <img data-src="images/fb.png" class="lazy" style="width:30px;height:25px;margin-right:5px;"> </a>
-					<a href="#"> <img data-src="images/fb.png" class="lazy" style="width:30px;height:25px;margin-right:5px;"> </a>
-					<a href="#"> <img data-src="images/fb.png" class="lazy" style="width:30px;height:25px;margin-right:5px;"> </a>
-					<br>
-					<br>
-					<br>
-					<h4 style="font-family:times new roman;font-weight:bold;margin-bottom:20px;">Need Help?</h4>
-					<h5><b>Email : </b><span>care@kashmirbox.com</span></h5>
-					<h5><b>Contact : </b> <span>+91-9796-659-999</span></h5>
+			</div>
+			<hr>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 paymentPartners">
+						<center>
+							<span>Payment Partners</span>
+						</center>
+						<div>
+							<img data-src="images/d.png" class="lazy">
+							<img data-src="images/m.png" class="lazy">
+							<img data-src="images/v.png" class="lazy">
+							<img data-src="images/a.png" class="lazy">
+						</div>
+					</div>
 				</div>
 			</div>
 			<br>
-			<div class="row">
-				<div class="col-md-12">
-					<h4 style="font-family: Cormorant-Bold;font-size: 18pt;">
-						Your Convenient Connection to the best of Kashmir
-					</h4>
-					<h2 style="padding: 40px 30px;margin-top: 0;margin-right: 20px;float: left;background: #222;color: white;font-size: 60pt;font-family: Cormorant-Medium;">KB</h2>
-					<p style="font-size: 14px;color: #777;font-family: calibri;font-weight: 500;text-align: justify;">
-						Kashmir Box prides itself for being an artisan family of more than 1000 artisans, 200 producers and 50+ local brands from the remotest corners of Kashmir. We aim to bring the most cherished and glorious of authentic Kashmiri Crafts and produce to our valued customers, giving them the most seamless shopping experience ever. Whether you are looking for the soft embrace of Pashmina &amp; Cashmere, or to charm up your attire with the best of Kashmiri Embroideries like Aari, Sozni &amp; Tilla or to décor up your home with Paper Machie &amp; Walnut Wood beauties or simply to treat yourself to the exquisite Kashmiri Kahwa, Dry Fruits, Saffron and Wazwan, or to benefit from the age old health boosters like Mountain Shilajit, we have got you covered. We are your convenient connection to the best of Kashmir, an easy way to get all the beautiful products as easily and hassle free as is possible.
-
-					</p>
-					<h4>
-						<b style="font-family:  times new roman;font-size: 14px;">GSTIN: </b>
-						<span style="color:  #888;font-size: 13px;"> 01AAECK9299A1ZN</span>
-					</h4>
-
-				</div>
+			<div class="row footReserved">
+				<small class="copyright-footer">
+					Copyright © KashmirBox.com  2017-18. All Rights Reserved
+				</small>
 			</div>
-		</div>
-		<hr>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<center>
-						<span style="font-family:times new roman;font-size:22px;">Payment Partners</span>
-					</center>
-					<div style="display: flex;justify-content: center;padding-top: 20px;">
-						<img data-src="images/d.png" class="lazy" style="width: 40px;height: 20px;margin-right:5px;">
-						<img data-src="images/m.png" class="lazy" style="width: 40px;height: 20px;margin-right:5px;">
-						<img data-src="images/v.png" class="lazy" style="width: 40px;height: 20px;margin-right:5px;">
-						<img data-src="images/a.png" class="lazy" style="width: 40px;height: 20px;margin-right:5px;">
-					</div>
-				</div>
-			</div>
-		</div>
-		<br>
-		<div class="container-fluid" style="background: black;text-align:  center;padding: 8px 0;">
-			<small class="copyright-footer" style="text-align:center;color: white;">
-				Copyright © KashmirBox.com  2017-18. All Rights Reserved
-			</small>
-		</div>
-	</footer>
+		</footer>
+	</div>
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- Mobile Nav Script -->
+	<script type="text/javascript" src="js/stellarnav.min.js"></script>
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.2.0/bootstrap-slider.js"></script>
-
-	<script src="slidereveal.js"></script>
+<!-- script used for cart slide -->
+    <script src="slidereveal.js"></script>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/js/superfish.js"></script>
 
@@ -1083,31 +1292,61 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-
+	
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
-	<script type="text/javascript" src="custom.js"></script>
 
 <!-- mobile slide navbar -->
     <script src="customNavbar.js" type="text/javascript"></script>
-	
 
-	<script>
-	  $( function() {
-	    $( "#slider-range" ).slider({
-	      	range: true,
-	      	min: 99,
-	      	max: 99999,
-	      	values: [99, 99999],
-	    	slide: function( event, ui ) {
-	    		$('#min').text(ui.values[ 0 ])
-	    		$('#max').text(ui.values[ 1 ])
-			}
-		});
-	  });
-  </script>
+<!-- cart slide -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
+  	<script src="js/drawer.js"></script>
+
+<!-- script for overlay search -->
+    <script src="js/overlaysearch.js" type="text/javascript"></script>
+
+<!-- script for cart slide -->
+	<script type="text/javascript" src="custom.js"></script>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade modalLogin" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+      		<div class="row">
+      			<button type="button" class="close modalLoginClose" data-dismiss="modal">&times;</button>
+      			<div class="col-md-12 modalLoginMain">
+					<div class="col-md-6 col-sm-6 col-xs-12 modalLoginMainD1">
+						<img src="images/loginKB.png" class="img-responsive hidden-xs">
+						<h2 class="hidden-md hidden-sm hidden-lg" >LOGIN OR SIGN UP</h2>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12 modalLoginMainD2">
+						<div class="textboxHead">
+							<input type="text" class="form-control textboxes" placeholder="Enter your email address">
+						</div>
+						<div class="textboxHead" id="modalLoginMainD3">
+							<input type="password" class="form-control textboxes" placeholder="Enter password">
+							<a id="lnkforget" class="hyperlink">Forgot?</a>
+						</div>
+						<div>
+							<input type="button" class="btn textboxexButton" value="LOGIN">
+						</div>
+
+						<div class="signUpStyleHead">
+							<h5 class="signUpStyle">NEW KASHMIR BOX? <a href="#">SIGN UP</a></h5>
+						</div>
+					</div>
+			</div>
+      		</div>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 </body>
 </html>
-

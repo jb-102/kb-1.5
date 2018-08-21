@@ -144,3 +144,139 @@ $("#showFooter").click(function (){
 	}
 	
 })
+
+function toogleHeader() {
+	$('.menu-toggle').find('.fa').css("cssText", "padding: 0px !important; font-size: 20px !important;")
+	if($('.menu-toggle').find('.fa').hasClass('fa-bars')){
+		$('.menu-toggle').find('.fa').removeClass('fa-bars')
+		$('.menu-toggle').find('.fa').addClass('fa-times')
+		$('#mainHeader').addClass('hidden')
+		$('#mainHeaderGrey').removeClass('hidden')
+	} else {
+		$('.menu-toggle').find('.fa').addClass('fa-bars')
+		$('.menu-toggle').find('.fa').removeClass('fa-times')
+		$('#mainHeader').removeClass('hidden')
+		$('#mainHeaderGrey').addClass('hidden')
+	}
+}
+
+jQuery(document).ready(function($) {
+	jQuery('.stellarnav').stellarNav({
+		theme: 'light'
+	});
+});
+
+$(document).ready(function() {
+  $('.drawer').drawer();
+});
+
+(function() {
+	var morphSearch = document.getElementById( 'morphsearch' ),
+		input = morphSearch.querySelector( 'input.morphsearch-input' ),
+		searchIcon = morphSearch.querySelector( '#searchIcon' ),
+		ctrlClose = morphSearch.querySelector( 'span.morphsearch-close' ),
+		isOpen = isAnimating = false,
+		// show/hide search area
+		toggleSearch = function(evt) {
+			// return if open and the input gets focused
+			if( evt.type.toLowerCase() === 'focus' && isOpen ) return false;
+
+			var offsets = morphsearch.getBoundingClientRect();
+			if( isOpen ) {
+				classie.remove( morphSearch, 'open' );
+
+				// trick to hide input text once the search overlay closes 
+				// todo: hardcoded times, should be done after transition ends
+				if( input.value !== '' ) {
+					setTimeout(function() {
+						classie.add( morphSearch, 'hideInput' );
+						setTimeout(function() {
+							classie.remove( morphSearch, 'hideInput' );
+							input.value = '';
+						}, 300 );
+					}, 500);
+				}
+				
+				input.blur();
+			}
+			else {
+				classie.add( morphSearch, 'open' );
+			}
+			isOpen = !isOpen;
+		};
+
+	// events
+	input.addEventListener( 'focus', toggleSearch );
+	searchIcon.addEventListener( 'click', toggleSearch );
+	ctrlClose.addEventListener( 'click', toggleSearch );
+	// esc key closes search overlay
+	// keyboard navigation events
+	document.addEventListener( 'keydown', function( ev ) {
+		var keyCode = ev.keyCode || ev.which;
+		if( keyCode === 27 && isOpen ) {
+			toggleSearch(ev);
+		}
+	} );
+})();
+
+$(function(){
+    slider = $("#slider").slideReveal({
+      width: "50%",
+      // push: false,
+      position: "right",
+      speed: 600,
+      trigger: $("#trigger"),
+      // autoEscape: false,
+      show: function(obj){
+        console.log(obj);
+      },
+      shown: function(obj){
+        console.log(obj);
+      },
+      hide: function(obj){
+        console.log(obj);
+      },
+      hidden: function(obj){
+        console.log(obj);
+      },
+      overlay: true
+    });
+});
+
+$('.fa-minus').click(function (e){
+	let span = $(e.target).parent().find( "span" )
+	let value = span.text()
+	value = parseInt(value)
+	if(value > 1) {
+		value--;
+		span.text(value)
+	}
+})
+
+$('.fa-plus').click(function(e){
+	let span = $(e.target).parent().find( "span" )
+	let value = span.text()
+	value = parseInt(value)
+	value++;
+	span.text(value)
+})
+
+$('.fa-times').click(function(e){
+	let row_id = '#' + $(e.target).data('value')
+	let hr_id = '#' + $(e.target).data('value') + '_hr'
+	$(row_id).remove();
+	$(hr_id).remove();
+})
+
+$(function() {
+    $( "#slider-range" ).slider({
+      	range: true,
+      	min: 99,
+      	max: 99999,
+      	values: [99, 99999],
+    	slide: function( event, ui ) {
+    		$('#min').text(ui.values[ 0 ])
+    		$('#max').text(ui.values[ 1 ])
+		}
+	});
+});
