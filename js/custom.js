@@ -1,11 +1,11 @@
 $(document).ready(function(){
 	$(".dropdown").hover(            
 		function() {
-			$('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+			$('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).fadeIn(500);
 			$(this).toggleClass('open');        
 		},
 		function() {
-			$('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+			$('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).fadeOut(100);
 			$(this).toggleClass('open');       
 		}
 	);
@@ -171,7 +171,9 @@ $(document).ready(function() {
 });
 
 (function() {
-	var morphSearch = document.getElementById( 'morphsearch' ),
+	if(document.getElementById( 'morphsearch' ) !== null)
+	{
+		var morphSearch = document.getElementById( 'morphsearch' ),
 		input = morphSearch.querySelector( 'input.morphsearch-input' ),
 		searchIcon = morphSearch.querySelector( '#searchIcon' ),
 		ctrlClose = morphSearch.querySelector( 'span.morphsearch-close' ),
@@ -205,18 +207,19 @@ $(document).ready(function() {
 			isOpen = !isOpen;
 		};
 
-	// events
-	input.addEventListener( 'focus', toggleSearch );
-	searchIcon.addEventListener( 'click', toggleSearch );
-	ctrlClose.addEventListener( 'click', toggleSearch );
-	// esc key closes search overlay
-	// keyboard navigation events
-	document.addEventListener( 'keydown', function( ev ) {
-		var keyCode = ev.keyCode || ev.which;
-		if( keyCode === 27 && isOpen ) {
-			toggleSearch(ev);
-		}
-	} );
+		// events
+		input.addEventListener( 'focus', toggleSearch );
+		searchIcon.addEventListener( 'click', toggleSearch );
+		ctrlClose.addEventListener( 'click', toggleSearch );
+		// esc key closes search overlay
+		// keyboard navigation events
+		document.addEventListener( 'keydown', function( ev ) {
+			var keyCode = ev.keyCode || ev.which;
+			if( keyCode === 27 && isOpen ) {
+				toggleSearch(ev);
+			}
+		} );
+	}
 })();
 
 $(function(){
@@ -280,3 +283,74 @@ $(function() {
 		}
 	});
 });
+
+$(function() {
+    $( "#slider-range-dialog" ).slider({
+      	range: true,
+      	min: 99,
+      	max: 99999,
+      	values: [99, 99999],
+    	slide: function( event, ui ) {
+    		$('#minFilter').text(ui.values[ 0 ])
+    		$('#maxFilter').text(ui.values[ 1 ])
+		}
+	});
+});
+
+let el = document.getElementById('myProductCarousel')
+$(document).ready(function() {
+
+	$("#myProductCarousel").carousel({
+	    interval: false
+	}); 
+	if(el !== null)
+	{
+		el.addEventListener('swr',function(){
+			$("#myProductCarousel").carousel('prev')
+		},false);
+		
+		el.addEventListener('swl',function(){
+			$("#myProductCarousel").carousel('next') 
+		},false);
+	}
+
+
+	window.onload=function(){
+	(function(d){
+	 var
+	 ce=function(e,n){var a=document.createEvent("CustomEvent");a.initCustomEvent(n,true,true,e.target);e.target.dispatchEvent(a);a=null;return false},
+	 nm=true,sp={x:0,y:0},ep={x:0,y:0},
+	 touch={
+	  touchstart:function(e){sp={x:e.touches[0].pageX,y:e.touches[0].pageY}},
+	  touchmove:function(e){nm=false;ep={x:e.touches[0].pageX,y:e.touches[0].pageY}},
+	  touchend:function(e){if(nm){ce(e,'fc')}else{var x=ep.x-sp.x,xr=Math.abs(x),y=ep.y-sp.y,yr=Math.abs(y);if(Math.max(xr,yr)>20){ce(e,(xr>yr?(x<0?'swl':'swr'):(y<0?'swu':'swd')))}};nm=true},
+	  touchcancel:function(e){nm=false}
+	 };
+	 for(var a in touch){d.addEventListener(a,touch[a],false);}
+	})(document);
+	//EXAMPLE OF USE
+	var h=function(e){
+		// console.log(e.type,e)
+	};
+	document.body.addEventListener('fc',h,false);// 0-50ms vs 500ms with normal click
+	document.body.addEventListener('swl',h,false);
+	document.body.addEventListener('swr',h,false);
+	document.body.addEventListener('swu',h,false);
+	document.body.addEventListener('swd',h,false);
+	}
+});
+
+$('#apply-coupon-text').click(function(){
+	$('#apply-coupon-text').addClass('hidden');
+	$('#apply-coupon-input-box').removeClass('hidden');
+})
+
+$('body').on('click','#switchToSignUp',function(){
+	$('#loginBox').addClass('hidden');
+	$('#signUpBox').removeClass('hidden');
+})
+
+$('body').on('click','#switchToLogin',function(){
+	$('#loginBox').removeClass('hidden');
+	$('#signUpBox').addClass('hidden');
+})

@@ -31,7 +31,7 @@
   height: 100%;
   color: #222;
   background-color: #fff;
-  z-index: 9999;
+  z-index: 99999;
 }
 
 .drawer-brand {
@@ -139,6 +139,8 @@
 .drawer--right .drawer-hamburger,
 .drawer--right.drawer-open .drawer-navbar .drawer-hamburger {
   right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .drawer--right.drawer-open .drawer-hamburger {
@@ -540,7 +542,6 @@
   #cartNav
   {
     width:100% !important;
-    height: 100vh !important;
   }
   .drawer--right .drawer-nav
   {
